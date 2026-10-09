@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Mapa interactivo de la arquitectura web propuesta para American Recruiters México, con navegación, páginas, rutas de conversión y futuras ampliaciones.">
+  <title>Arquitectura web interactiva | American Recruiters México</title>
+  <style>
+    :root{--plum:#675C6C;--plum-deep:#4D4653;--ink:#25232A;--teal:#1EABA3;--teal-deep:#0F8F91;--teal-pale:#DDF4F3;--lilac:#EDE9F0;--page:#F5F4F7;--border:#E4E1E8;--muted:#76717C;--white:#FFF;--warning:#A87024;--warning-bg:#FFF5E6;--shadow:0 20px 65px rgba(53,43,63,.075);--shadow-small:0 8px 22px rgba(57,43,69,.06);--r:18px}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--page);font-family:Montserrat,Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--ink);font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+    button,input{font:inherit}
+    button{cursor:pointer}
+    button:focus-visible,input:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+    a{color:var(--teal-deep)}
+    .shell{max-width:1770px;margin:0 auto;padding:0 34px 54px}
+    .topbar{border-bottom:1px solid var(--border);background:#fff;position:relative;z-index:10}
+    .topbar-inner{max-width:1770px;margin:auto;padding:15px 34px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .identity{display:flex;gap:13px;align-items:center;min-width:0}
+    .symbol{height:38px;width:38px;flex:0 0 auto;border-radius:11px;background:var(--plum-deep);display:grid;grid-template-columns:repeat(2,7px);grid-template-rows:repeat(2,7px);justify-content:center;align-content:center;gap:5px;box-shadow:0 4px 8px rgba(77,70,83,.14)}
+    .symbol i{background:var(--teal);border-radius:2px}.symbol i:first-child{background:white}.symbol i:last-child{background:#d9d3dc}
+    .brand{font-size:12px;font-weight:800;letter-spacing:.09em;line-height:1.25}.brand small{display:block;margin-top:3px;font-size:10px;letter-spacing:.11em;color:var(--muted);font-weight:600}
+    .top-actions{display:flex;align-items:center;gap:10px}
+    .doc-tag{font-size:10px;font-weight:800;letter-spacing:.12em;color:var(--teal-deep);background:var(--teal-pale);border-radius:40px;padding:8px 12px;margin-right:8px;white-space:nowrap}
+    .button{border:1px solid var(--border);background:white;color:var(--plum-deep);border-radius:10px;padding:9px 13px;font-size:12px;font-weight:750;display:inline-flex;align-items:center;justify-content:center;gap:7px;transition:transform .17s,border-color .17s,background .17s;white-space:nowrap}
+    .button:hover{border-color:var(--teal);transform:translateY(-1px)}
+    .button:active{transform:translateY(0)}
+    .button.primary{background:var(--plum-deep);border-color:var(--plum-deep);color:white}
+    .button.primary:hover{background:var(--plum);border-color:var(--plum)}
+    .button svg{width:14px;height:14px;stroke:currentColor;stroke-width:1.9;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .intro{padding:32px 0 25px;display:flex;align-items:flex-end;justify-content:space-between;gap:30px}
+    .kicker{display:flex;align-items:center;gap:9px;color:var(--teal-deep);font-size:11px;letter-spacing:.15em;font-weight:850;text-transform:uppercase}
+    .kicker:before{content:"";display:block;width:29px;height:3px;border-radius:5px;background:var(--teal)}
+    h1{font-size:clamp(30px,3.1vw,47px);letter-spacing:-.045em;line-height:1.13;font-weight:850;color:var(--plum-deep);margin:11px 0}
+    .intro p{font-size:13px;max-width:820px;color:#696470;line-height:1.72;margin:0}
+    .env{max-width:365px;flex:0 0 340px;padding:14px 16px;border:1px solid var(--border);background:white;border-radius:14px;box-shadow:var(--shadow-small)}
+    .env-top{font-size:10px;letter-spacing:.13em;color:var(--muted);font-weight:800;text-transform:uppercase;margin-bottom:8px}
+    .env-flow{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-weight:750;font-size:11px;color:var(--plum-deep)}
+    .env-flow .step{padding:6px 9px;border-radius:7px;background:var(--page)}
+    .env-flow .arrow{color:var(--teal-deep);font-weight:900}
+    .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-bottom:23px}
+    .stat{border:1px solid var(--border);padding:17px 18px;background:white;border-radius:14px;display:flex;align-items:center;gap:13px;box-shadow:var(--shadow-small);min-height:82px}
+    .stat-icon{height:42px;width:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:var(--lilac);color:var(--plum-deep);font-weight:850;font-size:17px;flex:0 0 42px}
+    .stat:nth-child(2) .stat-icon,.stat:nth-child(4) .stat-icon{background:var(--teal-pale);color:var(--teal-deep)}
+    .stat .number{font-size:20px;letter-spacing:-.025em;line-height:1.15;font-weight:850;color:var(--plum-deep)}
+    .stat .lab{font-size:11px;color:var(--muted);line-height:1.35;margin-top:3px}
+    .board{background:#fff;border:1px solid var(--border);border-radius:20px;box-shadow:var(--shadow);overflow:hidden}
+    .board-head{padding:14px 21px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .tabs{display:flex;align-items:center;gap:5px;padding:4px;border:1px solid var(--border);background:#F8F7F9;border-radius:12px}
+    .tab{border:0;background:none;color:#766D7C;padding:10px 15px;border-radius:9px;font-weight:800;font-size:12px;display:flex;align-items:center;gap:9px}
+    .tab.active{background:white;color:var(--plum-deep);box-shadow:0 2px 8px rgba(53,43,63,.09)}
+    .tab .num{width:19px;height:19px;border-radius:6px;background:#EEEAF0;display:inline-flex;align-items:center;justify-content:center;font-size:10px}
+    .tab.active .num{background:var(--teal-pale);color:var(--teal-deep)}
+    .board-tools{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+    .search{min-width:205px;border:1px solid var(--border);border-radius:10px;padding:9px 11px;display:flex;align-items:center;gap:9px;background:white}
+    .search svg{width:15px;height:15px;stroke:#8A8590;fill:none;stroke-width:2}
+    .search input{border:0;outline:none;min-width:80px;width:155px;color:var(--ink);font-size:12px;background:none}
+    .search input:focus-visible{outline:none}
+    .switch{display:flex;gap:8px;align-items:center;font-size:11px;color:var(--plum-deep);font-weight:750;white-space:nowrap;cursor:pointer;user-select:none}
+    .switch input{accent-color:var(--teal-deep);height:16px;width:16px;cursor:pointer}
+    .filters{display:flex;gap:6px;align-items:center}
+    .filter{border:1px solid transparent;border-radius:9px;background:none;padding:8px 9px;font-size:11px;color:var(--muted);font-weight:750;white-space:nowrap}
+    .filter:hover{background:var(--page)}
+    .filter.active{border-color:#B8E4E0;color:var(--teal-deep);background:#EAF8F7}
+    .board-body{display:grid;grid-template-columns:minmax(0,1fr) 328px;min-height:660px}
+    .canvas{padding:27px 25px 32px;background:radial-gradient(circle at 50% 18%,rgba(30,171,163,.045),transparent 35%),linear-gradient(90deg,transparent 23px,rgba(77,70,83,.027) 24px),linear-gradient(transparent 23px,rgba(77,70,83,.027) 24px);background-size:auto,24px 24px,24px 24px;min-width:0}
+    .pane-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+    .pane-title .title{font-weight:850;color:var(--plum-deep);font-size:15px;letter-spacing:-.025em}
+    .pane-title .desc{font-size:11px;color:var(--muted)}
+    .pane-title .right{display:flex;align-items:center;gap:6px}
+    .legend{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:10px;color:#77707C}
+    .legend span{display:flex;gap:5px;align-items:center}
+    .dot{width:8px;height:8px;border-radius:50%;background:var(--teal)}
+    .dot.candidate{background:#9B8EA5}.dot.technical{background:#ADB2BC}.dot.future{background:#C99B55}
+    .root-wrap{display:flex;align-items:center;flex-direction:column;position:relative;margin-bottom:13px}
+    .root-card{background:var(--plum-deep);color:white;min-width:325px;max-width:92%;border-radius:14px;padding:17px 25px;display:flex;align-items:center;justify-content:center;gap:13px;box-shadow:0 15px 30px rgba(77,70,83,.17);border:1px solid var(--plum);cursor:pointer;transition:transform .15s,box-shadow .15s}
+    .root-card:hover,.root-card.selected{transform:translateY(-2px);box-shadow:0 19px 35px rgba(77,70,83,.22)}
+    .root-logo{width:34px;height:34px;background:#6A606F;border:1px solid #8A808D;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#80E7DD;font-weight:850;font-size:15px}
+    .root-main{display:block;font-size:14px;font-weight:850;line-height:1.1}.root-sub{display:block;font-size:11px;margin-top:4px;color:#DAD4DD;font-weight:550}
+    .stem{height:31px;width:2px;background:#C6BDC9;margin:auto}.stem:after{content:"";position:relative;top:27px;left:-3px;display:block;width:8px;height:8px;background:var(--teal);border:2px solid white;border-radius:50%}
+    .branch-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:14px;position:relative;padding-top:22px}
+    .branch-grid:before{content:"";position:absolute;left:12.5%;right:12.5%;top:0;height:2px;background:#D6CFD9}
+    .branch-col{border:1px solid var(--border);border-radius:13px;padding:12px;background:#fff;position:relative;min-width:0;box-shadow:0 7px 25px rgba(60,45,68,.035)}
+    .branch-col:before{content:"";position:absolute;top:-22px;left:50%;height:21px;background:#D6CFD9;width:2px}
+    .col-caption{padding:1px 4px 11px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:7px;margin-bottom:10px}
+    .col-caption h3{font-size:11px;letter-spacing:.075em;text-transform:uppercase;font-weight:900;margin:0;color:var(--plum-deep)}
+    .col-caption .count{font-size:10px;color:var(--muted);background:var(--page);border-radius:6px;padding:3px 6px;font-weight:750}
+    .col-caption.secondary h3{color:#716479}.col-caption.support h3{color:var(--teal-deep)}.col-caption.technical h3{color:#77737D}
+    .site-card{width:100%;text-align:left;border:1px solid #E7E4EA;border-radius:10px;padding:10px 10px;background:#fff;display:flex;align-items:flex-start;gap:8px;color:var(--ink);transition:border .15s,transform .15s,box-shadow .15s,background .15s;margin-bottom:9px;position:relative}
+    .site-card:hover{border-color:#77CBC5;transform:translateY(-1px);box-shadow:0 7px 14px rgba(20,84,79,.06)}
+    .site-card.selected{border-color:var(--teal);background:#F3FCFB;box-shadow:0 0 0 2px rgba(30,171,163,.11)}
+    .site-card .ic{width:23px;height:23px;border-radius:7px;background:var(--lilac);color:var(--plum-deep);font-size:10px;flex:0 0 23px;font-weight:850;display:flex;align-items:center;justify-content:center}
+    .site-card[data-zone="secondary"] .ic{background:#EFE9F1;color:#7A687D}
+    .site-card[data-zone="support"] .ic{background:var(--teal-pale);color:var(--teal-deep)}
+    .site-card[data-zone="technical"] .ic{background:#EFF0F2;color:#767986}
+    .site-card[data-zone="future"] .ic{background:var(--warning-bg);color:var(--warning)}
+    .site-card .txt{min-width:0;flex:1}
+    .site-card .name{font-size:11px;font-weight:800;line-height:1.35;display:block;color:var(--plum-deep)}
+    .site-card .url{display:block;font-size:10px;overflow-wrap:anywhere;color:var(--muted);margin-top:3px;line-height:1.3}
+    .site-card .meta{font-size:9px;display:block;margin-top:4px;color:var(--teal-deep);font-weight:750}
+    .site-card .chev{color:#BAB4C0;font-weight:900;font-size:15px;line-height:1;margin-left:auto}
+    .nested{margin:-3px 0 11px 13px;padding-left:13px;border-left:2px solid #E9E3EC}
+    .nested .site-card{padding:8px 7px;margin-bottom:7px}
+    .nested .site-card .name{font-size:10.5px}.nested .site-card .url{font-size:9.5px}
+    .nested .site-card .ic{width:19px;height:19px;flex-basis:19px;font-size:9px;border-radius:6px}
+    .empty{padding:14px 5px;color:var(--muted);font-size:11px;text-align:center;line-height:1.55}
+    .future-wrap{border:1px dashed #CFC7D4;background:rgba(255,255,255,.91);border-radius:14px;margin-top:20px;padding:16px}
+    .future-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
+    .future-label{font-weight:850;font-size:12px;color:var(--plum-deep)}
+    .future-note{font-size:10px;color:var(--muted)}
+    .future-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px}
+    .future-grid .site-card{margin:0;min-height:76px;border-style:dashed;background:#FFFCF8}
+    .future-grid .site-card .chev{display:none}
+    .future-grid .site-card .name{font-size:10px}.future-grid .site-card .url{font-size:9px}
+    .decision-bar{background:#fff;border:1px solid var(--border);border-radius:12px;padding:11px 14px;display:flex;gap:9px;align-items:start;margin-top:17px;color:#6D6673;font-size:11px;line-height:1.55}
+    .decision-bar strong{color:var(--plum-deep)}
+    .decision-bar .info{border-radius:50%;background:var(--teal-pale);width:19px;height:19px;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--teal-deep);font-weight:850}
+    .detail-panel{border-left:1px solid var(--border);padding:25px 24px 25px;background:white;position:relative;min-width:0}
+    .panel-sticky{position:sticky;top:15px}
+    .detail-kicker{color:var(--teal-deep);font-size:10px;letter-spacing:.13em;font-weight:900;text-transform:uppercase;display:flex;align-items:center;justify-content:space-between;gap:7px}
+    .detail-top-icon{height:43px;width:43px;display:flex;align-items:center;justify-content:center;border-radius:12px;background:var(--lilac);color:var(--plum-deep);font-size:16px;font-weight:900;margin:23px 0 13px}
+    .detail-panel h2{font-weight:850;font-size:23px;letter-spacing:-.035em;line-height:1.2;color:var(--plum-deep);margin:0 0 10px}
+    .detail-url{display:flex;align-items:center;justify-content:space-between;border:1px solid var(--border);padding:9px 9px 9px 11px;border-radius:10px;background:var(--page);font-size:11px;color:#6D6871;overflow-wrap:anywhere;gap:10px}
+    .copy{font-size:10px;border:1px solid var(--border);border-radius:7px;background:white;color:var(--plum-deep);padding:5px 8px;font-weight:850;flex:0 0 auto}
+    .tagset{display:flex;flex-wrap:wrap;gap:5px;margin:14px 0 18px}
+    .tag{border-radius:7px;padding:5px 7px;font-size:10px;font-weight:750;background:var(--lilac);color:var(--plum-deep)}
+    .tag.teal{background:var(--teal-pale);color:var(--teal-deep)}
+    .tag.warning{background:var(--warning-bg);color:var(--warning)}
+    .detail-section{border-top:1px solid var(--border);padding-top:14px;margin-top:13px}
+    .detail-label{font-size:10px;letter-spacing:.12em;color:#817A86;font-weight:850;text-transform:uppercase;margin-bottom:6px}
+    .detail-copy{font-size:12px;line-height:1.65;color:#514B55;margin:0}
+    .breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:5px;font-size:10.5px;color:var(--muted);line-height:1.45}
+    .breadcrumb .arrow{color:var(--teal-deep)}
+    .detail-foot{font-size:10px;color:var(--muted);margin-top:20px;line-height:1.6;border-radius:10px;background:#F8F6F9;padding:10px}
+    .mock-section{padding-top:0}
+    .preview-label{font-size:10px;letter-spacing:.11em;color:var(--muted);font-weight:850;text-transform:uppercase;margin:19px 0 10px}
+    .browser{background:white;border:1px solid #DCD7E0;border-radius:13px;box-shadow:var(--shadow-small);overflow:hidden}
+    .browser-top{height:31px;background:#F0EDF2;border-bottom:1px solid var(--border);display:flex;gap:6px;padding:0 13px;align-items:center}
+    .browser-top b{border-radius:50%;background:#C0BAC5;width:7px;height:7px}
+    .browser-address{margin:auto;background:white;border:1px solid var(--border);border-radius:5px;min-width:195px;text-align:center;font-size:9px;color:#867E8A;padding:3px 9px}
+    .fake-nav{display:flex;align-items:center;justify-content:space-between;padding:15px 17px;gap:13px}
+    .logo-placeholder{border:1px dashed #A9A1AC;border-radius:7px;background:#F9F8FA;color:#807684;font-weight:900;text-align:center;font-size:9px;line-height:1.25;padding:9px 10px;letter-spacing:.05em;flex-shrink:0}
+    .fake-links{display:flex;align-items:center;justify-content:flex-end;gap:6px;flex-wrap:wrap}
+    .fake-links .nav-el{border:0;background:none;color:#514A56;font-size:10px;font-weight:800;white-space:nowrap;padding:9px 7px;border-radius:7px}
+    .fake-links .nav-el:hover{background:var(--page)}
+    .fake-links .nav-el.cta{background:var(--plum-deep);color:white;padding:10px 12px;border-radius:8px}
+    .fake-links .nav-el.cv{color:var(--teal-deep)}
+    .navdrop{position:relative}
+    .drop-menu{position:absolute;z-index:12;right:0;top:34px;width:252px;background:white;border:1px solid var(--border);box-shadow:0 18px 30px rgba(48,39,57,.16);padding:8px;border-radius:11px;display:none}
+    .drop-menu.open{display:block}
+    .drop-menu button{display:block;width:100%;padding:10px;text-align:left;background:transparent;border:0;border-radius:7px;font-size:11px;font-weight:750;color:var(--plum-deep)}
+    .drop-menu button small{font-size:9px;display:block;color:var(--muted);font-weight:500;margin-top:3px}
+    .drop-menu button:hover{background:var(--page)}
+    .fake-hero{margin:0;padding:22px 21px 28px;background:linear-gradient(118deg,var(--plum-deep),#75687A);color:white}
+    .fake-hero .over{font-size:9px;text-transform:uppercase;letter-spacing:.15em;color:#A1E8E2;font-weight:850}
+    .fake-hero h3{margin:8px 0;font-size:clamp(18px,2vw,26px);font-weight:850;letter-spacing:-.03em;max-width:540px;line-height:1.25}
+    .fake-hero p{font-size:11px;color:#E3DBE5;max-width:560px;margin:7px 0 14px}
+    .fake-hero button{background:var(--teal);color:#113E3D;border:0;padding:9px 13px;border-radius:7px;font-weight:850;font-size:10px}
+    .subheading{font-weight:850;font-size:13px;color:var(--plum-deep);margin:19px 0 9px}
+    .footer-preview{background:#4D4653;border-radius:11px;color:white;padding:19px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .foot-group strong{display:block;color:#fff;font-size:10px;margin-bottom:7px}.foot-group button{display:block;border:0;background:none;color:#DAD4DE;text-align:left;padding:3px 0;font-size:9px;line-height:1.35}
+    .foot-group button:hover{color:#82E7DE;text-decoration:underline}
+    .device-switch{display:flex;align-items:center;gap:6px}
+    .smalltab{border:1px solid var(--border);border-radius:8px;background:white;padding:6px 9px;font-size:10px;font-weight:800;color:var(--muted)}
+    .smalltab.active{background:var(--plum-deep);color:white;border-color:var(--plum-deep)}
+    .mobile-viewport{width:min(100%,390px);border:8px solid #343036;border-radius:25px;margin:0 auto;background:white;overflow:hidden;min-height:428px;box-shadow:var(--shadow)}
+    .mobile-bar{height:19px;background:#343036;color:#C5C0C9;text-align:center;font-size:8px;line-height:19px;letter-spacing:.1em}
+    .mobile-header{display:flex;align-items:center;justify-content:space-between;padding:12px 13px;border-bottom:1px solid var(--border)}
+    .mobile-toggle{height:29px;width:33px;background:white;border:1px solid var(--border);border-radius:6px;color:var(--plum-deep);font-size:18px}
+    .mobile-menu{padding:11px;background:#F9F8FA}
+    .mobile-menu>button,.mobile-menu .mob-sub button{display:block;width:100%;text-align:left;padding:11px 9px;background:white;border:1px solid var(--border);border-radius:7px;margin-bottom:5px;color:var(--plum-deep);font-size:11px;font-weight:800}
+    .mobile-menu .mob-sub{margin:0 0 7px 12px;padding-left:9px;border-left:2px solid #DCD6DE}
+    .mobile-menu .mob-sub button{font-size:10px;font-weight:650;background:#F9F7FA}
+    .mobile-menu>button.mob-cta{background:var(--plum-deep);color:white}
+    .mobile-hero{padding:25px 20px;background:var(--plum-deep);color:white}
+    .mobile-hero h3{font-size:21px;letter-spacing:-.03em;line-height:1.24;max-width:290px;margin:10px 0}.mobile-hero p{font-size:11px;line-height:1.65;color:#E4DAE6}
+    .mobile-hero button{border:0;border-radius:7px;background:var(--teal);padding:11px;color:#123B39;font-weight:850;font-size:11px}
+    .journey-selector{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+    .journey-choice{border:1px solid var(--border);background:white;padding:10px 13px;border-radius:9px;font-size:11px;font-weight:850;color:var(--muted)}
+    .journey-choice.active{background:var(--plum-deep);color:white;border-color:var(--plum-deep)}
+    .journey-banner{padding:18px;background:#F8F5F9;border:1px solid var(--border);border-radius:12px;margin-bottom:18px}
+    .journey-banner h3{font-size:18px;color:var(--plum-deep);margin:0 0 5px;line-height:1.25}
+    .journey-banner p{margin:0;font-size:11px;color:#77707C;line-height:1.6}
+    .steps{display:flex;gap:9px;align-items:stretch;flex-wrap:wrap;margin:14px 0 20px}
+    .journey-step{flex:1;min-width:135px;max-width:260px;background:white;border:1px solid var(--border);border-radius:12px;position:relative;padding:14px 12px;text-align:left;min-height:122px}
+    .journey-step.clickable{cursor:pointer;transition:all .2s}
+    .journey-step.clickable:hover{border-color:var(--teal);transform:translateY(-2px)}
+    .journey-step.active{border-color:var(--teal);background:#F0FCFA}
+    .journey-step .stage{color:var(--teal-deep);font-size:9px;text-transform:uppercase;letter-spacing:.1em;font-weight:850}
+    .journey-step h4{margin:10px 0 7px;font-size:12px;color:var(--plum-deep);line-height:1.35}
+    .journey-step p{font-size:10px;color:var(--muted);margin:0;line-height:1.45}
+    .step-arrow{align-self:center;color:#AFA7B3;font-size:25px;font-weight:500}
+    .touchpoint{border-left:3px solid var(--teal);background:#F7FBFA;border-radius:0 10px 10px 0;padding:13px 15px;color:#554E5B;font-size:12px;line-height:1.6}
+    .touchpoint strong{color:var(--plum-deep)}
+    .journey-note{font-size:11px;color:var(--muted);margin-top:18px}
+    .bottom-note{margin:17px 0 0;color:#817986;font-size:11px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .hidden{display:none!important}
+    @media(max-width:1420px){.branch-grid{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:26px}.branch-grid:before{display:none}.branch-col:before{height:16px;top:-16px}.future-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.board-body{grid-template-columns:minmax(0,1fr) 305px}}
+    @media(max-width:1050px){.intro{align-items:flex-start;flex-direction:column}.env{flex:0 0 auto;max-width:none;width:100%}.board-body{grid-template-columns:minmax(0,1fr)}.detail-panel{border-left:0;border-top:1px solid var(--border)}.panel-sticky{position:static}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.board-head{align-items:flex-start}.topbar-inner{padding:14px 20px}.shell{padding:0 20px 40px}.future-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media(max-width:680px){.shell{padding:0 13px 30px}.topbar-inner{padding:12px 13px}.brand{font-size:11px}.top-actions .doc-tag{display:none}.top-actions .button span{display:none}.top-actions .button{padding:9px}.intro{padding:24px 0 19px}.intro p{font-size:12px}.stats{gap:8px;margin-bottom:15px}.stat{padding:11px;gap:8px;min-height:68px}.stat-icon{height:33px;width:33px;flex-basis:33px;font-size:14px}.stat .number{font-size:17px}.stat .lab{font-size:10px}.board{border-radius:14px}.board-head{padding:11px}.tabs{width:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.tab{font-size:10px;justify-content:center;padding:9px 2px;gap:4px}.tab .num{display:none}.board-tools{width:100%;justify-content:space-between;gap:8px}.filters{order:1}.search{min-width:0;flex:1}.search input{width:100%;max-width:150px}.switch{order:2}.canvas{padding:16px 10px}.pane-title{align-items:flex-start;flex-direction:column}.branch-grid{grid-template-columns:minmax(0,1fr)}.branch-col:before{display:none}.branch-grid{padding-top:3px;row-gap:11px}.root-card{min-width:0;width:100%;max-width:320px}.stem{height:21px}.stem:after{top:17px}.future-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.future-wrap{padding:10px}.future-top{align-items:flex-start;flex-direction:column;gap:3px}.detail-panel{padding:20px 17px}.fake-nav{flex-direction:column;align-items:flex-start}.fake-links{justify-content:flex-start}.fake-links .nav-el{padding:7px 5px}.footer-preview{grid-template-columns:repeat(2,1fr)}.steps{flex-direction:column}.journey-step{max-width:none;min-height:0;width:100%}.step-arrow{transform:rotate(90deg)}.top-actions{gap:5px}.legend{gap:7px}}
+    @media print{body{background:white}.shell{max-width:none;padding:0}.topbar,.board-head,.top-actions,.detail-panel,.bottom-note,.env,.board-tools{display:none!important}.intro{padding:12px 0}.board{border:0;box-shadow:none}.board-body{display:block}.canvas{background:none;padding:5px}.site-card{break-inside:avoid}.branch-col,.future-wrap{break-inside:avoid;box-shadow:none}h1{font-size:26px}.stats{margin:0 0 10px}.stat{box-shadow:none}}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="identity">
+      <div class="symbol" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="brand">AMERICAN RECRUITERS MÉXICO<small>MAPA ESTRATÉGICO DE ARQUITECTURA WEB</small></div>
+    </div>
+    <div class="top-actions">
+      <span class="doc-tag">PROPUESTA · V1.0</span>
+      <button class="button" id="exportButton" type="button" title="Exportar el árbol en texto">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M4 17v4h16v-4"/></svg><span>Exportar árbol</span>
+      </button>
+      <button class="button primary" id="printButton" type="button" title="Imprimir o guardar como PDF">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 9V3h10v6M5 18H3v-8h18v8h-2M7 14h10v7H7z"/></svg><span>Imprimir / PDF</span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="shell">
+  <section class="intro" aria-labelledby="mainTitle">
+    <div>
+      <div class="kicker">Plan maestro · Estructura de navegación</div>
+      <h1 id="mainTitle">La arquitectura de la nueva web</h1>
+      <p>Explora la jerarquía de páginas, cómo quedará el menú, los recorridos comerciales y las ampliaciones posibles. Haz clic sobre cualquier página para consultar su URL, objetivo, intención SEO y llamada a la acción. <strong>Es una propuesta para validar, no páginas ya publicadas.</strong></p>
+    </div>
+    <div class="env">
+      <div class="env-top">Escenario de implementación</div>
+      <div class="env-flow"><span class="step">WordPress nuevo</span><span class="arrow">→</span><span class="step">Staging privado</span><span class="arrow">→</span><span class="step">Dominio actual</span></div>
+    </div>
+  </section>
+  <section class="stats" aria-label="Resumen de la arquitectura">
+    <div class="stat"><div class="stat-icon">10</div><div><div class="number">10 páginas</div><div class="lab">Funcionales, sin contar privacidad</div></div></div>
+    <div class="stat"><div class="stat-icon">02</div><div><div class="number">2 servicios</div><div class="lab">Landings comerciales principales</div></div></div>
+    <div class="stat"><div class="stat-icon">02</div><div><div class="number">2 confirmaciones</div><div class="lab">Flujos separados · noindex</div></div></div>
+    <div class="stat"><div class="stat-icon">+5</div><div><div class="number">5 ampliaciones</div><div class="lab">Sujetas a validación comercial</div></div></div>
+  </section>
+  <div class="board">
+    <div class="board-head">
+      <div class="tabs" role="tablist" aria-label="Modo de visualización">
+        <button class="tab active" type="button" data-view="map" role="tab" aria-selected="true"><span class="num">01</span> Mapa del sitio</button>
+        <button class="tab" type="button" data-view="nav" role="tab" aria-selected="false"><span class="num">02</span> Menú y footer</button>
+        <button class="tab" type="button" data-view="journey" role="tab" aria-selected="false"><span class="num">03</span> Recorridos</button>
+      </div>
+      <div class="board-tools" id="mapTools">
+        <div class="filters" role="group" aria-label="Filtrar audiencia">
+          <button class="filter active" type="button" data-filter="all" aria-pressed="true">Todas</button>
+          <button class="filter" type="button" data-filter="b2b" aria-pressed="false">Empresas</button>
+          <button class="filter" type="button" data-filter="candidate" aria-pressed="false">Candidatos</button>
+        </div>
+        <label class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+          <input id="searchInput" type="search" placeholder="Buscar página o URL" aria-label="Buscar página o URL">
+        </label>
+        <label class="switch"><input type="checkbox" id="showFuture" checked> Mostrar fase futura</label>
+      </div>
+    </div>
+    <div class="board-body">
+      <main class="canvas" aria-label="Visualización interactiva">
+        <section id="mapView" role="tabpanel" aria-label="Mapa del sitio">
+          <div class="pane-title"><div><div class="title">Mapa jerárquico de páginas</div><div class="desc">Cuatro zonas: navegación, candidatos, apoyo e infraestructura</div></div><div class="legend"><span><i class="dot"></i>Empresas</span><span><i class="dot candidate"></i>Candidatos</span><span><i class="dot technical"></i>Técnicas</span><span><i class="dot future"></i>Futura</span></div></div>
+          <div class="root-wrap"><button type="button" class="root-card" data-page="home"><span class="root-logo">AR</span><span><span class="root-main">American Recruiters México</span><span class="root-sub">Home · / · Entrada principal B2B</span></span></button><div class="stem" aria-hidden="true"></div></div>
+          <div class="branch-grid" id="branchGrid">
+            <section class="branch-col"><div class="col-caption"><h3>Navegación principal</h3><span class="count">5 accesos</span></div><div id="primaryList"></div></section>
+            <section class="branch-col"><div class="col-caption secondary"><h3>Candidatos</h3><span class="count">Ruta secundaria</span></div><div id="secondaryList"></div></section>
+            <section class="branch-col"><div class="col-caption support"><h3>Información y apoyo</h3><span class="count">Footer</span></div><div id="supportList"></div></section>
+            <section class="branch-col"><div class="col-caption technical"><h3>Confirmaciones</h3><span class="count">Noindex</span></div><div id="technicalList"></div></section>
+          </div>
+          <section class="future-wrap" id="futureSection"><div class="future-top"><div><div class="future-label">Ampliaciones previstas · Fase futura</div><div class="future-note">No se activan hasta confirmar oferta, evidencia, cobertura o idioma.</div></div><span class="tag warning">No aprobadas</span></div><div class="future-grid" id="futureList"></div></section>
+          <div class="decision-bar"><div class="info">i</div><div><strong>Criterio de construcción:</strong> los dos servicios principales tienen páginas propias; las variantes de una misma keyword se trabajan dentro de su landing. El blog reutiliza artículos y slugs pertinentes. La auditoría guiará las redirecciones que realmente se necesiten.</div></div>
+        </section>
+        <section id="navView" class="hidden mock-section" role="tabpanel" aria-label="Menú y footer">
+          <div class="pane-title"><div><div class="title">Vista previa de la navegación</div><div class="desc">Simulación de jerarquía; no es un diseño final de homepage</div></div><div class="device-switch"><button type="button" class="smalltab active" data-device="desktop">Escritorio</button><button type="button" class="smalltab" data-device="mobile">Móvil</button></div></div>
+          <div id="desktopNavigation">
+            <div class="preview-label">Header principal · interactúa con el menú Servicios</div>
+            <div class="browser"><div class="browser-top"><b></b><b></b><b></b><div class="browser-address">americanrecruiters.com.mx</div></div>
+              <div class="fake-nav"><div class="logo-placeholder">LOGOTIPO OFICIAL<br>POR INSERTAR</div><div class="fake-links"><div class="navdrop"><button type="button" id="servicesToggle" class="nav-el" aria-expanded="false" aria-controls="servicesDropdown">Servicios ▾</button><div class="drop-menu" id="servicesDropdown"><button data-page="services" type="button">Ver todos los servicios<small>/servicios/</small></button><button data-page="headhunting" type="button">Headhunting y reclutamiento ejecutivo<small>/servicios/headhunting/</small></button><button data-page="recruiting" type="button">Reclutamiento y selección de personal<small>/servicios/reclutamiento-y-seleccion/</small></button></div></div><button type="button" class="nav-el" data-page="method">Cómo trabajamos</button><button type="button" class="nav-el" data-page="about">Nosotros</button><button type="button" class="nav-el" data-page="blog">Blog</button><button type="button" class="nav-el cv" data-page="candidates">Enviar CV</button><button type="button" class="nav-el cta" data-page="contact">Solicitar propuesta →</button></div></div>
+              <div class="fake-hero"><div class="over">American Recruiters México · Empresas</div><h3>Talento para las decisiones que impulsan a tu empresa.</h3><p>Ejemplo conceptual de jerarquía, no copy aprobado ni representación final del diseño.</p><button type="button" data-page="contact">Solicitar propuesta</button></div>
+            </div>
+            <div class="preview-label">Footer · navegación de apoyo</div>
+            <div class="footer-preview"><div class="foot-group"><strong>Servicios</strong><button type="button" data-page="headhunting">Headhunting ejecutivo</button><button type="button" data-page="recruiting">Reclutamiento y selección</button><button type="button" data-page="services">Ver servicios</button></div><div class="foot-group"><strong>La empresa</strong><button type="button" data-page="about">Nosotros</button><button type="button" data-page="method">Cómo trabajamos</button><button type="button" data-page="contact">Contacto empresarial</button></div><div class="foot-group"><strong>Información</strong><button type="button" data-page="blog">Blog</button><button type="button" data-page="faq">Preguntas frecuentes</button><button type="button" data-page="candidates">Enviar CV</button></div><div class="foot-group"><strong>Legal y contacto</strong><button type="button" data-page="privacy">Aviso de privacidad</button><button type="button" data-page="contact">Solicitar propuesta</button><span style="color:#BEB6C2;font-size:9px">Datos y enlaces sujetos a verificación</span></div></div>
+          </div>
+          <div id="mobileNavigation" class="hidden"><div class="preview-label">Simulación de estructura móvil · abrir menú</div><div class="mobile-viewport"><div class="mobile-bar">● ● ●</div><div class="mobile-header"><div class="logo-placeholder">LOGOTIPO<br>OFICIAL</div><button type="button" class="mobile-toggle" id="mobileToggle" aria-expanded="false" aria-controls="mobileMenu">☰</button></div><div class="mobile-menu hidden" id="mobileMenu"><button type="button" id="mobileServicesToggle" aria-expanded="false">Servicios ▾</button><div class="mob-sub hidden" id="mobileSub"><button data-page="services" type="button">Ver todos</button><button data-page="headhunting" type="button">Headhunting ejecutivo</button><button data-page="recruiting" type="button">Reclutamiento y selección</button></div><button type="button" data-page="method">Cómo trabajamos</button><button type="button" data-page="about">Nosotros</button><button type="button" data-page="blog">Blog</button><button type="button" data-page="candidates">Enviar CV</button><button type="button" class="mob-cta" data-page="contact">Solicitar propuesta →</button></div><div class="mobile-hero"><div style="font-size:9px;letter-spacing:.12em;color:#89E6DB;font-weight:800">AMERICAN RECRUITERS MÉXICO</div><h3>Talento para las decisiones que impulsan a tu empresa.</h3><p>Ejemplo de jerarquía comercial. El contenido y diseño definitivos se trabajarán más adelante.</p><button type="button" data-page="contact">Solicitar propuesta</button></div></div></div>
+          <div class="decision-bar"><div class="info">i</div><div>El logotipo original sustituirá el marcador; no se ha recreado el logo. El menú corporativo prioriza <strong>Solicitar propuesta</strong> y conserva <strong>Enviar CV</strong> como acceso secundario.</div></div>
+        </section>
+        <section id="journeyView" class="hidden" role="tabpanel" aria-label="Recorridos de conversión">
+          <div class="pane-title"><div><div class="title">Recorridos que habilita la arquitectura</div><div class="desc">Elige un caso y explora cómo conecta sus páginas</div></div><span class="tag teal">B2B prioritario</span></div>
+          <div class="journey-selector" role="group" aria-label="Elegir recorrido"><button class="journey-choice active" type="button" data-journey="executive">Búsqueda ejecutiva</button><button class="journey-choice" type="button" data-journey="general">Selección empresarial</button><button class="journey-choice" type="button" data-journey="content">Desde un artículo</button><button class="journey-choice" type="button" data-journey="candidate">Envío de CV</button></div>
+          <div id="journeyContent"></div>
+          <div class="decision-bar"><div class="info">i</div><div>Los recorridos representan posibilidades, no pasos obligatorios. El visitante puede llegar a <strong>Contacto</strong> desde cualquier página comercial; los CV se envían por una vía independiente.</div></div>
+        </section>
+      </main>
+      <aside class="detail-panel" aria-labelledby="detailTitle"><div class="panel-sticky"><div class="detail-kicker">Ficha de página <span id="detailCount">01 / 19</span></div><div class="detail-top-icon" id="detailIcon">H</div><h2 id="detailTitle">Headhunting y reclutamiento ejecutivo</h2><div class="detail-url"><span id="detailURL">/servicios/headhunting/</span><button class="copy" type="button" id="copyUrl">Copiar</button></div><div class="tagset" id="detailTags"></div><div class="detail-section"><div class="detail-label">Ubicación jerárquica</div><div class="breadcrumb" id="detailBreadcrumb"></div></div><div class="detail-section"><div class="detail-label">Objetivo de la página</div><p class="detail-copy" id="detailPurpose"></p></div><div class="detail-section"><div class="detail-label">Intención SEO</div><p class="detail-copy" id="detailSEO"></p></div><div class="detail-section"><div class="detail-label">Conversión / acción</div><p class="detail-copy" id="detailCTA"></p></div><div class="detail-section"><div class="detail-label">Observaciones</div><p class="detail-copy" id="detailNotes"></p></div><div class="detail-foot" id="detailDisclaimer"></div></div></aside>
+    </div>
+  </div>
+  <div class="bottom-note"><span>Propuesta de arquitectura basada en los estudios de competencia, keyword research, auditoría SEO y reunión del 02/10/2026.</span><span>Identidad: púrpura #675C6C · turquesa #1EABA3 · sin servicios inventados.</span></div>
+</div>
+<script>
+(function(){
+  'use strict';
+  const pages = [
+    {id:'home',label:'Inicio',url:'/',parent:null,zone:'primary',status:'base',icon:'I',audience:'b2b',position:'Logo / entrada raíz',purpose:'Introducir la firma y guiar a las empresas desde su necesidad de contratación hacia el servicio y el contacto adecuados.',seo:'Marca American Recruiters México, presentación de oferta y temas comerciales principales sin competir frontalmente con todas las landings.',cta:'Ver servicios · Solicitar propuesta.',notes:'Hero centrado en empresas; prueba comercial solo verificada; acceso a candidatos secundario. La Home se construye desde cero pero conserva la URL raíz.'},
+    {id:'services',label:'Servicios',url:'/servicios/',parent:'home',zone:'primary',status:'base',icon:'S',audience:'b2b',position:'Header → Servicios',purpose:'Servir como directorio comercial breve que ayuda a seleccionar la solución adecuada, sin repetir íntegramente las páginas específicas.',seo:'Hub de servicios; enlazado a los clusters H01 y R01. Debe diferenciar claramente reclutamiento ejecutivo de selección general.',cta:'Elegir solución · Solicitar propuesta.',notes:'Conservar la ruta pública existente /servicios/ cuando sea posible. Los dos servicios definitivos deben reflejar el alcance realmente aprobado.'},
+    {id:'headhunting',label:'Headhunting y reclutamiento ejecutivo',url:'/servicios/headhunting/',parent:'services',zone:'primary',status:'base',icon:'H',audience:'b2b',position:'Submenú Servicios · Landing',purpose:'Explicar búsqueda ejecutiva para posiciones gerenciales, directivas y estratégicas: a quién se dirige, proceso y beneficios reales.',seo:'H01: headhunting, headhunter para empresas, reclutamiento ejecutivo, executive search México (variante de apoyo). Unificar sinónimos.',cta:'Solicitar búsqueda ejecutiva / propuesta.',notes:'No crear páginas duplicadas por las variantes «head hunter», «headhunter», «executive search». Los claims y pruebas concretas requieren aprobación.'},
+    {id:'recruiting',label:'Reclutamiento y selección de personal',url:'/servicios/reclutamiento-y-seleccion/',parent:'services',zone:'primary',status:'validate',icon:'R',audience:'b2b',position:'Submenú Servicios · Landing',purpose:'Presentar selección externa para empresas y delimitar claramente puestos, procesos y entregables reales.',seo:'R01: servicio de reclutamiento de personal; empresas/agencias de reclutamiento; selección de personal para empresas.',cta:'Solicitar apoyo en selección.',notes:'El sitio actual menciona puestos administrativos y operativos. Sergio debe confirmar niveles, alcance operativo y capacidad; NO da por aprobado reclutamiento masivo.'},
+    {id:'method',label:'Cómo trabajamos',url:'/metodologia/',parent:'home',zone:'primary',status:'base',icon:'M',audience:'b2b',position:'Header',purpose:'Explicar el proceso de búsqueda y selección, los puntos de colaboración y qué recibe la empresa.',seo:'Apoyo de confianza: metodología y proceso de reclutamiento aplicado a empresas. No competir con guías académicas.',cta:'Conocer servicios · Hablar con un especialista.',notes:'Publicar exclusivamente etapas, pruebas, garantías y tiempos confirmados por Sergio. Puede funcionar como página de confianza desde cada servicio.'},
+    {id:'about',label:'Nosotros',url:'/nosotros/',parent:'home',zone:'primary',status:'base',icon:'N',audience:'b2b',position:'Header',purpose:'Presentar la trayectoria, especialización, equipo, historia y elementos verificables que respaldan a American Recruiters.',seo:'Búsquedas de marca e identidad corporativa; no duplicar los mensajes transaccionales completos de los servicios.',cta:'Conocer el enfoque · Contactar.',notes:'Verificar fundación 2005 frente a claim anterior de 10 años. Incluir equipo/testimonios solo con evidencia y autorización.'},
+    {id:'blog',label:'Blog',url:'/blog/',parent:'home',zone:'primary',status:'base',icon:'B',audience:'b2b',position:'Header',purpose:'Organizar artículos que ayuden al decisor empresarial con contratación, liderazgo y talento; mantener separado el contenido de candidatos.',seo:'Clusters informativos D01–D05 con enlaces contextuales a los servicios relevantes.',cta:'Leer artículo · Descubrir servicio relacionado.',notes:'Inventario auditado: 11 posts publicados; 7 coinciden temáticamente con primeros borradores y 4 son antiguos. Revisar claims y preservar slugs útiles.'},
+    {id:'article',label:'Plantilla de artículo individual',url:'/{slug-del-articulo}/',parent:'blog',zone:'primary',status:'template',icon:'A',audience:'both',position:'Hijo editorial de Blog',purpose:'Diseño repetible para los artículos existentes y futuros: título, autoría, fecha, contenido y enlace a la solución pertinente.',seo:'Una intención informativa específica por artículo, evitando canibalización y slugs innecesariamente nuevos.',cta:'Visitar servicio relacionado o Enviar CV solo cuando corresponda.',notes:'Esta entrada representa una plantilla, no una URL literal ni un artículo adicional. Las categorías editoriales iniciales son reclutamiento/selección, liderazgo y recursos para candidatos.'},
+    {id:'contact',label:'Contacto para empresas',url:'/contacto/',parent:'home',zone:'primary',status:'base',icon:'C',audience:'b2b',position:'Header (CTA principal) · Footer',purpose:'Recibir solicitudes comerciales cualificadas y conducirlas al responsable correspondiente.',seo:'Página de conversión B2B y contacto de marca; no optimizarla para solicitudes de empleo.',cta:'Enviar solicitud empresarial.',notes:'Formulario para necesidad de contratación, no para CV. Etiquetas accesibles, privacidad y eventos de analítica en QA. Mantener ruta pública /contacto/.'},
+    {id:'candidates',label:'Candidatos / Enviar CV',url:'/candidatos/',parent:'home',zone:'secondary',status:'base',icon:'CV',audience:'candidate',position:'Header secundario · Footer',purpose:'Facilitar un envío de CV PDF con expectativas claras y sin competir con la oferta empresarial.',seo:'F01: información y servicio para candidatos; prioridad de adquisición orgánica secundaria.',cta:'Adjuntar CV PDF y enviar.',notes:'Subida privada, límites de archivo, consentimiento y política de almacenamiento. No indexar PDFs ni exponerlos como recursos públicos.'},
+    {id:'faq',label:'Preguntas frecuentes',url:'/preguntas-frecuentes/',parent:'home',zone:'support',status:'base',icon:'?',audience:'b2b',position:'Footer · Enlaces desde servicios',purpose:'Resolver dudas reales sobre modalidades, proceso, perfiles, cobertura, confidencialidad y primer contacto.',seo:'FAQs contextuales para empresa; no duplicar términos comerciales mediante páginas sin contenido específico.',cta:'Solicitar propuesta · Ver el servicio adecuado.',notes:'Responder con información confirmada. No inventar tarifas, garantías o porcentajes.'},
+    {id:'privacy',label:'Aviso de privacidad',url:'/privacidad/',parent:'home',zone:'support',status:'legal',icon:'L',audience:'both',position:'Footer · Formularios',purpose:'Explicar cómo se tratan los datos personales de empresas y candidatos, incluidos CV y documentación adjunta.',seo:'Documento legal accesible. Revisar el tratamiento de robots e indexabilidad conforme a la política final.',cta:'Regresar a contacto o candidatos, según el recorrido.',notes:'La URL /privacidad/ ya existe. El contenido deberá verificarse con el responsable correspondiente antes de publicar.'},
+    {id:'thanksBusiness',label:'Solicitud empresarial recibida',url:'/solicitud-recibida/',parent:'contact',zone:'technical',status:'technical',icon:'✓',audience:'b2b',position:'Fuera del menú · noindex',purpose:'Confirmar visualmente que el formulario empresarial fue enviado y explicar el siguiente paso.',seo:'noindex; fuera de sitemap y navegación. No debe competir por tráfico orgánico.',cta:'Volver al inicio o ver servicios.',notes:'URL propuesta. La confirmación debe mostrarse solo tras un envío real exitoso. Configurar evento comercial diferenciado en analítica.'},
+    {id:'thanksCV',label:'Currículum recibido',url:'/cv-recibido/',parent:'candidates',zone:'technical',status:'technical',icon:'✓',audience:'candidate',position:'Fuera del menú · noindex',purpose:'Confirmar el envío del CV sin prometer contratación ni una respuesta que no esté aprobada.',seo:'noindex; fuera de sitemap y navegación.',cta:'Regresar a candidatos o Inicio.',notes:'URL propuesta. Confirmación, resguardo y evento de medición separados de los leads empresariales.'},
+    {id:'futureServices',label:'Servicios adicionales',url:'Pendiente',parent:'services',zone:'future',status:'future',icon:'+',audience:'b2b',position:'Solo si se confirma su venta',purpose:'Ampliar la cartera con ofertas reales que merezcan una landing independiente.',seo:'Potenciales B04/B05/B06 y otras necesidades solo tras validar intención, servicio y diferenciación.',cta:'Propuesta empresarial del servicio confirmado.',notes:'Outplacement, coaching independiente, estudios salariales o reclutamiento masivo NO están aprobados como landings.'},
+    {id:'futureIndustries',label:'Especialidades / industrias',url:'/especialidades/ (tentativa)',parent:'home',zone:'future',status:'future',icon:'E',audience:'b2b',position:'Sección futura',purpose:'Mostrar experiencia específica por sector, perfiles y retos reales de contratación.',seo:'Potenciales B01/B03/E02; páginas sectoriales solo con contenido y experiencia verificables.',cta:'Solicitar especialistas del sector.',notes:'No abrir TI, finanzas, salud, industrial ni otros verticales solo porque figuren en el borrador de blog.'},
+    {id:'futurePlaces',label:'Cobertura / ciudades',url:'Rutas por definir',parent:'home',zone:'future',status:'future',icon:'G',audience:'b2b',position:'Sección futura',purpose:'Explicar dónde atiende efectivamente la firma sin inventar oficinas.',seo:'L01: CDMX primero como hipótesis, otras ciudades únicamente con cobertura comercial comprobable.',cta:'Solicitar contratación por ubicación.',notes:'Evitar landings repetidas que sustituyen únicamente el nombre de la ciudad. Confirmar Monterrey, Guadalajara, Querétaro y Bajío.'},
+    {id:'futureCases',label:'Casos de éxito',url:'/casos-de-exito/ (tentativa)',parent:'home',zone:'future',status:'future',icon:'K',audience:'b2b',position:'Sección futura',purpose:'Reunir casos reales aprobados que demuestren experiencia y ayuden al decisor a confiar.',seo:'Evidencia empresarial, apoyo a landings comerciales y enlaces cruzados.',cta:'Solicitar una conversación.',notes:'No inventar clientes, logos, indicadores, testimonios, garantías o porcentajes de colocación.'},
+    {id:'futureEnglish',label:'Versión en inglés',url:'/en/ (tentativa)',parent:'home',zone:'future',status:'future',icon:'EN',audience:'b2b',position:'Rama idiomática futura',purpose:'Facilitar la consulta de empresas internacionales que contratan personal en México.',seo:'E01 y contenido equivalente en inglés; usar hreflang y traducciones completas solo si el servicio está disponible.',cta:'Contact our consultants (sujeto a aprobación).',notes:'Confirmar atención en inglés antes de crear la traducción o prometer cobertura internacional.'}
+  ];
+  const byId = Object.fromEntries(pages.map(p=>[p.id,p]));
+  const el = id=>document.getElementById(id);
+  let selected='headhunting',view='map',audienceFilter='all',journey='executive',device='desktop';
+  const allCards = () => Array.from(document.querySelectorAll('[data-page]'));
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const statusTitle = {base:'Lanzamiento · propuesta',validate:'Validar alcance',legal:'Legal · revisar',template:'Plantilla editorial',technical:'Función técnica',future:'Fase futura · condicionada'};
+  const kindOfAudience = p => p.audience==='b2b'?'Empresas (B2B)':p.audience==='candidate'?'Candidatos':'Ambas audiencias';
+  function card(p){
+    const t = document.createElement('button');t.type='button';t.className='site-card'+(selected===p.id?' selected':'');t.dataset.page=p.id;t.dataset.zone=p.zone;
+    t.innerHTML=`<span class="ic">${esc(p.icon)}</span><span class="txt"><span class="name">${esc(p.label)}</span><span class="url">${esc(p.url)}</span>${p.status==='validate'?'<span class="meta">ALCANCE POR VALIDAR</span>':p.status==='template'?'<span class="meta">PLANTILLA · NO ES URL REAL</span>':''}</span><span class="chev">›</span>`;
+    return t;
+  }
+  function matches(p){
+    if(audienceFilter==='b2b' && p.audience==='candidate')return false;
+    if(audienceFilter==='candidate' && p.audience==='b2b')return false;
+    const query=el('searchInput').value.trim().toLocaleLowerCase('es');
+    if(query && !(p.label+' '+p.url+' '+p.purpose+' '+p.seo).toLocaleLowerCase('es').includes(query))return false;
+    return true;
+  }
+  function empty(where){where.innerHTML='<div class="empty">No hay páginas en este grupo con el filtro actual.</div>'}
+  function renderGroup(where, ids){
+    where.innerHTML='';let has=false;
+    ids.forEach(id=>{const p=byId[id];const children=pages.filter(q=>q.parent===id && q.zone==='primary');const visibleParent=matches(p), visibleKids=children.filter(matches);
+      if(visibleParent || visibleKids.length){has=true;if(visibleParent)where.appendChild(card(p)); if(visibleKids.length){const nest=document.createElement('div');nest.className='nested';visibleKids.forEach(q=>nest.appendChild(card(q)));where.appendChild(nest)}}
+    });
+    if(!has)empty(where);
+  }
+  function renderMap(){
+    const root=byId.home;document.querySelector('.root-card').classList.toggle('selected',selected==='home');
+    document.querySelector('.root-card').style.opacity=matches(root)?'1':'.43';
+    renderGroup(el('primaryList'),['services','method','about','blog','contact']);
+    // Home already appears at root; all other primary top-level pages are below it.
+    renderGroup(el('secondaryList'),['candidates']);
+    renderGroup(el('supportList'),['faq','privacy']);
+    renderGroup(el('technicalList'),['thanksBusiness','thanksCV']);
+    const future=el('futureSection');future.classList.toggle('hidden',!el('showFuture').checked);
+    const wrap=el('futureList');wrap.innerHTML='';const matchesFuture=pages.filter(p=>p.zone==='future' && matches(p));
+    if(!matchesFuture.length)empty(wrap);else matchesFuture.forEach(p=>wrap.appendChild(card(p)));
+  }
+  function breadcrumb(p){const result=[p];let x=p;let max=0;while(x.parent && byId[x.parent] && max++<6){x=byId[x.parent];result.unshift(x)}return result.map((q,i)=>`<span>${esc(q.label)}</span>${i<result.length-1?'<span class="arrow">›</span>':''}`).join('')}
+  function updateDetail(){
+    const p=byId[selected]||byId.headhunting;
+    el('detailTitle').textContent=p.label;el('detailURL').textContent=p.url;el('detailIcon').textContent=p.icon;el('detailBreadcrumb').innerHTML=breadcrumb(p);
+    el('detailPurpose').textContent=p.purpose;el('detailSEO').textContent=p.seo;el('detailCTA').textContent=p.cta;el('detailNotes').textContent=p.notes;
+    const tags=[`<span class="tag ${p.audience==='candidate'?'':'teal'}">${esc(kindOfAudience(p))}</span>`,`<span class="tag ${p.status==='future'||p.status==='validate'?'warning':''}">${esc(statusTitle[p.status])}</span>`];
+    if(p.status==='technical')tags.push('<span class="tag">Fuera de sitemap</span>');
+    el('detailTags').innerHTML=tags.join('');
+    el('detailDisclaimer').textContent=p.status==='future'?'Esta es una posible ampliación. No forma parte del alcance aprobado del lanzamiento.':p.status==='validate'?'La landing se propone porque la oferta se menciona en la web actual. Alcance y perfiles deben validarse con Sergio.':p.status==='template'?'Este nodo representa una plantilla reutilizable, no una página nueva ni un slug literal.':'Las rutas, CTAs y denominaciones son propuestas iniciales que se confirmarán en el sitemap definitivo.';
+    el('detailCount').textContent=`${String(pages.indexOf(p)+1).padStart(2,'0')} / ${pages.length}`;
+    allCards().forEach(btn=>btn.classList.toggle('selected',btn.dataset.page===selected));
+    document.querySelector('.root-card').classList.toggle('selected',selected==='home');
+  }
+  function select(id){if(!byId[id])return;selected=id;updateDetail();renderMap();if(view==='journey')renderJourney();}
+  function setView(next){view=next;el('mapView').classList.toggle('hidden',next!=='map');el('navView').classList.toggle('hidden',next!=='nav');el('journeyView').classList.toggle('hidden',next!=='journey');el('mapTools').classList.toggle('hidden',next!=='map');document.querySelectorAll('.tab').forEach(b=>{const yes=b.dataset.view===next;b.classList.toggle('active',yes);b.setAttribute('aria-selected',String(yes))});}
+  function setDevice(next){device=next;el('desktopNavigation').classList.toggle('hidden',next!=='desktop');el('mobileNavigation').classList.toggle('hidden',next!=='mobile');document.querySelectorAll('[data-device]').forEach(b=>b.classList.toggle('active',b.dataset.device===next))}
+  const journeyInfo={
+    executive:{title:'Empresa que necesita un directivo',subtitle:'La visita llega con una búsqueda o necesidad de liderazgo claramente definida.',steps:[['Búsqueda de proveedor',null,'Consulta de headhunting / executive search'],['Landing de headhunting','headhunting','Alcance, perfiles y evidencia'],['Cómo trabajamos','method','Proceso y señales de confianza'],['Contacto empresarial','contact','Solicitud del encargo'],['Confirmación','thanksBusiness','Recepción y siguiente paso']],note:'No es obligatorio visitar metodología: el CTA de la landing también lleva directamente a Contacto.'},
+    general:{title:'Empresa que necesita seleccionar personal',subtitle:'Recorrido para un comprador que compara agencias y soluciones de selección externa.',steps:[['Búsqueda comercial',null,'Agencia / servicio de reclutamiento'],['Servicios','services','Elegir solución'],['Reclutamiento y selección','recruiting','Perfiles y cobertura real'],['Contacto empresarial','contact','Definir necesidad'],['Confirmación','thanksBusiness','Solicitar seguimiento']],note:'La landing de selección debe indicar claramente qué niveles y procesos cubre la firma. Reclutamiento masivo no se sobreentiende.'},
+    content:{title:'Visitante que descubre un artículo',subtitle:'El contenido informativo orienta y vincula la necesidad con el servicio apropiado.',steps:[['Consulta informativa',null,'Costo, evaluación o externalización'],['Artículo de blog','article','Responder una pregunta concreta'],['Servicio relacionado','headhunting','Aplicación empresarial'],['Contacto empresarial','contact','Conversación consultiva'],['Confirmación','thanksBusiness','Recepción del contacto']],note:'El servicio enlazado depende del tema. Algunos artículos de candidatos conducirán a Candidatos, no al formulario B2B.'},
+    candidate:{title:'Profesional que desea compartir su CV',subtitle:'Recorrido secundario independiente de la captación comercial.',steps:[['Acceso Enviar CV',null,'Header secundario / footer'],['Candidatos','candidates','Información clara y privacidad'],['Enviar CV PDF','candidates','Formulario y carga privada'],['Currículum recibido','thanksCV','Confirmación separada']],note:'Los archivos CV no deben quedar expuestos públicamente. El envío de un CV no cuenta como lead empresarial.'}
+  };
+  function renderJourney(){const d=journeyInfo[journey];el('journeyContent').innerHTML=`<div class="journey-banner"><h3>${esc(d.title)}</h3><p>${esc(d.subtitle)}</p></div><div class="steps">${d.steps.map((s,i)=>`${i?'<div class="step-arrow">›</div>':''}<button ${s[1]?`data-page="${esc(s[1])}"`: 'disabled'} class="journey-step ${s[1]?'clickable':''} ${s[1]===selected?'active':''}" type="button"><div class="stage">Paso ${String(i+1).padStart(2,'0')}</div><h4>${esc(s[0])}</h4><p>${esc(s[2])}</p></button>`).join('')}</div><div class="touchpoint"><strong>Nota del recorrido:</strong> ${esc(d.note)}</div><p class="journey-note">Haz clic en un paso enlazado a la web para visualizar la ficha detallada de esa página.</p>`}
+  function exportTree(){
+    const lines=['AMERICAN RECRUITERS MÉXICO — ARQUITECTURA WEB PROPUESTA','Propuesta V1.0 | WordPress nuevo en staging → dominio principal actual','','INICIO /'];
+    function append(ids,indent='  '){ids.forEach(id=>{const p=byId[id];lines.push(`${indent}- ${p.label} | ${p.url} | ${statusTitle[p.status]}`);pages.filter(q=>q.parent===id && q.zone==='primary').forEach(q=>lines.push(`${indent}    - ${q.label} | ${q.url} | ${statusTitle[q.status]}`))})}
+    lines.push('NAVEGACIÓN PRINCIPAL');append(['services','method','about','blog','contact']);
+    lines.push('CANDIDATOS');append(['candidates']);lines.push('INFORMACIÓN Y APOYO');append(['faq','privacy']);lines.push('FUNCIONES TÉCNICAS');append(['thanksBusiness','thanksCV']);
+    lines.push('AMPLIACIONES CONDICIONADAS');append(['futureServices','futureIndustries','futurePlaces','futureCases','futureEnglish']);
+    lines.push('','NOTAS','- Faltan validaciones comerciales; no son páginas aprobadas.','- El artículo individual es una plantilla; sus slugs se definirán por inventario.','- Preservar URLs actuales pertinentes y planificar 301 solo cuando corresponda.');
+    const blob=new Blob([lines.join('\n')],{type:'text/plain;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='American_Recruiters_Arquitectura_Web_V1.txt';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),800);
+  }
+  async function copyUrl(){const txt=byId[selected].url;let ok=false;try{if(navigator.clipboard && location.protocol!=='file:'){await navigator.clipboard.writeText(txt);ok=true}}catch(e){} if(!ok){const t=document.createElement('textarea');t.value=txt;t.style.position='fixed';t.style.left='-9999px';document.body.appendChild(t);t.select();try{ok=document.execCommand('copy')}catch(e){}t.remove()}const b=el('copyUrl');b.textContent=ok?'Copiado':'Selecciona URL';if(!ok){const selection=window.getSelection(),range=document.createRange();range.selectNodeContents(el('detailURL'));selection.removeAllRanges();selection.addRange(range)}setTimeout(()=>b.textContent='Copiar',1600)}
+  document.addEventListener('click',function(e){
+    const tab=e.target.closest('[data-view]');if(tab){setView(tab.dataset.view);return}
+    const filter=e.target.closest('[data-filter]');if(filter){audienceFilter=filter.dataset.filter;document.querySelectorAll('.filter').forEach(b=>{const on=b===filter;b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on))});renderMap();return}
+    const chosen=e.target.closest('[data-page]');if(chosen){select(chosen.dataset.page);return}
+    const dev=e.target.closest('[data-device]');if(dev){setDevice(dev.dataset.device);return}
+    const choice=e.target.closest('[data-journey]');if(choice){journey=choice.dataset.journey;document.querySelectorAll('.journey-choice').forEach(b=>b.classList.toggle('active',b===choice));renderJourney();return}
+    if(e.target.closest('#servicesToggle')){const d=el('servicesDropdown');const on=!d.classList.contains('open');d.classList.toggle('open',on);el('servicesToggle').setAttribute('aria-expanded',String(on));return}
+    if(!e.target.closest('.navdrop')){el('servicesDropdown').classList.remove('open');el('servicesToggle').setAttribute('aria-expanded','false')}
+    if(e.target.closest('#mobileToggle')){const open=el('mobileMenu').classList.toggle('hidden')===false;el('mobileToggle').setAttribute('aria-expanded',String(open));return}
+    if(e.target.closest('#mobileServicesToggle')){const open=el('mobileSub').classList.toggle('hidden')===false;el('mobileServicesToggle').setAttribute('aria-expanded',String(open));return}
+  });
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){el('servicesDropdown').classList.remove('open');el('servicesToggle').setAttribute('aria-expanded','false')}});
+  el('searchInput').addEventListener('input',renderMap);el('showFuture').addEventListener('change',renderMap);
+  el('exportButton').addEventListener('click',exportTree);el('printButton').addEventListener('click',()=>window.print());el('copyUrl').addEventListener('click',copyUrl);
+  setDevice('desktop');renderJourney();updateDetail();renderMap();
+})();
+</script>
+</body>
+</html>
