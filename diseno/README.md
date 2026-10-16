@@ -4,7 +4,7 @@ Fuente visual aprobada: kit madre suministrado por el responsable del proyecto. 
 
 ## Referencia independiente
 
-`index.html` conserva el prototipo maestro y su logotipo oficial PNG embebido. `css/design-system.css` contiene el sistema original compartido. Las fotografías externas de Unsplash son ilustrativas: no representan equipo, oficinas ni proyectos de la empresa. Los formularios del prototipo son demostraciones; no envían datos.
+`index.html` conserva el prototipo maestro; el logotipo PNG oficial se ha extraído sin modificaciones a `assets/american-recruiters-logo.png`. `css/design-system.css` contiene el sistema original compartido. Las fotografías externas de Unsplash son ilustrativas: no representan equipo, oficinas ni proyectos de la empresa. Los formularios del prototipo son demostraciones; no envían datos.
 
 ## Implementación WordPress
 
