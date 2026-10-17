@@ -1,0 +1,71 @@
+AMERICAN RECRUITERS MÉXICO — TEMA EJECUTIVO EDITORIAL 1.0.1
+Fecha: 17/10/2026. Entorno intervenido: desarrollo.americanrecruiters.mx.
+
+Fuente del tema activo, capturada desde WordPress y corregida durante Fase 6.
+No incluye WordPress, plugins, base de datos, credenciales ni contenidos privados.
+No sustituye un respaldo completo. El diseño maestro, arquitectura y documentos
+comerciales de este repositorio no se han modificado.
+
+CAMBIOS
+- functions.php: distingue scaffolds iniciales de contenido Gutenberg real;
+  evita otro H1 cuando el cuerpo ya lo contiene; permite omitir descripción
+  técnica; preconnect de fuentes; optimiza únicamente la fotografía aprobada
+  del hero de Home con variantes locales y dimensiones explícitas.
+- page.php, page-service.php, page-contact.php, page-candidates.php, page-faq.php:
+  los módulos de demostración solo aparecen con los placeholders iniciales.
+  Las maquetas de formularios permanecen deshabilitadas.
+- home.php: índice real, intro Gutenberg de la página de entradas publicada,
+  contexto de archivos/búsqueda, extractos, destacados, fechas y paginación nativa.
+  Respeta un bloque Query existente; cuando haya publicaciones reales sustituye
+  solo la sección heredada exacta «Artículos del sitio actual» del borrador de
+  Blog, si se publica posteriormente, por el listado nativo. No lee borradores.
+- single.php: contenido Gutenberg, H1 único, fecha y autor real de WordPress,
+  imagen destacada proporcional, paginación interna nativa. Sin schema adicional.
+- style.css: versión 1.0.1; disposición móvil estable de los CTA del hero antes
+  del intercambio de fuente, sin eliminar fotografía, textos ni secciones.
+
+MEDIOS
+Home utiliza tres imágenes ya existentes en la instalación intervenida:
+wp-content/uploads/2026/10/ar-hero-editorial-640.webp (55142 bytes),
+wp-content/uploads/2026/10/ar-hero-editorial-960.webp (102110 bytes),
+wp-content/uploads/2026/10/ar-hero-editorial-1300.webp (171494 bytes).
+Son derivados de la MISMA fotografía aprobada, no imágenes nuevas.
+Conservar estos archivos al migrar; el tema por sí solo no traslada uploads.
+La fuente original y las copias previas están respaldadas fuera del repositorio.
+No se redistribuyen archivos de tipografías.
+
+VERIFICACIÓN
+Tres pruebas móviles comparables antes: 80/80/80, LCP 3.5 s, CLS 0.168.
+Tres después: 92/92/92, LCP 2.7 s, CLS 0.041. FCP 2.6 s y TBT 0 ms.
+Lighthouse 13.5.0, Moto G Power emulado, red 4G lenta; resultados de laboratorio.
+No hay datos de campo ni INP válido. El objetivo LCP <=2.5 s no se alcanzó.
+Home revisada en 1440,1024,768,430,390,360; diez borradores en 1440 y390.
+Una entrada QA se creó exclusivamente como borrador y se probó en preview.
+No se importaron los once artículos ni se publicaron borradores comerciales.
+
+REGLAS / SEO
+Se regeneraron las reglas nativas conservando /%postname%/ para corregir
+los 404 de hosting de las rutas amigables del desarrollo. No hubo cambio de URLs.
+Home conserva un canonical propio único; front-page.php no fue alterado.
+Interiores y previews siguen noindex; Yoast omite canonical en esos contextos.
+No añadir canonicals manuales por esa ausencia. Validarlos al preparar lanzamiento.
+
+PENDIENTES PARA AGENTE G
+Puede iniciar una migración CONTROLADA en staging, no lanzar producción.
+Con cero entradas públicas no se ha validado en ejecución la paginación del
+índice ni los archivos con artículos reales. Probar con las primeras entradas
+importadas sin publicarlas y después con la publicación expresamente autorizada.
+Comprobar destacados, categorías, extractos, autoría y canonicals del estado final.
+El guardado inicial Gutenberg falló; posteriormente se guardó correctamente el
+borrador QA tras regenerar reglas. No se atribuye una causa REST exacta sin traza.
+
+ROLLBACK
+Restaurar desde las copias de los archivos previos, primero page*.php, home.php,
+single.php y style.css; functions.php AL FINAL porque las plantillas dependen
+de sus helpers nuevos. Purgar solo caché del desarrollo y volver a revisar Home
+y previews. También existe respaldo completo WPvivid previo; restauración no
+ensayada y no debe ejecutarse sobre producción. No borrar medios para revertir.
+
+REFERENCIAS
+https://developer.wordpress.org/themes/classic-themes/basics/template-hierarchy/
+https://developer.yoast.com/features/seo-tags/canonical-urls/api/

@@ -1,0 +1,2 @@
+<?php /* Template Name: FAQ · Ejecutivo Editorial */ get_header(); while(have_posts()):the_post(); ar_page_hero(); ?><section class="ar-page-content"><div class="container"><?php the_content(); ?><?php if(ar_is_scaffold()): ?><div class="faq"><details><summary>¿Qué incluye esta fase de desarrollo?</summary><p>La base técnica, navegación y componentes visuales. El contenido comercial y las funciones finales requieren aprobación.</p></details></div><?php endif; ?></div></section><?php endwhile; get_footer(); ?>
+
