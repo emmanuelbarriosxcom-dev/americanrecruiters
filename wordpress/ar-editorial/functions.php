@@ -14,7 +14,7 @@ add_action('after_setup_theme','ar_setup');
 function ar_assets() {
     wp_enqueue_style('ar-fonts','https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap',[],null);
     wp_enqueue_style('ar-design',get_theme_file_uri('/assets/css/design-system.css'),['ar-fonts'],'1.0.0');
-    wp_enqueue_style('ar-theme',get_stylesheet_uri(),['ar-design'],'1.0.3');
+    wp_enqueue_style('ar-theme',get_stylesheet_uri(),['ar-design'],'1.0.4');
     wp_enqueue_script('ar-navigation',get_theme_file_uri('/assets/js/navigation.js'),[], '1.0.0',['strategy'=>'defer','in_footer'=>true]);
 }
 add_action('wp_enqueue_scripts','ar_assets');
