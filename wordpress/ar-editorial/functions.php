@@ -147,7 +147,7 @@ function ar_f9_form($kind='business') {
     <?php else: ?>
     <label for="ar-cv-pdf">Currículum PDF — carga deshabilitada</label><input disabled id="ar-cv-pdf" name="cv" type="file" accept=".pdf,application/pdf" aria-describedby="ar-cv-pdf-help"><small id="ar-cv-pdf-help">Límite técnico propuesto: 5 MB, pendiente de aprobación. No se solicitan identificaciones, datos bancarios ni información médica. El canal no se habilitará sin almacenamiento privado verificado.</small>
     <?php endif; ?>
-    <label class="ar-f9-privacy"><input disabled type="checkbox" name="privacy" value="1">Mecanismo y texto de privacidad pendientes de aprobación; no constituye una autorización.</label>
+    <p class="ar-f9-privacy">Información de privacidad y mecanismo aplicable pendientes de aprobación. No hay consentimiento activo ni recepción de datos en esta demostración.</p>
     <button disabled type="button" class="btn btn-purple"><?php echo $candidate?'Enviar CV — no disponible':'Solicitar propuesta — no disponible'; ?></button></fieldset>
     <p><a href="<?php echo ar_url('privacidad/'); ?>">Consultar el estado del aviso de privacidad</a></p>
     </section>
