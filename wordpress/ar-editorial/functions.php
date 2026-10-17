@@ -14,7 +14,7 @@ add_action('after_setup_theme','ar_setup');
 function ar_assets() {
     wp_enqueue_style('ar-fonts','https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap',[],null);
     wp_enqueue_style('ar-design',get_theme_file_uri('/assets/css/design-system.css'),['ar-fonts'],'1.0.0');
-    wp_enqueue_style('ar-theme',get_stylesheet_uri(),['ar-design'],'1.0.2');
+    wp_enqueue_style('ar-theme',get_stylesheet_uri(),['ar-design'],'1.0.3');
     wp_enqueue_script('ar-navigation',get_theme_file_uri('/assets/js/navigation.js'),[], '1.0.0',['strategy'=>'defer','in_footer'=>true]);
 }
 add_action('wp_enqueue_scripts','ar_assets');
@@ -72,8 +72,7 @@ function ar_home_hero_image($html) {
     return $image->get_updated_html();
 }
 add_filter('the_content','ar_home_hero_image',20);
-function ar_demo_form($candidate=false) { ?>
-<div class="ar-demo-form demo-form" role="group" aria-label="Formulario visual de demostración"><p><strong>Demostración visual — no admite envíos.</strong> No introduzcas datos personales. Campos, destinatarios y consentimiento se definirán en la fase funcional.</p><fieldset disabled><legend><?php echo $candidate ? 'Envío de CV · base visual' : 'Solicitud de propuesta · base visual'; ?></legend><label for="ar-demo-name">Nombre</label><input id="ar-demo-name" type="text" placeholder="Campo de demostración"><label for="ar-demo-email">Correo electrónico</label><input id="ar-demo-email" type="email" placeholder="Campo de demostración"><?php if($candidate): ?><p>La carga privada de CV PDF se implementará después de aprobar su tratamiento y destinatario. No se almacenan archivos en esta demo.</p><?php else: ?><label for="ar-demo-company">Empresa</label><input id="ar-demo-company" type="text" placeholder="Campo de demostración"><?php endif; ?><label for="ar-demo-message">Mensaje</label><textarea id="ar-demo-message" rows="4" placeholder="Campo de demostración"></textarea><button class="btn btn-purple" type="button" disabled>Envío no disponible en desarrollo</button></fieldset></div><?php }
+function ar_demo_form($candidate=false) { echo ar_f9_form($candidate ? 'candidate' : 'business'); }
 function ar_patterns() {
     register_block_pattern_category('ar-editorial',['label'=>'American Recruiters · Ejecutivo Editorial']);
     $patterns=[
@@ -124,3 +123,127 @@ function ar_post_categories($post_id=0) {
     }
     echo '</ul>';
 }
+
+
+/* Fase 9. Deliberately no mail, storage, attachment or successful submission path. */
+function ar_f9_staging() {
+    return wp_parse_url(home_url(), PHP_URL_HOST)==='desarrollo.americanrecruiters.mx';
+}
+function ar_f9_form($kind='business') {
+    if(!ar_f9_staging()) return '';
+    $candidate=$kind==='candidate'; $prefix=$candidate?'ar-cv':'ar-business';
+    ob_start(); ?>
+    <section class="ar-f9" aria-label="<?php echo $candidate?'Formulario de candidatos — revisión':'Formulario empresarial — revisión'; ?>">
+    <p class="ar-f9-status" id="<?php echo esc_attr($prefix); ?>-status"><strong>Demostración deshabilitada.</strong> No introduzcas datos personales. No se envían mensajes ni se reciben archivos. Privacidad, destinatario y seguridad operativa pendientes de aprobación.</p>
+    <fieldset disabled aria-describedby="<?php echo esc_attr($prefix); ?>-status"><legend><?php echo $candidate?'Presentar perfil profesional — no habilitado':'Solicitud empresarial — no habilitada'; ?></legend>
+    <?php
+    $fields=$candidate ? ['name'=>['Nombre','text',120,true],'email'=>['Correo electrónico','email',254,true],'phone'=>['Teléfono — opcional','tel',30,false],'area'=>['Área profesional — opcional','text',120,false]] : ['name'=>['Nombre','text',120,true],'company'=>['Empresa','text',160,true],'email'=>['Correo corporativo','email',254,true],'phone'=>['Teléfono — opcional','tel',30,false]];
+    foreach($fields as $name=>$f) { $id=$prefix.'-'.$name;
+        echo '<label for="'.esc_attr($id).'">'.esc_html($f[0]).'</label><input disabled id="'.esc_attr($id).'" name="'.esc_attr($name).'" type="'.esc_attr($f[1]).'" maxlength="'.(int)$f[2].'"'.($f[3]?' required':'').' autocomplete="off">';
+    }
+    if(!$candidate): ?>
+    <label for="ar-business-service">Servicio de interés</label><select disabled required id="ar-business-service" name="service"><option value="">Selecciona una opción</option><option value="headhunting">Headhunting</option><option value="personalizado">Servicio personalizado</option><option value="fast-placement">Fast Placement — información</option><option value="asesoramiento">No estoy seguro / asesoramiento inicial</option></select>
+    <label for="ar-business-message">Mensaje sobre la necesidad de contratación</label><textarea disabled required id="ar-business-message" name="message" maxlength="3000" rows="5"></textarea><small>No incluyas CV, datos de candidatos ni información sensible.</small>
+    <?php else: ?>
+    <label for="ar-cv-pdf">Currículum PDF — carga deshabilitada</label><input disabled id="ar-cv-pdf" name="cv" type="file" accept=".pdf,application/pdf" aria-describedby="ar-cv-pdf-help"><small id="ar-cv-pdf-help">Límite técnico propuesto: 5 MB, pendiente de aprobación. No se solicitan identificaciones, datos bancarios ni información médica. El canal no se habilitará sin almacenamiento privado verificado.</small>
+    <?php endif; ?>
+    <label class="ar-f9-privacy"><input disabled type="checkbox" name="privacy" value="1">Mecanismo y texto de privacidad pendientes de aprobación; no constituye una autorización.</label>
+    <button disabled type="button" class="btn btn-purple"><?php echo $candidate?'Enviar CV — no disponible':'Solicitar propuesta — no disponible'; ?></button></fieldset>
+    <p><a href="<?php echo ar_url('privacidad/'); ?>">Consultar el estado del aviso de privacidad</a></p>
+    </section>
+    <?php return ob_get_clean();
+}
+/* Replace only the two known draft mockups at render time; Gutenberg copy is untouched. */
+function ar_f9_draft_demo($content) {
+    if(!ar_f9_staging() || !is_main_query() || !in_the_loop() || !in_array(get_the_ID(),[45,47],true) || get_post_status()!=='draft' || !current_user_can('edit_post',get_the_ID())) return $content;
+    return preg_replace_callback('~<div class="ar-demo-form">\s*<fieldset\b[^>]*>.*?</fieldset>\s*(?:<small>La recepción no está habilitada\. No introduzcas datos personales\.</small>\s*)?</div>~s',function() { return ar_f9_form(get_the_ID()===47?'candidate':'business'); },$content,1);
+}
+add_filter('the_content','ar_f9_draft_demo',25);
+/* Pure validators prepared for later activation, not a data collection endpoint. */
+function ar_f9_validate($kind,$raw) {
+    $errors=[]; $clean=[];
+    if(!in_array($kind,['business','candidate'],true) || !is_array($raw)) return ['errors'=>['form'=>'Formulario no válido.'],'data'=>[]];
+    $limits=$kind==='business'?['name'=>120,'company'=>160,'email'=>254,'phone'=>30,'service'=>40,'message'=>3000]:['name'=>120,'email'=>254,'phone'=>30,'area'=>120];
+    $required=$kind==='business'?['name','company','email','service','message']:['name','email'];
+    foreach($limits as $field=>$limit) {
+        if(isset($raw[$field])&&!is_string($raw[$field])) {$errors[$field]='Valor no válido.';continue;}
+        $value=trim($raw[$field]??'');
+        if(strlen($value)>$limit*4 || (function_exists('mb_strlen')?mb_strlen($value,'UTF-8'):strlen($value))>$limit) $errors[$field]='Texto demasiado largo.';
+        if(in_array($field,$required,true)&&$value==='') $errors[$field]='Completa este campo.';
+        if($field==='email' && (!is_email($value)||preg_match('/[\r\n]/',$value))) $errors[$field]='Introduce un correo válido.';
+        if($field==='service' && !in_array($value,['headhunting','personalizado','fast-placement','asesoramiento'],true)) $errors[$field]='Selecciona un servicio válido.';
+        if($field==='phone' && $value!=='' && !preg_match('/^[0-9+().\s-]{5,30}$/',$value)) $errors[$field]='Revisa el teléfono.';
+        $clean[$field]=$field==='message'?sanitize_textarea_field($value):sanitize_text_field($value);
+    }
+    if(!empty($raw['website'])) $errors['spam']='Solicitud no admitida.';
+    if(($raw['privacy']??'')!=='1') $errors['privacy']='La información de privacidad requiere validación antes de activar el canal.';
+    return ['errors'=>$errors,'data'=>$errors?[]:$clean];
+}
+function ar_f9_pdf_check($file) {
+    if(!is_array($file)||($file['error']??UPLOAD_ERR_NO_FILE)!==UPLOAD_ERR_OK) return 'Carga no válida.';
+    if(!isset($file['size']) || $file['size']<1 || $file['size']>5*1024*1024) return 'El PDF debe pesar como máximo 5 MB.';
+    if(!is_string($file['name']??null)||strtolower(pathinfo($file['name'],PATHINFO_EXTENSION))!=='pdf') return 'Solo se admite PDF.';
+    $path=$file['tmp_name']??'';
+    if(!is_string($path)||!is_uploaded_file($path)) return 'No es un archivo de carga HTTP válido.';
+    return ar_f9_pdf_content_check($path);
+}
+function ar_f9_pdf_content_check($path) {
+    if(!is_string($path)||!is_file($path)||!is_readable($path)||!class_exists('finfo')) return 'No se puede verificar el archivo.';
+    $size=filesize($path);if(!$size||$size>5*1024*1024) return 'Tamaño no válido.';
+    $mime=(new finfo(FILEINFO_MIME_TYPE))->file($path);
+    $fh=fopen($path,'rb');if(!$fh)return 'No se puede verificar el archivo.';
+    $header=fread($fh,8);fseek($fh,max(0,$size-1024));$tail=stream_get_contents($fh);fclose($fh);
+    if($mime!=='application/pdf'||!preg_match('/^%PDF-1\.[0-9]/',$header)||strpos($tail,'%%EOF')===false) return 'Contenido PDF no válido.';
+    /* Signature/MIME checks are not antivirus or proof that a PDF is safe. */
+    return '';
+}
+function ar_f9_guard($method,$nonce_ok,$count) {
+    if($method!=='POST') return 405;
+    if(!$nonce_ok) return 403;
+    if($count>=5) return 429;
+    return 503; // Hard stop. No configuration flag can turn collection on.
+}
+function ar_f9_disabled_endpoint() {
+    $method=$_SERVER['REQUEST_METHOD']??'';
+    $nonce=isset($_POST['_wpnonce'])&&is_string($_POST['_wpnonce'])?sanitize_text_field(wp_unslash($_POST['_wpnonce'])):'';
+    $nonce_ok=(bool)wp_verify_nonce($nonce,'ar_f9_disabled');
+    $count=0;
+    if($method==='POST'&&$nonce_ok) {
+        $key='ar_f9_rate_'.hash_hmac('sha256',(string)($_SERVER['REMOTE_ADDR']??'unknown'),wp_salt('nonce'));
+        $count=(int)get_transient($key);set_transient($key,$count+1,10*MINUTE_IN_SECONDS);
+    }
+    $status=ar_f9_guard($method,$nonce_ok,$count);
+    nocache_headers();
+    wp_die('Canal deshabilitado. No se ha enviado ni almacenado ninguna solicitud. No introduzcas datos personales.','Canal no disponible',['response'=>$status]);
+}
+foreach(['ar_f9_business','ar_f9_candidate'] as $action) {
+    add_action('admin_post_'.$action,'ar_f9_disabled_endpoint');
+    add_action('admin_post_nopriv_'.$action,'ar_f9_disabled_endpoint');
+}
+/* Administrator-only deterministic QA. No customer data, mail or uploads. */
+function ar_f9_qa_page() {
+    if(!ar_f9_staging()||!current_user_can('manage_options')) return;
+    $valid=['name'=>'QA FICTICIO','company'=>'Empresa QA','email'=>'qa@example.invalid','phone'=>'','service'=>'headhunting','message'=>'Datos ficticios para validar.','privacy'=>'1'];
+    $cases=[];
+    $cases['Empresa válida']=!ar_f9_validate('business',$valid)['errors'];
+    $bad=$valid;$bad['email']='invalido';$cases['Email inválido rechazado']=isset(ar_f9_validate('business',$bad)['errors']['email']);
+    $bad=$valid;$bad['name']=['array'];$cases['Array rechazado']=isset(ar_f9_validate('business',$bad)['errors']['name']);
+    $bad=$valid;$bad['service']='otro';$cases['Servicio fuera de lista rechazado']=isset(ar_f9_validate('business',$bad)['errors']['service']);
+    $bad=$valid;$bad['message']=str_repeat('x',3001);$cases['Longitud excesiva rechazada']=isset(ar_f9_validate('business',$bad)['errors']['message']);
+    $bad=$valid;$bad['website']='spam';$cases['Honeypot rechazado']=isset(ar_f9_validate('business',$bad)['errors']['spam']);
+    $cases['Campos vacíos rechazados']=count(ar_f9_validate('business',[])['errors'])>=5;
+    $cases['Candidato sin empresa ni mensaje válido']=!ar_f9_validate('candidate',['name'=>'QA','email'=>'qa@example.invalid','privacy'=>'1'])['errors'];
+    $cases['Sin autorización de privacidad rechazado']=isset(ar_f9_validate('candidate',['name'=>'QA','email'=>'qa@example.invalid'])['errors']['privacy']);
+    $cases['CSRF inválido devuelve 403']=ar_f9_guard('POST',false,0)===403;
+    $cases['GET devuelve 405']=ar_f9_guard('GET',true,0)===405;
+    $cases['Límite devuelve 429']=ar_f9_guard('POST',true,5)===429;
+    $cases['POST válido permanece bloqueado 503']=ar_f9_guard('POST',true,0)===503;
+    $cases['Archivo demasiado grande rechazado']=ar_f9_pdf_check(['error'=>0,'size'=>5242881,'name'=>'qa.pdf','tmp_name'=>''])!=='';
+    $cases['Extensión falsa rechazada']=ar_f9_pdf_check(['error'=>0,'size'=>10,'name'=>'qa.php','tmp_name'=>''])!=='';
+    $cases['Ruta no subida rechazada']=ar_f9_pdf_check(['error'=>0,'size'=>10,'name'=>'qa.pdf','tmp_name'=>__FILE__])!=='';
+    $cases['Contenido no PDF rechazado']=ar_f9_pdf_content_check(__FILE__)!=='';
+    echo '<div class="wrap"><h1>Fase 9 — QA sin envíos</h1><p>Validación de funciones con datos ficticios. No verifica entrega de correo, procesamiento de una carga HTTP ni almacenamiento privado.</p><table class="widefat striped"><thead><tr><th>Prueba</th><th>Resultado</th></tr></thead><tbody>';
+    foreach($cases as $name=>$pass)echo '<tr><td>'.esc_html($name).'</td><td>'.($pass?'PASS':'FAIL').'</td></tr>';
+    echo '</tbody></table><p>Canales bloqueados. No existe ruta de éxito, correo ni almacenamiento.</p></div>';
+}
+add_action('admin_menu',function(){if(ar_f9_staging())add_management_page('Fase 9 — QA','Formularios — QA','manage_options','ar-f9-qa','ar_f9_qa_page');});
