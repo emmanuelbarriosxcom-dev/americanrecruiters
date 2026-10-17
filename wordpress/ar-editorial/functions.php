@@ -14,7 +14,7 @@ add_action('after_setup_theme','ar_setup');
 function ar_assets() {
     wp_enqueue_style('ar-fonts','https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap',[],null);
     wp_enqueue_style('ar-design',get_theme_file_uri('/assets/css/design-system.css'),['ar-fonts'],'1.0.0');
-    wp_enqueue_style('ar-theme',get_stylesheet_uri(),['ar-design'],'1.0.1');
+    wp_enqueue_style('ar-theme',get_stylesheet_uri(),['ar-design'],'1.0.2');
     wp_enqueue_script('ar-navigation',get_theme_file_uri('/assets/js/navigation.js'),[], '1.0.0',['strategy'=>'defer','in_footer'=>true]);
 }
 add_action('wp_enqueue_scripts','ar_assets');
@@ -106,3 +106,21 @@ function ar_staging_bootstrap(){
 }
 add_action('after_switch_theme','ar_staging_bootstrap');
 
+
+/* Real historical taxonomies; never link to an empty public archive. */
+function ar_post_categories($post_id=0) {
+    $categories=get_the_category($post_id ?: get_the_ID());
+    if(!$categories || is_wp_error($categories)) return;
+    echo '<ul class="ar-post-categories" aria-label="Categorías">';
+    foreach($categories as $category) {
+        echo '<li>';
+        $url=(int)$category->count>0 ? get_category_link($category->term_id) : '';
+        if($url && !is_wp_error($url)) {
+            echo '<a class="ar-category" href="'.esc_url($url).'">'.esc_html($category->name).'</a>';
+        } else {
+            echo '<span class="ar-category">'.esc_html($category->name).'</span>';
+        }
+        echo '</li>';
+    }
+    echo '</ul>';
+}

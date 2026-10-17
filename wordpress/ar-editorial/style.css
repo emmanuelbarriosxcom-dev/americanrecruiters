@@ -1,7 +1,7 @@
 /*
 Theme Name: American Recruiters — Ejecutivo Editorial
 Description: Base de desarrollo Opción 2. Gutenberg y componentes compartidos; sin formularios comerciales.
-Version: 1.0.1
+Version: 1.0.2
 Requires at least: 6.6
 Requires PHP: 8.0
 Text Domain: ar-editorial
@@ -15,3 +15,14 @@ Text Domain: ar-editorial
 @media(min-width:921px){.ar-mobile-cta{display:none}.ar-menu>li:hover>.ar-submenu:not([hidden]){display:block}}
 @media(max-width:600px){.site-header .logo{width:190px}.ar-page-content>.container{padding-block:48px}.ar-base-hero .hero-inner h1{font-size:clamp(46px,12vw,68px)}.ar-demo-actions .btn{white-space:normal;text-align:center}.ar-cta-band .btn{white-space:normal;text-align:center}.ar-staging-chip{font-size:10px}.ar-card{padding:24px}.ar-breadcrumb{font-size:11px}.ar-base-hero{min-height:560px!important}}
 
+
+/* Fase 8: same visual layout, logical disclosure order and real taxonomy labels. */
+@media(max-width:920px){
+.site-header .nav-content>.nav-toggle{margin-left:auto}
+.site-header .nav-content>.nav-cta{display:none}
+}
+.ar-post-categories{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:12px 0 20px;padding:0}
+.ar-post-categories li{margin:0}
+.ar-post-categories .ar-category{display:inline-flex;align-items:center;min-height:32px;padding:4px 10px;border:1px solid #675c6c;background:#f5f4f7;color:#4d4653;font-size:12px;font-weight:600;line-height:1.5;text-decoration:none;border-radius:4px}
+.ar-post-categories a.ar-category{min-height:44px}
+.ar-post-categories a.ar-category:hover{color:#fff;background:#4d4653}

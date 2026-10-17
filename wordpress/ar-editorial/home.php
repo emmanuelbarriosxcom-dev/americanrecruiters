@@ -29,6 +29,7 @@ ar_hero(wp_strip_all_tags($title),'',!preg_match('/<h1\b/i',$intro));
 <?php if(has_post_thumbnail()): ?><a href="<?php the_permalink(); ?>" aria-label="<?php echo esc_attr(get_the_title()); ?>"><?php the_post_thumbnail('medium_large',['loading'=>'lazy']); ?></a><?php endif; ?>
 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 <p class="ar-article-meta"><time datetime="<?php echo esc_attr(get_the_date('c')); ?>"><?php echo esc_html(get_the_date()); ?></time></p>
+<?php ar_post_categories(); ?>
 <?php the_excerpt(); ?></article><?php endwhile; ?></div><?php the_posts_pagination(); ?>
 <?php else: ?><p class="ar-blog-empty">Sin artículos publicados. La plantilla está preparada para la siguiente fase.</p><?php endif; ?>
 <?php endif; ?></div></section><?php get_footer(); ?>
