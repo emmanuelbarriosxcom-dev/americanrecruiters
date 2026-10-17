@@ -174,6 +174,7 @@ function ar_f9_validate($kind,$raw) {
         if($field==='service' && !in_array($value,['headhunting','personalizado','fast-placement','asesoramiento'],true)) $errors[$field]='Selecciona un servicio válido.';
         if($field==='phone' && $value!=='' && !preg_match('/^[0-9+().\s-]{5,30}$/',$value)) $errors[$field]='Revisa el teléfono.';
         $clean[$field]=$field==='message'?sanitize_textarea_field($value):sanitize_text_field($value);
+        if(in_array($field,$required,true)&&trim($clean[$field])==='') $errors[$field]='Completa este campo con información válida.';
     }
     if(!empty($raw['website'])) $errors['spam']='Solicitud no admitida.';
     if(($raw['privacy']??'')!=='1') $errors['privacy']='La información de privacidad requiere validación antes de activar el canal.';
@@ -181,7 +182,7 @@ function ar_f9_validate($kind,$raw) {
 }
 function ar_f9_pdf_check($file) {
     if(!is_array($file)||($file['error']??UPLOAD_ERR_NO_FILE)!==UPLOAD_ERR_OK) return 'Carga no válida.';
-    if(!isset($file['size']) || $file['size']<1 || $file['size']>5*1024*1024) return 'El PDF debe pesar como máximo 5 MB.';
+    if(!isset($file['size']) || !is_int($file['size']) || $file['size']<1 || $file['size']>5*1024*1024) return 'El PDF debe pesar como máximo 5 MB.';
     if(!is_string($file['name']??null)||strtolower(pathinfo($file['name'],PATHINFO_EXTENSION))!=='pdf') return 'Solo se admite PDF.';
     $path=$file['tmp_name']??'';
     if(!is_string($path)||!is_uploaded_file($path)) return 'No es un archivo de carga HTTP válido.';
@@ -193,7 +194,7 @@ function ar_f9_pdf_content_check($path) {
     $mime=(new finfo(FILEINFO_MIME_TYPE))->file($path);
     $fh=fopen($path,'rb');if(!$fh)return 'No se puede verificar el archivo.';
     $header=fread($fh,8);fseek($fh,max(0,$size-1024));$tail=stream_get_contents($fh);fclose($fh);
-    if($mime!=='application/pdf'||!preg_match('/^%PDF-1\.[0-9]/',$header)||strpos($tail,'%%EOF')===false) return 'Contenido PDF no válido.';
+    if($mime!=='application/pdf'||!preg_match('/^%PDF-(?:1\.[0-9]|2\.0)/',$header)||strpos($tail,'%%EOF')===false) return 'Contenido PDF no válido.';
     /* Signature/MIME checks are not antivirus or proof that a PDF is safe. */
     return '';
 }
@@ -232,6 +233,9 @@ function ar_f9_qa_page() {
     $bad=$valid;$bad['message']=str_repeat('x',3001);$cases['Longitud excesiva rechazada']=isset(ar_f9_validate('business',$bad)['errors']['message']);
     $bad=$valid;$bad['website']='spam';$cases['Honeypot rechazado']=isset(ar_f9_validate('business',$bad)['errors']['spam']);
     $cases['Campos vacíos rechazados']=count(ar_f9_validate('business',[])['errors'])>=5;
+    $bad=$valid;$bad['name']='<b></b>';$cases['Nombre vacío tras sanitizar rechazado']=isset(ar_f9_validate('business',$bad)['errors']['name']);
+    $bad=$valid;$bad['company']='<i></i>';$cases['Empresa vacía tras sanitizar rechazada']=isset(ar_f9_validate('business',$bad)['errors']['company']);
+    $cases['Tamaño de PDF no entero rechazado']=ar_f9_pdf_check(['error'=>0,'size'=>'pequeno','name'=>'qa.pdf','tmp_name'=>''])!=='';
     $cases['Candidato sin empresa ni mensaje válido']=!ar_f9_validate('candidate',['name'=>'QA','email'=>'qa@example.invalid','privacy'=>'1'])['errors'];
     $cases['Sin autorización de privacidad rechazado']=isset(ar_f9_validate('candidate',['name'=>'QA','email'=>'qa@example.invalid'])['errors']['privacy']);
     $cases['CSRF inválido devuelve 403']=ar_f9_guard('POST',false,0)===403;
