@@ -1,0 +1,60 @@
+/* Temporary Fase 9.2 QA. Remove after diagnostics. No anonymous handler. */
+function ar_i2_sender_approved() { return false; } // Diagnostic completed and removed. Reauthorization required before reuse.
+function ar_i2_mail_run($kind) {
+    if(!ar_f9_staging() || !current_user_can('manage_options') || !ar_i2_sender_approved()) return 'blocked';
+    if(!in_array($kind,['transport','business'],true)) return 'invalid';
+    if($kind==='business'){
+        $transport_ok=false;
+        foreach(get_option('ar_i2_mail_results',[]) as $entry)if($entry['kind']==='transport'&&!empty($entry['wp_mail_return']))$transport_ok=true;
+        if(!$transport_ok)return 'transport_required';
+    }
+    /* Atomic per-stage reservation prevents repeats, including a refreshed POST. */
+    if(!add_option('ar_i2_reserved_'.$kind,gmdate('c'),'','no')) return 'duplicate';
+    if(!add_option('ar_i2_mail_lock','locked','','no')) return 'busy';
+    $count=(int)get_option('ar_i2_mail_count',0);
+    if($count>=3){delete_option('ar_i2_mail_lock');return 'limit';}
+    $ref='AR-I2-'.gmdate('Ymd-His').'-'.($kind==='business'?'BUSINESS':'TRANSPORT');
+    $data=['name'=>'Prueba Técnica AR','company'=>'American Recruiters QA','email'=>'qa@example.invalid','phone'=>'','service'=>'headhunting','message'=>'Prueba técnica del formulario empresarial. No es una solicitud comercial real.','privacy'=>'1'];
+    $validation=ar_f9_validate('business',$data);
+    if($validation['errors']){delete_option('ar_i2_mail_lock');return 'validation_failed';}
+    $subject='[PRUEBA TÉCNICA] American Recruiters — Formulario empresarial';
+    $body="PRUEBA CON DATOS FICTICIOS — NO ES UNA SOLICITUD COMERCIAL.\n\nReferencia: ".$ref."\nEtapa: ".$kind."\nFecha UTC: ".gmdate('c')."\n\n";
+    if($kind==='business'){
+        foreach($validation['data'] as $key=>$value)$body.=$key.': '.$value."\n";
+    }else{$body.="Diagnóstico del transporte nativo de WordPress. No contiene datos de clientes ni candidatos.\n";}
+    $body.="\nNo respondas al correo ficticio qa@example.invalid. Confirma la recepción indicando esta referencia al responsable del proyecto. No se han habilitado formularios públicos ni recepción de CV.\n";
+    $audit=['reference'=>$ref,'kind'=>$kind,'utc'=>gmdate('c'),'attempt'=>$count+1,'validated'=>true,'subject'=>$subject,'wp_mail_return'=>null,'mail_hook'=>null,'transport'=>null,'charset'=>null,'error_code'=>null];
+    $init=function($mailer)use(&$audit){$audit['transport']=$mailer->Mailer;$audit['charset']=$mailer->CharSet;};
+    $ok=function($mail_data)use(&$audit){$audit['mail_hook']='wp_mail_succeeded';};
+    $fail=function($error)use(&$audit){$audit['mail_hook']='wp_mail_failed';$audit['error_code']=$error->get_error_code();};
+    add_action('phpmailer_init',$init,999);add_action('wp_mail_succeeded',$ok);add_action('wp_mail_failed',$fail);
+    /* Reserve total before send. Never retry automatically on ambiguous outcomes. */
+    update_option('ar_i2_mail_count',$count+1,false);
+    try{
+        $audit['wp_mail_return']=(bool)wp_mail('direccioncomercia@americanrecruiters.mx',$subject,$body,['Content-Type: text/plain; charset=UTF-8','From: American Recruiters QA <wordpress@desarrollo.americanrecruiters.mx>']);
+    }catch(Throwable $e){$audit['wp_mail_return']=false;$audit['error_code']='exception';}
+    remove_action('phpmailer_init',$init,999);remove_action('wp_mail_succeeded',$ok);remove_action('wp_mail_failed',$fail);
+    $logs=get_option('ar_i2_mail_results',[]);$logs[]=$audit;update_option('ar_i2_mail_results',$logs,false);delete_option('ar_i2_mail_lock');
+    return $audit['wp_mail_return']?'processed':'mail_failed';
+}
+function ar_i2_mail_page() {
+    if(!ar_f9_staging() || !current_user_can('manage_options'))return;
+    $status='';
+    if(($_SERVER['REQUEST_METHOD']??'')==='POST'){
+        check_admin_referer('ar_i2_mail');
+        $kind=isset($_POST['qa_kind'])&&is_string($_POST['qa_kind'])?sanitize_key(wp_unslash($_POST['qa_kind'])):'';
+        $status=ar_i2_mail_run($kind);
+    }
+    $logs=get_option('ar_i2_mail_results',[]);
+    echo '<div class="wrap"><h1>Fase 9.2 — Prueba administrativa de correo</h1><p>Solo datos ficticios. Público y CV permanecen deshabilitados. Máximo 3 intentos; cada etapa solo se puede ejecutar una vez. Sin reintento automático.</p>';
+    if($status)echo '<div class="notice notice-info"><p>Resultado técnico: '.esc_html($status).'. No equivale a recepción en el buzón.</p></div>';
+    echo '<p>Destinatario exclusivo: direccioncomercia@americanrecruiters.mx<br>Remitente: American Recruiters QA &lt;wordpress@desarrollo.americanrecruiters.mx&gt;<br>Reply-To: omitido, no se dirige una respuesta al email ficticio.<br>Autorización del remitente: '.(ar_i2_sender_approved()?'confirmada':'PENDIENTE; envío bloqueado').'</p>';
+    $transport_ok=false;foreach($logs as $log)if($log['kind']==='transport'&&$log['wp_mail_return'])$transport_ok=true;
+    foreach(['transport'=>'Enviar diagnóstico de transporte','business'=>'Ejecutar prueba empresarial ficticia'] as $kind=>$label){
+        echo '<form method="post">';wp_nonce_field('ar_i2_mail');echo '<input type="hidden" name="qa_kind" value="'.esc_attr($kind).'">';
+        $disabled=!ar_i2_sender_approved() || get_option('ar_i2_reserved_'.$kind) || ($kind==='business'&&!$transport_ok) || (int)get_option('ar_i2_mail_count',0)>=3;
+        echo '<p><button class="button button-primary" type="submit"'.disabled($disabled,true,false).'>'.esc_html($label).'</button></p></form>';
+    }
+    echo '<h2>Registro técnico mínimo</h2><p>No contiene cuerpos, CV, contraseñas ni datos de clientes.</p><pre id="ar-i2-results" style="white-space:pre-wrap">'.esc_html(wp_json_encode($logs,JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE)).'</pre><p>wp_mail=true solo acredita la aceptación del procesamiento local; recepción y autenticación requieren evidencia adicional.</p></div>';
+}
+add_action('admin_menu',function(){if(ar_f9_staging())add_management_page('Fase 9.2 — Correo','Correo — QA temporal','manage_options','ar-i2-mail','ar_i2_mail_page');});
