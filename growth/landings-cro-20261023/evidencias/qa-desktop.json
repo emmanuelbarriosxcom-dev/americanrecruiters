@@ -1,0 +1,272 @@
+[
+  {
+    "disabledInputs": 0,
+    "documentWidth": 1280,
+    "faq": 0,
+    "forms": 0,
+    "h1": 1,
+    "images": [
+      {
+        "loaded": true,
+        "src": "assets/american-recruiters-logo.png"
+      },
+      {
+        "loaded": true,
+        "src": "assets/american-recruiters-logo.png"
+      }
+    ],
+    "links": [
+      {
+        "href": "http://127.0.0.1:8768/prototipos/index.html",
+        "text": "Propuestas"
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/contacto.html",
+        "text": "Solicitar propuesta de Headhunting\n↗"
+      },
+      {
+        "href": "https://desarrollo.americanrecruiters.mx/metodologia/",
+        "text": "Conocer cómo trabajamos\n↗"
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/personalizado.html",
+        "text": "Servicio personalizado"
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/contacto.html",
+        "text": "Solicitar propuesta de Headhunting\n↗"
+      }
+    ],
+    "url": "http://127.0.0.1:8768/prototipos/headhunting.html",
+    "viewport": 1280
+  },
+  {
+    "disabledInputs": 0,
+    "documentWidth": 1280,
+    "faq": 0,
+    "forms": 0,
+    "h1": 1,
+    "images": [
+      {
+        "loaded": true,
+        "src": "assets/american-recruiters-logo.png"
+      },
+      {
+        "loaded": true,
+        "src": "assets/american-recruiters-logo.png"
+      }
+    ],
+    "links": [
+      {
+        "href": "http://127.0.0.1:8768/prototipos/index.html",
+        "text": "Propuestas"
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/contacto.html",
+        "text": "Consultar selección personalizada\n↗"
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/servicios.html",
+        "text": "Comparar servicios\n↗"
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/headhunting.html",
+        "text": "Headhunting"
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/contacto.html",
+        "text": "Consultar selección personalizada\n↗"
+      }
+    ],
+    "url": "http://127.0.0.1:8768/prototipos/personalizado.html",
+    "viewport": 1280
+  },
+  {
+    "disabledInputs": 0,
+    "documentWidth": 1280,
+    "faq": 0,
+    "forms": 0,
+    "h1": 1,
+    "images": [
+      {
+        "loaded": true,
+        "src": "assets/american-recruiters-logo.png"
+      },
+      {
+        "loaded": true,
+        "src": "assets/american-recruiters-logo.png"
+      }
+    ],
+    "links": [
+      {
+        "href": "http://127.0.0.1:8768/prototipos/index.html",
+        "text": "Propuestas"
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/contacto.html",
+        "text": "Consultar qué servicio corresponde\n↗"
+      },
+      {
+        "href": "https://desarrollo.americanrecruiters.mx/preguntas-frecuentes/",
+        "text": "Revisar preguntas frecuentes\n↗"
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/headhunting.html",
+        "text": "Explorar Headhunting\n↗"
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/personalizado.html",
+        "text": "Explorar Servicio personalizado\n↗"
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/contacto.html",
+        "text": "Consultar mi necesidad\n↗"
+      },
+      {
+        "href": "https://desarrollo.americanrecruiters.mx/servicios/fast-placement/",
+        "text": "Consultar la información provisional"
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/contacto.html",
+        "text": "Consultar qué servicio corresponde\n↗"
+      }
+    ],
+    "url": "http://127.0.0.1:8768/prototipos/servicios.html",
+    "viewport": 1280
+  },
+  {
+    "disabledInputs": 7,
+    "documentWidth": 1280,
+    "faq": 0,
+    "forms": 0,
+    "h1": 1,
+    "images": [
+      {
+        "loaded": true,
+        "src": "assets/american-recruiters-logo.png"
+      },
+      {
+        "loaded": true,
+        "src": "assets/american-recruiters-logo.png"
+      }
+    ],
+    "links": [
+      {
+        "href": "http://127.0.0.1:8768/prototipos/index.html",
+        "text": "Propuestas"
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/contacto.html#solicitud",
+        "text": "Solicitar propuesta\n↗"
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/servicios.html",
+        "text": "Comparar servicios\n↗"
+      },
+      {
+        "href": "https://desarrollo.americanrecruiters.mx/candidatos/",
+        "text": "Consulta el espacio de Candidatos"
+      }
+    ],
+    "url": "http://127.0.0.1:8768/prototipos/contacto.html#solicitud",
+    "viewport": 1280
+  },
+  {
+    "disabledInputs": 0,
+    "documentWidth": 1280,
+    "faq": 4,
+    "forms": 0,
+    "h1": 1,
+    "images": [
+      {
+        "loaded": true,
+        "src": "assets/american-recruiters-logo.png"
+      },
+      {
+        "loaded": true,
+        "src": "assets/american-recruiters-logo.png"
+      }
+    ],
+    "links": [
+      {
+        "href": "http://127.0.0.1:8768/prototipos/index.html",
+        "text": "Propuestas"
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/contacto.html",
+        "text": "Consultar una necesidad de personal operativo\n↗"
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/personalizado.html",
+        "text": "Conocer Servicio personalizado\n↗"
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/personalizado.html",
+        "text": "Conocer Servicio personalizado"
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/servicios.html",
+        "text": "compara los servicios actuales"
+      },
+      {
+        "href": "https://desarrollo.americanrecruiters.mx/candidatos/",
+        "text": ""
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/contacto.html",
+        "text": "Consultar una necesidad de personal operativo\n↗"
+      }
+    ],
+    "url": "http://127.0.0.1:8768/prototipos/operativo.html",
+    "viewport": 1280
+  },
+  {
+    "disabledInputs": 0,
+    "documentWidth": 1280,
+    "faq": 4,
+    "forms": 0,
+    "h1": 1,
+    "images": [
+      {
+        "loaded": true,
+        "src": "assets/american-recruiters-logo.png"
+      },
+      {
+        "loaded": true,
+        "src": "assets/american-recruiters-logo.png"
+      }
+    ],
+    "links": [
+      {
+        "href": "http://127.0.0.1:8768/prototipos/index.html",
+        "text": "Propuestas"
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/contacto.html",
+        "text": "Consultar una búsqueda vinculada con CDMX\n↗"
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/headhunting.html",
+        "text": "Conocer Headhunting\n↗"
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/headhunting.html",
+        "text": "Conocer Headhunting"
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/servicios.html",
+        "text": "compara los servicios actuales"
+      },
+      {
+        "href": "https://desarrollo.americanrecruiters.mx/candidatos/",
+        "text": ""
+      },
+      {
+        "href": "http://127.0.0.1:8768/prototipos/contacto.html",
+        "text": "Consultar una búsqueda vinculada con CDMX\n↗"
+      }
+    ],
+    "url": "http://127.0.0.1:8768/prototipos/headhunting-cdmx.html",
+    "viewport": 1280
+  }
+]

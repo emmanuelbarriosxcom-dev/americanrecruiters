@@ -1,0 +1,26 @@
+[
+  {
+    "page": "headhunting.html",
+    "metrics": "mobile: headhunting.html innerWidth=390, innerHeight=844, documentWidth=390, H1=1, formularios=0 — tablet: headhunting.html innerWidth=768, innerHeight=1024, documentWidth=768, H1=1, formularios=0"
+  },
+  {
+    "page": "personalizado.html",
+    "metrics": "mobile: personalizado.html innerWidth=390, innerHeight=844, documentWidth=390, H1=1, formularios=0 — tablet: personalizado.html innerWidth=768, innerHeight=1024, documentWidth=768, H1=1, formularios=0"
+  },
+  {
+    "page": "servicios.html",
+    "metrics": "mobile: servicios.html innerWidth=390, innerHeight=844, documentWidth=390, H1=1, formularios=0 — tablet: servicios.html innerWidth=768, innerHeight=1024, documentWidth=768, H1=1, formularios=0"
+  },
+  {
+    "page": "contacto.html",
+    "metrics": "mobile: contacto.html innerWidth=390, innerHeight=844, documentWidth=390, H1=1, formularios=0 — tablet: contacto.html innerWidth=768, innerHeight=1024, documentWidth=768, H1=1, formularios=0"
+  },
+  {
+    "page": "operativo.html",
+    "metrics": "mobile: operativo.html innerWidth=390, innerHeight=844, documentWidth=390, H1=1, formularios=0 — tablet: operativo.html innerWidth=768, innerHeight=1024, documentWidth=768, H1=1, formularios=0"
+  },
+  {
+    "page": "headhunting-cdmx.html",
+    "metrics": "mobile: headhunting-cdmx.html innerWidth=390, innerHeight=844, documentWidth=390, H1=1, formularios=0 — tablet: headhunting-cdmx.html innerWidth=768, innerHeight=1024, documentWidth=768, H1=1, formularios=0"
+  }
+]

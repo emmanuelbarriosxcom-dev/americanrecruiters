@@ -1,0 +1,93 @@
+[
+  [
+    "HH-01",
+    "Headhunting",
+    "/servicios/headhunting/",
+    "Cuerpo / guía de necesidad",
+    "Solicitar propuesta de Headhunting",
+    "/contacto/",
+    "READY",
+    "Consultas con mejor contexto del puesto.",
+    "Solicitudes B2B válidas con puesto y ubicación / solicitudes B2B válidas de esta ruta.",
+    "Recepción y medición de éxito verificadas antes de medir solicitudes",
+    "S1, S4"
+  ],
+  [
+    "SP-01",
+    "Servicio personalizado",
+    "/servicios/reclutamiento-personalizado/",
+    "Cuerpo / guía de necesidad",
+    "Consultar selección personalizada",
+    "/contacto/",
+    "READY",
+    "Menos consultas ambiguas o derivadas al servicio equivocado.",
+    "Consultas clasificables por necesidad / solicitudes B2B válidas de esta ruta.",
+    "Recepción y medición de éxito verificadas antes de medir solicitudes",
+    "S1, S4"
+  ],
+  [
+    "SV-01",
+    "Servicios",
+    "/servicios/",
+    "Cuerpo / guía de necesidad",
+    "Consultar qué servicio corresponde",
+    "/contacto/",
+    "READY",
+    "Más navegación hacia el servicio adecuado, sin forzar una etiqueta antes de consultar.",
+    "Clics desde hub a servicio / sesiones del hub; consultas válidas por ruta, cuando la recepción esté validada.",
+    "Recepción y medición de éxito verificadas antes de medir solicitudes",
+    "S1, S4"
+  ],
+  [
+    "CT-01",
+    "Contacto",
+    "/contacto/",
+    "Cuerpo / guía de necesidad",
+    "Solicitar propuesta",
+    "/contacto/",
+    "READY",
+    "Menos mensajes de candidatos y más solicitudes comerciales con contexto.",
+    "Solicitudes B2B válidas / envíos exitosos; candidatos mal dirigidos / solicitudes recibidas. No medir por clic en enviar.",
+    "Recepción y medición de éxito verificadas antes de medir solicitudes",
+    "S1, S4"
+  ],
+  [
+    "operativo",
+    "Reclutamiento de personal operativo",
+    "/servicios/reclutamiento-personal-operativo/",
+    "Hero y cierre propuestos",
+    "Consultar una necesidad de personal operativo",
+    "/contacto/",
+    "CONDICIONADO",
+    "Consultas empresariales relacionadas con la necesidad específica",
+    "Solicitudes B2B válidas / sesiones de landing; GSC query/URL",
+    "Confirmar puestos realmente atendidos, ubicaciones, modalidades, volumen viable, actividades incluidas/excluidas y caso o responsable autorizado. El uso histórico de la palabra operativo no aprueba una oferta masiva.",
+    "S5, S6"
+  ],
+  [
+    "headhunting-cdmx",
+    "Headhunting en CDMX",
+    "/servicios/headhunting/cdmx/",
+    "Hero y cierre propuestos",
+    "Consultar una búsqueda vinculada con CDMX",
+    "/contacto/",
+    "CONDICIONADO",
+    "Consultas empresariales relacionadas con la necesidad específica",
+    "Solicitudes B2B válidas / sesiones de landing; GSC query/URL",
+    "Ratificar cobertura actual, modalidad de atención y información local original útil: responsable, caso autorizado o condiciones específicas. Verificar research original y consultas/landing actuales. No publicar domicilio sin validación.",
+    "S5, S6"
+  ],
+  [
+    "FP-01",
+    "Fast Placement",
+    "/servicios/fast-placement/",
+    "Nota informativa",
+    "Consultar información de Fast Placement",
+    "/contacto/",
+    "CONDICIONADO",
+    "Distinguir información de una oferta contratada",
+    "Consultas informativas clasificadas, no contratos",
+    "Ficha comercial aprobada",
+    "S3, S4"
+  ]
+]

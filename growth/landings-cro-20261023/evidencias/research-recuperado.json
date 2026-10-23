@@ -1,0 +1,89 @@
+{
+  "procedencia": "Extracto local de trabajo Fase 5, 17/10/2026; no original Semrush ni medición fresca",
+  "headers": [
+    "ID estudio",
+    "Keyword exacta",
+    "Volumen MX mensual histórico",
+    "KD histórico %",
+    "Cluster",
+    "Prioridad del estudio",
+    "SERP estudiada",
+    "Condición comercial",
+    "Fuente Semrush",
+    "Extracción"
+  ],
+  "rows": [
+    [
+      "AR-038",
+      "head hunters cdmx",
+      170,
+      15.0,
+      "L01",
+      "Alta",
+      "ND - no analizada individualmente",
+      "Confirmar cobertura local; CDMX visible en web",
+      "https://es.semrush.com/analytics/keywordoverview/?q=head%20hunters%20cdmx&db=mx",
+      "2026-10-09"
+    ],
+    [
+      "AR-039",
+      "headhunter cdmx",
+      110,
+      13.0,
+      "L01",
+      "Alta",
+      "Mixta comercial/candidatos",
+      "Confirmar cobertura local; CDMX visible en web",
+      "https://es.semrush.com/analytics/keywordoverview/?q=headhunter%20cdmx&db=mx",
+      "2026-10-09"
+    ],
+    [
+      "AR-044",
+      "agencias de reclutamiento cdmx",
+      140,
+      14.0,
+      "L01",
+      "Alta",
+      "Comercial local",
+      "Confirmar cobertura local; CDMX visible en web",
+      "https://es.semrush.com/analytics/keywordoverview/?q=agencias%20de%20reclutamiento%20cdmx&db=mx",
+      "2026-10-09"
+    ],
+    [
+      "AR-057",
+      "agencia de reclutamiento ti",
+      20,
+      "ND",
+      "B01",
+      "Media",
+      "ND - no analizada individualmente",
+      "Confirmación comercial pendiente",
+      "https://es.semrush.com/analytics/keywordoverview/?q=agencia%20de%20reclutamiento%20ti&db=mx",
+      "2026-10-09"
+    ],
+    [
+      "AR-062",
+      "reclutamiento masivo",
+      480,
+      16.0,
+      "B02",
+      "Media",
+      "Mixta informativa/empleo/comercial",
+      "Confirmación comercial pendiente",
+      "https://es.semrush.com/analytics/keywordoverview/?q=reclutamiento%20masivo&db=mx",
+      "2026-10-09"
+    ],
+    [
+      "AR-064",
+      "reclutamiento de personal operativo",
+      260,
+      6.0,
+      "B02",
+      "Alta",
+      "ND - no analizada individualmente",
+      "Perfiles operativos confirmados en web",
+      "https://es.semrush.com/analytics/keywordoverview/?q=reclutamiento%20de%20personal%20operativo&db=mx",
+      "2026-10-09"
+    ]
+  ]
+}
