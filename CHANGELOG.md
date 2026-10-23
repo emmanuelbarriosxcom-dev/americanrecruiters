@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.5-rc.2 — 23/10/2026
+
+- Conserva 404.php exacto del tema activo1.0.4 tras comparación de fuente.
+- Evita desbordamiento de la cuadrícula Home si falla la foto externa mediante min-width:0 local.
+- Versiona assets RC2; mantiene RC1 y su ZIP original.
+- Corrige inicialización de reglas y puerto en el fixture de QA, sin bypass HTTP en el tema.
+- Añade evidencia de restauración, instalación ZIP y rollback de tema con respaldo privado; documenta límites de hosting/MU plugins y vigencia del respaldo.
+
 ## 1.0.5-rc.1 — 23/10/2026
 
 Base acumulativa: `97584768e2fedae6e265e4e148d49994da6249e0` (Fase 10).

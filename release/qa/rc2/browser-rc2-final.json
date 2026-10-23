@@ -1,0 +1,56 @@
+{
+  "viewports": [
+    {
+      "canonical": [
+        "http://127.0.0.1:9414/"
+      ],
+      "h1": 1,
+      "height": 800,
+      "robots": "noindex, nofollow",
+      "scrollWidth": 360,
+      "version": "http://127.0.0.1:9414/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2",
+      "width": 360
+    },
+    {
+      "canonical": [
+        "http://127.0.0.1:9414/"
+      ],
+      "h1": 1,
+      "height": 844,
+      "robots": "noindex, nofollow",
+      "scrollWidth": 390,
+      "version": "http://127.0.0.1:9414/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2",
+      "width": 390
+    },
+    {
+      "canonical": [
+        "http://127.0.0.1:9414/"
+      ],
+      "h1": 1,
+      "height": 900,
+      "robots": "noindex, nofollow",
+      "scrollWidth": 768,
+      "version": "http://127.0.0.1:9414/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2",
+      "width": 768
+    },
+    {
+      "canonical": [
+        "http://127.0.0.1:9414/"
+      ],
+      "h1": 1,
+      "height": 900,
+      "robots": "noindex, nofollow",
+      "scrollWidth": 1280,
+      "version": "http://127.0.0.1:9414/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2",
+      "width": 1280
+    }
+  ],
+  "interaction": {
+    "faqOpen": true,
+    "menu": {
+      "expanded": "true",
+      "scrollWidth": 390,
+      "sub": "true"
+    }
+  }
+}

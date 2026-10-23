@@ -1,14 +1,14 @@
-# Manifest — 1.0.5-rc.1
+# Manifest — 1.0.5-rc.2
 
-ZIP: `release/ar-editorial-1.0.5-rc.1.zip`
+ZIP: `release/ar-editorial-1.0.5-rc.2.zip`
 
-SHA-256: `0912c6d435587483dc120f323a43144d62d16019b48590cab2f1cd8101c2156f`
+SHA-256: `5564575ab6dc6e119b2450947e6262698b015cc5e1537b70a3fa8479d32a0cae`
 
 21 archivos. Una raíz `ar-editorial/`. Sin WordPress, plugins, base de datos ni uploads.
 
 | Archivo | Bytes | SHA-256 |
 |---|---:|---|
-| ar-editorial/404.php | 430 | `2d5686ce7ac51931b4bed90a694081c5550fc0b3c0770d703e5561c302ceb5d6` |
+| ar-editorial/404.php | 452 | `31d6daec1a0676abde9a7fb5d3fa1adffa321702206085a5a8ac1c5f83c96a6d` |
 | ar-editorial/assets/css/design-system.css | 20733 | `3e7c216327365f7cd4603bd320bbfad4ba3dc27ea4b8e2ee56361acafcab7237` |
 | ar-editorial/assets/images/american-recruiters-logo.png | 4258 | `0da5f5806a4b98f1c69c9e965941e016aaba060a190b5fb0992706d2e797fee8` |
 | ar-editorial/assets/js/navigation.js | 1401 | `84aa7349ee33f08ffb6aab9528665b2b7ca4a9845b4876bdbce74283a206554c` |
@@ -27,7 +27,7 @@ SHA-256: `0912c6d435587483dc120f323a43144d62d16019b48590cab2f1cd8101c2156f`
 | ar-editorial/page-service.php | 631 | `5b0733aa94cb38df00a148a11767d356de8b140613e351737d8c14a10526b1a8` |
 | ar-editorial/page.php | 572 | `753800e6aff18657e1db1285beb946bd233f6475bae57b8e91e4d2a2a1498e49` |
 | ar-editorial/single.php | 576 | `cd0666f3eb2ccf77b0901f5341797877381d407a24273a9fc9692ea5eccb3448` |
-| ar-editorial/style.css | 7356 | `d03ae0dd8f9bc6cf33e25e8d3e6d7bd12c03f16fe318581d337f46dc2b3e557a` |
+| ar-editorial/style.css | 7501 | `174daeda639bbc4866eab547a3032505a3e62652522d53f18a8ee24a411fe9e3` |
 | ar-editorial/theme.json | 959 | `50e9ce967ecf0aa2d2c84309ec595a489c051ebca3623ced75f6b23f99b86eab` |
 
 Construcción determinista: `python3 tools/release/build.py`. El ZIP se verifica contra cada hash antes de finalizar.

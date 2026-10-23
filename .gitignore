@@ -7,5 +7,5 @@
 *.zip
 
 # Local release QA tooling
-/tools/release/node_modules/
+/tools/release/node_modules
 /release/qa/existing-home-1280.png

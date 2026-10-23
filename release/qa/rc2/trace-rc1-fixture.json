@@ -1,0 +1,91 @@
+[
+  {
+    "path": "/",
+    "kind": "direct",
+    "status": 200
+  },
+  {
+    "path": "/",
+    "kind": "fetch",
+    "status": 302,
+    "location": "/"
+  },
+  {
+    "path": "/",
+    "kind": "http",
+    "status": 200
+  },
+  {
+    "path": "/zzzz-release-not-found-847692/",
+    "kind": "direct",
+    "status": 301,
+    "location": "http://127.0.0.1:9413/",
+    "x-redirect-by": "WordPress",
+    "x-ar-redirect": {
+      "url": "http://127.0.0.1:9413/",
+      "status": 301,
+      "trace": "require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), WP_Hook->do_action, WP_Hook->apply_filters, redirect_canonical, wp_redirect, apply_filters('wp_redirect'), WP_Hook->apply_filters, {closure}"
+    }
+  },
+  {
+    "path": "/zzzz-release-not-found-847692/",
+    "kind": "fetch",
+    "status": 301,
+    "location": "http://127.0.0.1:9413/",
+    "x-redirect-by": "WordPress",
+    "x-ar-redirect": {
+      "url": "http://127.0.0.1:9413/",
+      "status": 301,
+      "trace": "require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), WP_Hook->do_action, WP_Hook->apply_filters, redirect_canonical, wp_redirect, apply_filters('wp_redirect'), WP_Hook->apply_filters, {closure}"
+    }
+  },
+  {
+    "path": "/zzzz-release-not-found-847692/",
+    "kind": "http",
+    "status": 301,
+    "location": "http://127.0.0.1:9413/",
+    "x-redirect-by": "WordPress",
+    "x-ar-redirect": {
+      "url": "http://127.0.0.1:9413/",
+      "status": 301,
+      "trace": "require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), WP_Hook->do_action, WP_Hook->apply_filters, redirect_canonical, wp_redirect, apply_filters('wp_redirect'), WP_Hook->apply_filters, {closure}"
+    }
+  },
+  {
+    "path": "/wp-admin/admin-post.php?action=ar_f9_candidate",
+    "kind": "direct",
+    "status": 302,
+    "location": "http://127.0.0.1:9413/wp-admin/admin.php?page=wpseo_installation_successful_free",
+    "x-redirect-by": "Yoast SEO",
+    "x-ar-redirect": {
+      "url": "http://127.0.0.1:9413/wp-admin/admin.php?page=wpseo_installation_successful_free",
+      "status": 302,
+      "trace": "do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, Yoast\\WP\\SEO\\Integrations\\Admin\\Installation_Success_Integration->maybe_redirect, wp_safe_redirect, wp_redirect, apply_filters('wp_redirect'), WP_Hook->apply_filters, {closure}"
+    }
+  },
+  {
+    "path": "/wp-admin/admin-post.php?action=ar_f9_candidate",
+    "kind": "fetch",
+    "status": 405
+  },
+  {
+    "path": "/wp-admin/admin-post.php?action=ar_f9_candidate",
+    "kind": "http",
+    "status": 405
+  },
+  {
+    "path": "/?p=999999",
+    "kind": "direct",
+    "status": 404
+  },
+  {
+    "path": "/?p=999999",
+    "kind": "fetch",
+    "status": 404
+  },
+  {
+    "path": "/?p=999999",
+    "kind": "http",
+    "status": 404
+  }
+]

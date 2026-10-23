@@ -1,10 +1,10 @@
 {
-  "version": "1.0.5-rc.1",
+  "version": "1.0.5-rc.2",
   "files": [
     {
       "path": "ar-editorial/404.php",
-      "bytes": 430,
-      "sha256": "2d5686ce7ac51931b4bed90a694081c5550fc0b3c0770d703e5561c302ceb5d6"
+      "bytes": 452,
+      "sha256": "31d6daec1a0676abde9a7fb5d3fa1adffa321702206085a5a8ac1c5f83c96a6d"
     },
     {
       "path": "ar-editorial/assets/css/design-system.css",
@@ -98,8 +98,8 @@
     },
     {
       "path": "ar-editorial/style.css",
-      "bytes": 7356,
-      "sha256": "d03ae0dd8f9bc6cf33e25e8d3e6d7bd12c03f16fe318581d337f46dc2b3e557a"
+      "bytes": 7501,
+      "sha256": "174daeda639bbc4866eab547a3032505a3e62652522d53f18a8ee24a411fe9e3"
     },
     {
       "path": "ar-editorial/theme.json",

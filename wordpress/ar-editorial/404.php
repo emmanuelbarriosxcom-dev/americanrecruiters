@@ -1,10 +1,1 @@
-<?php
-/** Native 404: do not render the Blog loop for an unknown URL. */
-get_header();
-ar_hero('Página no encontrada', '', true);
-?>
-<section class="ar-page-content"><div class="container ar-reading">
-<p>La dirección solicitada no está disponible.</p>
-<p><a href="<?php echo ar_url(); ?>">Volver al inicio</a> · <a href="<?php echo ar_url('servicios/'); ?>">Consultar servicios</a></p>
-</div></section>
-<?php get_footer(); ?>
+<?php get_header(); ar_hero('Página no encontrada','Esta dirección no está disponible. Puedes regresar al inicio o explorar los servicios.'); ?><section class="ar-section ar-section--light"><div class="container"><div class="ar-demo-actions"><a class="btn btn-purple" href="<?php echo ar_url(); ?>">Volver al inicio</a><a class="btn btn-ghost" href="<?php echo ar_url('servicios/'); ?>">Ver servicios</a></div></div></section><?php get_footer(); ?>

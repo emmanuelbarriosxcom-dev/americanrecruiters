@@ -1,0 +1,13 @@
+{
+  "tables_in_dump": 25,
+  "all_tables_restored": true,
+  "dump_rows": 914,
+  "clone_rows_after_plugin_boot": 919,
+  "differences": {
+    "wpvx_options": {
+      "dump": 264,
+      "clone": 269
+    }
+  },
+  "core_editorial_counts_match": true
+}

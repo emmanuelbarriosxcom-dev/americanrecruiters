@@ -1,0 +1,12 @@
+{
+  "zipInstalls": true,
+  "rollback_files_exact": true,
+  "editorial_preserved": true,
+  "options_preserved": true,
+  "noindex": true,
+  "mail_blocked": true,
+  "pass_pages": 39,
+  "total_pages": 39,
+  "pass_endpoints": 4,
+  "total_endpoints": 4
+}

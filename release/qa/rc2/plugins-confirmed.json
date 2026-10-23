@@ -1,0 +1,23 @@
+{
+  "wordpress": "7.1.3",
+  "theme_active": "1.0.4",
+  "plugins": {
+    "elementor/elementor.php": "3.27.5",
+    "elementor-pro/elementor-pro.php": "3.26.2",
+    "wordpress-importer/wordpress-importer.php": "0.9.6",
+    "wpvivid-backuprestore/wpvivid-backuprestore.php": "0.9.136",
+    "wordpress-seo/wp-seo.php": "24.2",
+    "wordpress-seo-premium/wp-seo-premium.php": "21.0"
+  },
+  "active": [
+    "elementor-pro/elementor-pro.php",
+    "elementor/elementor.php",
+    "wordpress-importer/wordpress-importer.php",
+    "wordpress-seo-premium/wp-seo-premium.php",
+    "wordpress-seo/wp-seo.php",
+    "wpvivid-backuprestore/wpvivid-backuprestore.php"
+  ],
+  "mu_plugins_live_count": 2,
+  "mu_live_versions_verified": false,
+  "hosting_mu_loaded_in_clone": false
+}

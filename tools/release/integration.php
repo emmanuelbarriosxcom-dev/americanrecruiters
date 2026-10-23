@@ -11,6 +11,8 @@ update_option('show_on_front','page');update_option('page_on_front',$home);updat
 $cat=wp_insert_term('QA Category','category');
 for($i=1;$i<=7;$i++)wp_insert_post(['post_type'=>'post','post_status'=>'publish','post_title'=>'QA Post '.$i,'post_name'=>'qa-post-'.$i,'post_content'=>'<!-- wp:paragraph --><p>QA article.</p><!-- /wp:paragraph -->','post_category'=>[$cat['term_id']]]);
 $draft=wp_insert_post(['post_type'=>'post','post_status'=>'draft','post_title'=>'PRIVATE_DRAFT_SENTINEL','post_content'=>'DO_NOT_RENDER_DRAFT']);
+global $wp_rewrite;
+$wp_rewrite->init();
 flush_rewrite_rules(false);
 foreach(glob(get_theme_file_path().'/*.php') as $file){try{token_get_all(file_get_contents($file),TOKEN_PARSE);check_rc('PHP parse '.basename($file),true);}catch(ParseError $e){check_rc('PHP parse '.basename($file),false);}}
 check_rc('Gutenberg supports',current_theme_supports('align-wide')&&current_theme_supports('editor-styles')&&current_theme_supports('responsive-embeds'));
@@ -26,7 +28,7 @@ check_rc('PDF non-upload rejected',ar_f9_pdf_check(['error'=>0,'size'=>10,'name'
 check_rc('NonPDF content rejected',ar_f9_pdf_content_check(__FILE__)!=='');
 check_rc('Demo hidden outside staging',ar_f9_form()==='');
 // Exercise the host-gated disabled UI in this isolated process only.
-add_filter('home_url',function($url){return str_replace('127.0.0.1:9413','desarrollo.americanrecruiters.mx',$url);});
+add_filter('home_url',function($url){return preg_replace('~127\.0\.0\.1:\d+~','desarrollo.americanrecruiters.mx',$url);});
 $html=ar_f9_form('candidate');
 check_rc('Disabled candidate controls',strpos($html,'<fieldset disabled')!==false && strpos($html,'<form')===false && strpos($html,'<button disabled type="button"')!==false);
 check_rc('No consent checkbox',strpos($html,'type="checkbox"')===false);

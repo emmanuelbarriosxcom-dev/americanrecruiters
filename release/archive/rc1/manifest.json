@@ -1,0 +1,110 @@
+{
+  "version": "1.0.5-rc.1",
+  "files": [
+    {
+      "path": "ar-editorial/404.php",
+      "bytes": 430,
+      "sha256": "2d5686ce7ac51931b4bed90a694081c5550fc0b3c0770d703e5561c302ceb5d6"
+    },
+    {
+      "path": "ar-editorial/assets/css/design-system.css",
+      "bytes": 20733,
+      "sha256": "3e7c216327365f7cd4603bd320bbfad4ba3dc27ea4b8e2ee56361acafcab7237"
+    },
+    {
+      "path": "ar-editorial/assets/images/american-recruiters-logo.png",
+      "bytes": 4258,
+      "sha256": "0da5f5806a4b98f1c69c9e965941e016aaba060a190b5fb0992706d2e797fee8"
+    },
+    {
+      "path": "ar-editorial/assets/js/navigation.js",
+      "bytes": 1401,
+      "sha256": "84aa7349ee33f08ffb6aab9528665b2b7ca4a9845b4876bdbce74283a206554c"
+    },
+    {
+      "path": "ar-editorial/footer.php",
+      "bytes": 1279,
+      "sha256": "5070024fcf52b9a547ca243c3347a2d77195698e033e0a20be8ee695bd0cc3df"
+    },
+    {
+      "path": "ar-editorial/front-page.php",
+      "bytes": 530,
+      "sha256": "3066b32a2c97f87ec8a0123a91e37433179b46ebecb15318d19a4a82cb4b653e"
+    },
+    {
+      "path": "ar-editorial/functions.php",
+      "bytes": 22537,
+      "sha256": "8a006d69be4983e0b88328c631c522d085dedbcb63ec84300d30bb367a643738"
+    },
+    {
+      "path": "ar-editorial/header.php",
+      "bytes": 982,
+      "sha256": "c0233e6e1b765fd9c8b8a4b09718e384f06a6a2d14a50b0b4b2696e4a36c19a6"
+    },
+    {
+      "path": "ar-editorial/home.php",
+      "bytes": 2300,
+      "sha256": "b44c7292a3fb21b7a849c6ab311329710d44b8b1e3fb40e884fca80077f31b16"
+    },
+    {
+      "path": "ar-editorial/index.php",
+      "bytes": 49,
+      "sha256": "05d0ddb368b4cb225a5b88fb49176e545eeb88d2b5ce20299df16b3344f20b42"
+    },
+    {
+      "path": "ar-editorial/page-candidates.php",
+      "bytes": 383,
+      "sha256": "a964c3bb7b611382e5e47b1f636ef0e2b01e065228e01a0c4efa07e698af924c"
+    },
+    {
+      "path": "ar-editorial/page-components.php",
+      "bytes": 2224,
+      "sha256": "a6eadd116ab03e22a56aa6d838e2bf316403be806c574aec53e63fcd28435f4d"
+    },
+    {
+      "path": "ar-editorial/page-contact.php",
+      "bytes": 364,
+      "sha256": "c24b9d9801a7725ead174e63a46f30e334fe158c7946d33c9c4a9b961a81c5ac"
+    },
+    {
+      "path": "ar-editorial/page-corporate.php",
+      "bytes": 105,
+      "sha256": "1f8641b58a0dcadc3d172ad91a01d6bc6c6b7d7c9aa1278a1fc6d91fc744701c"
+    },
+    {
+      "path": "ar-editorial/page-faq.php",
+      "bytes": 522,
+      "sha256": "6293a891e5c326eaaec3a387f5e2c66815d4ecc547911aef99cdb1955356a897"
+    },
+    {
+      "path": "ar-editorial/page-methodology.php",
+      "bytes": 106,
+      "sha256": "6f5a2703e6395cacb1d4730576059741f1b7587a60bb5184dca7357cc07bcaea"
+    },
+    {
+      "path": "ar-editorial/page-service.php",
+      "bytes": 631,
+      "sha256": "5b0733aa94cb38df00a148a11767d356de8b140613e351737d8c14a10526b1a8"
+    },
+    {
+      "path": "ar-editorial/page.php",
+      "bytes": 572,
+      "sha256": "753800e6aff18657e1db1285beb946bd233f6475bae57b8e91e4d2a2a1498e49"
+    },
+    {
+      "path": "ar-editorial/single.php",
+      "bytes": 576,
+      "sha256": "cd0666f3eb2ccf77b0901f5341797877381d407a24273a9fc9692ea5eccb3448"
+    },
+    {
+      "path": "ar-editorial/style.css",
+      "bytes": 7356,
+      "sha256": "d03ae0dd8f9bc6cf33e25e8d3e6d7bd12c03f16fe318581d337f46dc2b3e557a"
+    },
+    {
+      "path": "ar-editorial/theme.json",
+      "bytes": 959,
+      "sha256": "50e9ce967ecf0aa2d2c84309ec595a489c051ebca3623ced75f6b23f99b86eab"
+    }
+  ]
+}

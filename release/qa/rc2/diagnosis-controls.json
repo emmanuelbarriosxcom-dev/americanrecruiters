@@ -1,0 +1,24 @@
+[
+  {
+    "stage": "rc1-same-theme-after-correct-initialization",
+    "status": 404
+  },
+  {
+    "stage": "stock-theme-before-rewrite-reset",
+    "status": 404
+  },
+  {
+    "stage": "stock-theme-after-rewrite-reset",
+    "status": 404
+  },
+  {
+    "stage": "rc1-after-rewrite-reset",
+    "path": "/zzzz-release-not-found-847692/",
+    "status": 404
+  },
+  {
+    "stage": "rc1-after-rewrite-reset",
+    "path": "/wp-admin/admin-post.php?action=ar_f9_candidate",
+    "status": 405
+  }
+]

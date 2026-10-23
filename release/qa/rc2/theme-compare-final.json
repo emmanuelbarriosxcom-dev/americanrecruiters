@@ -1,0 +1,142 @@
+[
+  {
+    "file": "404.php",
+    "active_sha256": "31d6daec1a0676abde9a7fb5d3fa1adffa321702206085a5a8ac1c5f83c96a6d",
+    "rc2_sha256": "31d6daec1a0676abde9a7fb5d3fa1adffa321702206085a5a8ac1c5f83c96a6d",
+    "equal_exact": true,
+    "equal_ignoring_trailing_whitespace": true
+  },
+  {
+    "file": "assets/css/design-system.css",
+    "active_sha256": "4498aa204b55433b6e9fa10008e542b36516d34fa7ceff0d535bc88e4f635324",
+    "rc2_sha256": "3e7c216327365f7cd4603bd320bbfad4ba3dc27ea4b8e2ee56361acafcab7237",
+    "equal_exact": false,
+    "equal_ignoring_trailing_whitespace": true
+  },
+  {
+    "file": "assets/js/navigation.js",
+    "active_sha256": "3601e4045247a1f18dd0394aa295983308b0e4e9c06612f6056942e63db77785",
+    "rc2_sha256": "84aa7349ee33f08ffb6aab9528665b2b7ca4a9845b4876bdbce74283a206554c",
+    "equal_exact": false,
+    "equal_ignoring_trailing_whitespace": true
+  },
+  {
+    "file": "footer.php",
+    "active_sha256": "b15d5717674663e2401013ae1def104afb13af7f0ff7c7bc979811828bc1682f",
+    "rc2_sha256": "5070024fcf52b9a547ca243c3347a2d77195698e033e0a20be8ee695bd0cc3df",
+    "equal_exact": false,
+    "equal_ignoring_trailing_whitespace": true
+  },
+  {
+    "file": "front-page.php",
+    "active_sha256": "4890425200ed78ddf0e79fa4499ab921420c6d1feddc511d813b9ce42e37957f",
+    "rc2_sha256": "3066b32a2c97f87ec8a0123a91e37433179b46ebecb15318d19a4a82cb4b653e",
+    "equal_exact": false,
+    "equal_ignoring_trailing_whitespace": false
+  },
+  {
+    "file": "functions.php",
+    "active_sha256": "8a6673632f323ce8aaaffee4cafa083b52041259012db7813053c32084f23a98",
+    "rc2_sha256": "8a006d69be4983e0b88328c631c522d085dedbcb63ec84300d30bb367a643738",
+    "equal_exact": false,
+    "equal_ignoring_trailing_whitespace": false
+  },
+  {
+    "file": "header.php",
+    "active_sha256": "2a0892ba5c4a6825c85aaffae0e11b9b6f1e3d2a3720fdc1c4ac7c134145ec0c",
+    "rc2_sha256": "c0233e6e1b765fd9c8b8a4b09718e384f06a6a2d14a50b0b4b2696e4a36c19a6",
+    "equal_exact": false,
+    "equal_ignoring_trailing_whitespace": true
+  },
+  {
+    "file": "home.php",
+    "active_sha256": "a8d471524398d8f8e55b0611488725707018ee019b640da4fc78b8060b38daa8",
+    "rc2_sha256": "b44c7292a3fb21b7a849c6ab311329710d44b8b1e3fb40e884fca80077f31b16",
+    "equal_exact": false,
+    "equal_ignoring_trailing_whitespace": true
+  },
+  {
+    "file": "index.php",
+    "active_sha256": "90da423c49436f5c1cf37c868b8d0433aa0ab4d0a99d8e018d71e39050864368",
+    "rc2_sha256": "05d0ddb368b4cb225a5b88fb49176e545eeb88d2b5ce20299df16b3344f20b42",
+    "equal_exact": false,
+    "equal_ignoring_trailing_whitespace": true
+  },
+  {
+    "file": "page-candidates.php",
+    "active_sha256": "a964c3bb7b611382e5e47b1f636ef0e2b01e065228e01a0c4efa07e698af924c",
+    "rc2_sha256": "a964c3bb7b611382e5e47b1f636ef0e2b01e065228e01a0c4efa07e698af924c",
+    "equal_exact": true,
+    "equal_ignoring_trailing_whitespace": true
+  },
+  {
+    "file": "page-components.php",
+    "active_sha256": "691a236b66671be1b079beb4121709704e57f0f14cf4e56ee049a5ff0be74f40",
+    "rc2_sha256": "a6eadd116ab03e22a56aa6d838e2bf316403be806c574aec53e63fcd28435f4d",
+    "equal_exact": false,
+    "equal_ignoring_trailing_whitespace": true
+  },
+  {
+    "file": "page-contact.php",
+    "active_sha256": "c24b9d9801a7725ead174e63a46f30e334fe158c7946d33c9c4a9b961a81c5ac",
+    "rc2_sha256": "c24b9d9801a7725ead174e63a46f30e334fe158c7946d33c9c4a9b961a81c5ac",
+    "equal_exact": true,
+    "equal_ignoring_trailing_whitespace": true
+  },
+  {
+    "file": "page-corporate.php",
+    "active_sha256": "92b7aaf7aade56f8cd9a080d267fcfc265847d4edf38228b45f9be5eba7a30d5",
+    "rc2_sha256": "1f8641b58a0dcadc3d172ad91a01d6bc6c6b7d7c9aa1278a1fc6d91fc744701c",
+    "equal_exact": false,
+    "equal_ignoring_trailing_whitespace": true
+  },
+  {
+    "file": "page-faq.php",
+    "active_sha256": "6293a891e5c326eaaec3a387f5e2c66815d4ecc547911aef99cdb1955356a897",
+    "rc2_sha256": "6293a891e5c326eaaec3a387f5e2c66815d4ecc547911aef99cdb1955356a897",
+    "equal_exact": true,
+    "equal_ignoring_trailing_whitespace": true
+  },
+  {
+    "file": "page-methodology.php",
+    "active_sha256": "e612feb84fc021bcc242fc93b56327be65456d05ab582476910f83800329c33e",
+    "rc2_sha256": "6f5a2703e6395cacb1d4730576059741f1b7587a60bb5184dca7357cc07bcaea",
+    "equal_exact": false,
+    "equal_ignoring_trailing_whitespace": true
+  },
+  {
+    "file": "page-service.php",
+    "active_sha256": "5b0733aa94cb38df00a148a11767d356de8b140613e351737d8c14a10526b1a8",
+    "rc2_sha256": "5b0733aa94cb38df00a148a11767d356de8b140613e351737d8c14a10526b1a8",
+    "equal_exact": true,
+    "equal_ignoring_trailing_whitespace": true
+  },
+  {
+    "file": "page.php",
+    "active_sha256": "753800e6aff18657e1db1285beb946bd233f6475bae57b8e91e4d2a2a1498e49",
+    "rc2_sha256": "753800e6aff18657e1db1285beb946bd233f6475bae57b8e91e4d2a2a1498e49",
+    "equal_exact": true,
+    "equal_ignoring_trailing_whitespace": true
+  },
+  {
+    "file": "single.php",
+    "active_sha256": "20e3349cdf25fb19597d1381fcf8dbad2998a168933d6df77840247bf3578dae",
+    "rc2_sha256": "cd0666f3eb2ccf77b0901f5341797877381d407a24273a9fc9692ea5eccb3448",
+    "equal_exact": false,
+    "equal_ignoring_trailing_whitespace": true
+  },
+  {
+    "file": "style.css",
+    "active_sha256": "a8bb085e0cb23c1a22b3bcdc82de3c8b7e829c62b11166c5f31ee9933fc51bc9",
+    "rc2_sha256": "174daeda639bbc4866eab547a3032505a3e62652522d53f18a8ee24a411fe9e3",
+    "equal_exact": false,
+    "equal_ignoring_trailing_whitespace": false
+  },
+  {
+    "file": "theme.json",
+    "active_sha256": "76e3cab418f83b6ef7bb8cb106cc799c6ca9ff4990a0bf04021c53a539f280fd",
+    "rc2_sha256": "50e9ce967ecf0aa2d2c84309ec595a489c051ebca3623ced75f6b23f99b86eab",
+    "equal_exact": false,
+    "equal_ignoring_trailing_whitespace": true
+  }
+]

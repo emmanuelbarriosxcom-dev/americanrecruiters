@@ -1,11 +1,12 @@
-# Instalación controlada — no ejecutada en sitios compartidos
+# Instalación controlada
 
-1. Resolver primero los bloqueos de `PENDIENTES_INTEGRACION.md`. Coordinar una ventana cuando los otros agentes hayan terminado; congelar sus cambios y registrar SHA, versión y fecha del tema activo.
-2. Obtener respaldo recuperable del directorio completo `wp-content/themes/ar-editorial`, base de datos, uploads y configuración relevante. Registrar opciones `template`, `stylesheet`, `show_on_front`, `page_on_front`, `page_for_posts`, permalinks y estado de indexación/Yoast. Verificar que el respaldo se pueda abrir/restaurar en clon aislado.
-3. Crear clon aislado autorizado del estado final real. No usar producción para ensayo; bloquear correo saliente y conservar formularios deshabilitados/noindex. Conservar identificadores, slugs, fechas y autores.
-4. Verificar SHA-256 del ZIP contra `release/SHA256SUMS`. Expandirlo aparte: debe haber una sola raíz `ar-editorial/` con 21 archivos. Comparar cambios contra el tema activo y cualquier hotfix no versionado. No instalar el diagnóstico histórico `.php.txt`.
-5. En el clon, instalar/reemplazar el tema mediante Apariencia → Temas → Añadir tema → Subir tema, o transferencia atómica del directorio completo. Mantener slug `ar-editorial`. No copiar archivos sueltos mientras hay peticiones. No definir `AR_ENABLE_STAGING_BOOTSTRAP`: por defecto no crea contenido.
-6. Conservar BD, uploads, plugins y ajustes de Yoast. No cambiar URLs, DNS, robots, borradores, formularios ni destinatarios. No ejecutar migraciones editoriales con este paquete.
-7. QA del clon real: Home, tres servicios, metodología, Nosotros, Blog/página 2/categorías/artículos, FAQ, Contacto, CV, Privacidad, búsqueda y una URL realmente inexistente. Revisar H1/title/canonical/robots; menú/submenú/FAQ/CTAs; imágenes y fuentes; 1280,768,390,360px; formularios disabled; logs PHP. No enviar formularios. Resolver 404 amigable antes de aprobar.
-8. Registrar ensayo de rollback en ese clon. Solo después de QA firmado podrá proponerse actualizar el desarrollo compartido en ventana acordada. Esta entrega NO autoriza desplegar producción ni activar indexación.
-9. Si se autoriza una actualización posterior, conservar copia de reversión, reemplazar de forma controlada y purgar únicamente cachés del tema/entorno con autorización del responsable. Revisar frontend sin sesión. No actualizar plugins para hacer encajar el candidato.
+Ensayo realizado únicamente en clon privado del respaldo16/10: Theme_Upgrader instaló el ZIP final RC2 y permitió rollback exacto del tema. No se instaló en WordPress compartido ni producción.
+
+1. Resolver INT-04 y confirmar el delta de BD/uploads/configuración del respaldo antes de autorizar integración. Congelar cambios concurrentes y registrar estado activo.
+2. Obtener respaldo recuperable actualizado del tema, BD, uploads y configuración. Guardar template/stylesheet, portada/blog, permalinks, noindex y configuración Yoast. No publicar ni mover borradores.
+3. En clon privado nativo equivalente, bloquear correo, cron, HTTP externo no requerido y formularios; mantener noindex. No ejecutar credenciales productivas en otro servidor.
+4. Verificar SHA256 del ZIP con MANIFEST.md. Raíz ar-editorial/ y21 archivos. Comparar frente al tema activo, incluidos hotfixes posteriores. El paquete no incluye contenido/medios/plugins.
+5. Instalar ZIP mediante Theme_Upgrader o subida de tema controlada. El ensayo de esta entrega usó la API, no la interfaz dashboard. Conservar slug ar-editorial y no definir AR_ENABLE_STAGING_BOOTSTRAP.
+6. Mantener BD/uploads y configuración SEO existentes. No actualizar plugins, migrar artículos, cambiar destinatarios, publicar borradores ni habilitar formularios.
+7. Repetir rutas, 404 real, endpoints bloqueados405/403, canonical/title/robots, medios, navegación y vista móvil. Conservar logs. Repetir rollback de tema y comparar hashes/opciones/contenido como en clone-results.json.
+8. Solo después de revisión técnica y autorización explícita, proponer ventana para desarrollo compartido. Este RC no autoriza producción ni indexación. No purgar cachés globales sin autorización.

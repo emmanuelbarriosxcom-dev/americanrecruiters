@@ -1,0 +1,110 @@
+[
+  {
+    "path": "/",
+    "final_url": "http://127.0.0.1:9413/",
+    "status": 200,
+    "h1_count": 1,
+    "canonical_count": 1,
+    "has_private_draft": false,
+    "php_error": false,
+    "pagination": false,
+    "robots_noindex": true,
+    "pass": true
+  },
+  {
+    "path": "/blog/",
+    "final_url": "http://127.0.0.1:9413/blog/",
+    "status": 200,
+    "h1_count": 1,
+    "canonical_count": 0,
+    "has_private_draft": false,
+    "php_error": false,
+    "pagination": true,
+    "robots_noindex": true,
+    "pass": true
+  },
+  {
+    "path": "/blog/page/2/",
+    "final_url": "http://127.0.0.1:9413/blog/page/2/",
+    "status": 200,
+    "h1_count": 1,
+    "canonical_count": 0,
+    "has_private_draft": false,
+    "php_error": false,
+    "pagination": true,
+    "robots_noindex": true,
+    "pass": true
+  },
+  {
+    "path": "/qa-post-1/",
+    "final_url": "http://127.0.0.1:9413/qa-post-1/",
+    "status": 200,
+    "h1_count": 1,
+    "canonical_count": 0,
+    "has_private_draft": false,
+    "php_error": false,
+    "pagination": false,
+    "robots_noindex": true,
+    "pass": true
+  },
+  {
+    "path": "/category/qa-category/",
+    "final_url": "http://127.0.0.1:9413/category/qa-category/",
+    "status": 200,
+    "h1_count": 1,
+    "canonical_count": 0,
+    "has_private_draft": false,
+    "php_error": false,
+    "pagination": true,
+    "robots_noindex": true,
+    "pass": true
+  },
+  {
+    "path": "/?s=QA",
+    "final_url": "http://127.0.0.1:9413/?s=QA",
+    "status": 200,
+    "h1_count": 1,
+    "canonical_count": 0,
+    "has_private_draft": false,
+    "php_error": false,
+    "pagination": true,
+    "robots_noindex": true,
+    "pass": true
+  },
+  {
+    "path": "/zzzz-release-not-found-847692/",
+    "final_url": "http://127.0.0.1:9413/zzzz-release-not-found-847692/",
+    "status": 404,
+    "h1_count": 1,
+    "canonical_count": 0,
+    "has_private_draft": false,
+    "php_error": false,
+    "pagination": false,
+    "robots_noindex": true,
+    "pass": true
+  },
+  {
+    "path": "/?p=999999",
+    "final_url": "http://127.0.0.1:9413/?p=999999",
+    "status": 404,
+    "h1_count": 1,
+    "canonical_count": 0,
+    "has_private_draft": false,
+    "php_error": false,
+    "pagination": false,
+    "robots_noindex": true,
+    "pass": true
+  },
+  {
+    "path": "/?p=13",
+    "final_url": "http://127.0.0.1:9413/?p=13",
+    "status": 404,
+    "h1_count": 1,
+    "canonical_count": 0,
+    "has_private_draft": false,
+    "php_error": false,
+    "pagination": false,
+    "robots_noindex": true,
+    "pass": true
+  }
+]

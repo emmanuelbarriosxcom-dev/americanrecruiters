@@ -1,0 +1,26 @@
+[
+  {
+    "action": "ar_f9_candidate",
+    "method": "GET",
+    "status": 405,
+    "pass": true
+  },
+  {
+    "action": "ar_f9_candidate",
+    "method": "POST",
+    "status": 403,
+    "pass": true
+  },
+  {
+    "action": "ar_f9_business",
+    "method": "GET",
+    "status": 405,
+    "pass": true
+  },
+  {
+    "action": "ar_f9_business",
+    "method": "POST",
+    "status": 403,
+    "pass": true
+  }
+]

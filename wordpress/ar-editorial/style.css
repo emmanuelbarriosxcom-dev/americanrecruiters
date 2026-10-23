@@ -1,7 +1,7 @@
 /*
 Theme Name: American Recruiters — Ejecutivo Editorial
 Description: Base de desarrollo Opción 2. Gutenberg y componentes compartidos; sin formularios comerciales.
-Version: 1.0.5-rc.1
+Version: 1.0.5-rc.2
 Requires at least: 6.6
 Requires PHP: 8.0
 Text Domain: ar-editorial
@@ -33,3 +33,6 @@ Text Domain: ar-editorial
 .ar-f9 fieldset{min-width:0;border:0;padding:0;margin:0}.ar-f9 legend{font-weight:700;margin-bottom:16px;font-size:1.15rem}
 .ar-f9 label{display:block;font-weight:600;margin:16px 0 6px}.ar-f9 input,.ar-f9 select,.ar-f9 textarea{box-sizing:border-box;width:100%;max-width:100%;min-height:48px;padding:12px;border:1px solid #93869e;border-radius:8px;font:inherit;background:#f4f2f6;color:#51475b;opacity:1}
 .ar-f9 textarea{min-height:120px;resize:vertical}.ar-f9 small{display:block;line-height:1.6;margin-top:6px}.ar-f9 button{min-height:48px;max-width:100%;white-space:normal;margin-top:20px;opacity:1;cursor:not-allowed}.ar-f9-status{border-left:4px solid #256f68;padding:12px;background:#eef6f4}.ar-f9 a{color:#512776;text-decoration:underline}.ar-f9 a:focus-visible{outline:3px solid #256f68;outline-offset:4px}.ar-f9 .ar-f9-privacy input{width:20px;min-height:20px;height:20px;vertical-align:middle;margin-right:8px}.ar-f9 .ar-f9-privacy{font-weight:400}
+
+/* Keep Home's needs grid within its track when an external image is unavailable. */
+body.style-b .ar-home .moment-layout > * { min-width: 0; }

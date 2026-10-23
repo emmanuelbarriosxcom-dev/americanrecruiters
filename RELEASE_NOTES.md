@@ -1,26 +1,28 @@
-# Release candidate — American Recruiters Ejecutivo Editorial
+# American Recruiters — 1.0.5-rc.2
 
-Versión: **1.0.5-rc.1**. Rama: `release/ar-ejecutivo-editorial-20261023`.
-Fecha: 23/10/2026. Estado final: **BLOCKED para integración en WordPress compartido**.
+Fecha: 23/10/2026. Rama: release/ar-ejecutivo-editorial-20261023.
 
-El candidato y el ZIP están completos. La activación y ejecución se probaron en WordPress Playground aislado, no en el entorno compartido. No se ha instalado este ZIP en desarrollo ni en producción.
+**RC2 validado en el clon del respaldo disponible; integración compartida pendiente de paridad del hosting y actualización del estado de referencia.** Ver PENDIENTES_INTEGRACION.md. No instalado en producción ni desarrollo compartido. RC1 se conserva inmutable.
 
-## Procedencia verificada
+## Cambios respecto a RC1
 
-`main a432c88` → Fase 6 `87cfb7a` → Fase 8 `353ca6b` → Fase 9 `ddd7784`, `0c9abcf` → Fase 9.2 `5f92480` → Fase 9.3 `5ef1e06`, `5f75133` → Fase 10 `f81a559`, `9758476`.
+- Restaura exactamente el 404.php del tema activo 1.0.4, evitando una sustitución visual innecesaria.
+- Corrige el desbordamiento de la cuadrícula de Home cuando la fotografía externa no está disponible: min-width:0 en los hijos directos de moment-layout. No oculta contenido ni overflow. Caso reproducido a 390px con imagen bloqueada: scrollWidth 466 → 390.
+- Versiona assets como 1.0.5-rc.2. Conserva controles de bootstrap opt-in, canonical y formularios de RC1.
+- Corrige únicamente el fixture de QA para inicializar WP_Rewrite antes de regenerar reglas. No añade una corrección artificial de HTTP al tema.
 
-Todos los extremos solicitados son ancestros de Fase 10; no se fusionaron ramas. Las referencias y SHA completos están en `release/qa/branches.json`. La rama local Fase 6 `1741712` tiene el mismo árbol `wordpress/` que Fase 6 remota: no aporta un parche pendiente al tema. El repositorio local es superficial en `main`; se verificó toda la cadena de trabajo disponible desde ese punto. No había ramas remotas posteriores adicionales en la consulta del 23/10.
+## Paquete y compatibilidad
 
-## Entrega
+ZIP release/ar-editorial-1.0.5-rc.2.zip, 21 archivos bajo ar-editorial/. SHA-256 en MANIFEST.md y release/SHA256SUMS. RC1 permanece en release/ar-editorial-1.0.5-rc.1.zip con SHA original.
 
-ZIP `release/ar-editorial-1.0.5-rc.1.zip`, 21 archivos, raíz `ar-editorial/`. `MANIFEST.md`, `release/manifest.json` y `release/SHA256SUMS` identifican su contenido. El ZIP no es un respaldo completo de WordPress.
+WordPress >=6.6 / PHP >=8.0; pruebas del RC2 en WP6.6.2/PHP8.0.30 y WP7.1.3/PHP8.3.33. Gutenberg Core. Clon con los seis plugins estándar activos observados, incluido Yoast gratuito 24.2 y Premium 21.0. No se actualizó ningún plugin compartido.
 
-## Dependencias
+El tema no incluye BD/uploads, contenido editorial, configuración del hosting ni plugins. La Home Gutenberg y sus asignaciones permanecen en BD. No ejecutar el diagnóstico de correo histórico, conservado como texto fuera del tema.
 
-WordPress >=6.6; PHP >=8.0. Gutenberg de Core. Google Fonts (Montserrat, solicitud externa) y medios de uploads existentes. Yoast no es imprescindible para activar el tema; debe conservarse la configuración SEO del sitio. La prueba local adicional usó Yoast gratuito 24.2; no replica Premium 21.0 y todos los plugins observados en desarrollo.
+## Procedencia
 
-Las páginas, entradas, categorías, autores, asignaciones de plantillas, opciones Home/Blog, navegación editorial y bloques viven en la base de datos; no vienen en el ZIP. La Home depende de contenido Gutenberg existente. No recrear contenido desde los textos del diseño maestro.
+Base acumulativa Fase10 97584768e2fedae6e265e4e148d49994da6249e0 → RC1 f167982c4939e117110abff52df93c55283d8315 → RC2. Las ramas técnicas de Fases6–10 son ancestrales a esa base. Nuevas referencias content/articulos-b2b-20261023 (413cfc2) y growth/landings-cro-20261023 (a432c88) revisadas: no incorporan cambios al directorio del tema. No se fusionó ni alteró main.
 
-## Motivo del bloqueo
+## Resultado
 
-No hay copia autorizada completa del estado actual de BD, uploads y PHP activo para probar una actualización con el contenido real. Además, en Playground una URL amigable inexistente redirige a Home; la consulta explícita de un ID inexistente devuelve correctamente 404. GET del endpoint aislado tampoco entrega el 405 esperado, aunque POST vacío sí entrega 403 y la guarda pura pasa. Falta reproducir y resolver el enrutamiento HTTP y la ruta amigable en un clon con el mismo servidor/reglas del destino. No se afirma ausencia total de regresiones ni se permite cerrar ese control con la prueba por ID. Ver `PENDIENTES_INTEGRACION.md`.
+Instalación mediante la API real Theme_Upgrader, rollback exacto de todos los archivos del tema y conservación de hashes editoriales/opciones. 39/39 rutas por fases, 4/4 endpoints, 9/9 HTTP sintético y 41/41 controles por matriz. El clon lógico no equivale al hosting nativo; el respaldo tiene fecha 16/10. No se recalcularon ni atribuyen métricas Lighthouse o conversiones.

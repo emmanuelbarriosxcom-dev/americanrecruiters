@@ -1,0 +1,9 @@
+{
+  "status": 302,
+  "redirect_by": [
+    "Yoast SEO"
+  ],
+  "location": [
+    "http://127.0.0.1:9413/wp-admin/admin.php?page=wpseo_installation_successful_free"
+  ]
+}
