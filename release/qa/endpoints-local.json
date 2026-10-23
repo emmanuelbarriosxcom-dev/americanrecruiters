@@ -1,0 +1,14 @@
+[
+  {
+    "method": "GET",
+    "status": 200,
+    "disabled_notice": false,
+    "pass": false
+  },
+  {
+    "method": "POST",
+    "status": 403,
+    "disabled_notice": true,
+    "pass": true
+  }
+]

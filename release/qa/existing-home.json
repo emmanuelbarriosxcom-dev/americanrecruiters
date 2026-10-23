@@ -1,0 +1,39 @@
+{
+  "canonicals": [
+    "https://desarrollo.americanrecruiters.mx/"
+  ],
+  "h1": [
+    "El liderazgo adecuado cambia el rumbo."
+  ],
+  "images": [
+    {
+      "src": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/ar-hero-editorial-1300.webp",
+      "srcset": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/ar-hero-editorial-640.webp 640w, https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/ar-hero-editorial-960.webp 960w, https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/ar-hero-editorial-1300.webp 1300w"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1000&q=78",
+      "srcset": ""
+    },
+    {
+      "src": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/financial-investment-volatility-uncertainty-or-change-in-business-and-stock-market-concept-businessman-investor-fall-on-uncertainty-volatile-up-and-down-arrow-profit-graph-vector-300x191.jpg",
+      "srcset": ""
+    },
+    {
+      "src": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/propuesta-oferta-laboral-candidatos-ejecutivos-e1787943340313-300x185.png",
+      "srcset": ""
+    },
+    {
+      "src": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/agencia-reclutamiento-especializado-vs-rh-interno-e1787943914730-300x190.png",
+      "srcset": ""
+    }
+  ],
+  "robots": "noindex, nofollow",
+  "scripts": [
+    "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/js/navigation.js?ver=1.0.0"
+  ],
+  "styles": [
+    "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.0",
+    "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.4"
+  ],
+  "url": "https://desarrollo.americanrecruiters.mx/"
+}

@@ -1,0 +1,10 @@
+import {runCLI} from '@wp-playground/cli';
+import fs from 'node:fs';
+import {fileURLToPath} from 'node:url';
+const root=fileURLToPath(new URL('../../',import.meta.url)).replace(/\/$/,'');
+const server=await runCLI({command:'server',wp:process.env.QA_WP||'6.6.2',php:process.env.QA_PHP||'8.3',port:9413,workers:1,mount:[{hostPath:root+'/wordpress/ar-editorial',vfsPath:'/wordpress/wp-content/themes/ar-editorial'}],blueprint:process.env.QA_YOAST?{plugins:['https://downloads.wordpress.org/plugin/wordpress-seo.24.2.zip']}:undefined,verbosity:'normal'});
+await server.playground.run({code:`<?php require '/wordpress/wp-load.php'; update_option('ar_qa_pages_before',(int)wp_count_posts('page')->publish); switch_theme('ar-editorial');`});
+const out=await server.playground.run({code:fs.readFileSync(root+'/tools/release/integration.php','utf8')});
+fs.writeFileSync(root+'/release/qa/integration-'+(process.env.QA_PHP||'8.3')+(process.env.QA_YOAST?'-yoast':'')+'.json',JSON.stringify({exitCode:out.exitCode,errors:out.errors,output:new TextDecoder().decode(out.bytes)},null,2));
+console.log(new TextDecoder().decode(out.bytes),out.errors);
+console.log('QA server http://127.0.0.1:9413');

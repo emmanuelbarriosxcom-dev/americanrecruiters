@@ -1,0 +1,163 @@
+{
+  "pages": [
+    {
+      "url": "https://desarrollo.americanrecruiters.mx/",
+      "status": 403,
+      "h1": [],
+      "canonicals": [],
+      "robots": [],
+      "forms": 0,
+      "enabled_submit": 0,
+      "images": []
+    },
+    {
+      "url": "https://desarrollo.americanrecruiters.mx/servicios/",
+      "status": 403,
+      "h1": [],
+      "canonicals": [],
+      "robots": [],
+      "forms": 0,
+      "enabled_submit": 0,
+      "images": []
+    },
+    {
+      "url": "https://desarrollo.americanrecruiters.mx/servicios/headhunting/",
+      "status": 403,
+      "h1": [],
+      "canonicals": [],
+      "robots": [],
+      "forms": 0,
+      "enabled_submit": 0,
+      "images": []
+    },
+    {
+      "url": "https://desarrollo.americanrecruiters.mx/servicios/reclutamiento-personalizado/",
+      "status": 403,
+      "h1": [],
+      "canonicals": [],
+      "robots": [],
+      "forms": 0,
+      "enabled_submit": 0,
+      "images": []
+    },
+    {
+      "url": "https://desarrollo.americanrecruiters.mx/servicios/fast-placement/",
+      "status": 403,
+      "h1": [],
+      "canonicals": [],
+      "robots": [],
+      "forms": 0,
+      "enabled_submit": 0,
+      "images": []
+    },
+    {
+      "url": "https://desarrollo.americanrecruiters.mx/metodologia/",
+      "status": 403,
+      "h1": [],
+      "canonicals": [],
+      "robots": [],
+      "forms": 0,
+      "enabled_submit": 0,
+      "images": []
+    },
+    {
+      "url": "https://desarrollo.americanrecruiters.mx/nosotros/",
+      "status": 403,
+      "h1": [],
+      "canonicals": [],
+      "robots": [],
+      "forms": 0,
+      "enabled_submit": 0,
+      "images": []
+    },
+    {
+      "url": "https://desarrollo.americanrecruiters.mx/blog/",
+      "status": 403,
+      "h1": [],
+      "canonicals": [],
+      "robots": [],
+      "forms": 0,
+      "enabled_submit": 0,
+      "images": []
+    },
+    {
+      "url": "https://desarrollo.americanrecruiters.mx/contacto/",
+      "status": 403,
+      "h1": [],
+      "canonicals": [],
+      "robots": [],
+      "forms": 0,
+      "enabled_submit": 0,
+      "images": []
+    },
+    {
+      "url": "https://desarrollo.americanrecruiters.mx/candidatos/",
+      "status": 403,
+      "h1": [],
+      "canonicals": [],
+      "robots": [],
+      "forms": 0,
+      "enabled_submit": 0,
+      "images": []
+    },
+    {
+      "url": "https://desarrollo.americanrecruiters.mx/preguntas-frecuentes/",
+      "status": 403,
+      "h1": [],
+      "canonicals": [],
+      "robots": [],
+      "forms": 0,
+      "enabled_submit": 0,
+      "images": []
+    },
+    {
+      "url": "https://desarrollo.americanrecruiters.mx/privacidad/",
+      "status": 403,
+      "h1": [],
+      "canonicals": [],
+      "robots": [],
+      "forms": 0,
+      "enabled_submit": 0,
+      "images": []
+    },
+    {
+      "url": "https://desarrollo.americanrecruiters.mx/ar-qa-missing-20261023/",
+      "status": 403,
+      "h1": [],
+      "canonicals": [],
+      "robots": [],
+      "forms": 0,
+      "enabled_submit": 0,
+      "images": []
+    },
+    {
+      "url": "https://www.americanrecruiters.com.mx/",
+      "error": "HTTP Error 406: Not Acceptable"
+    },
+    {
+      "url": "https://emmanuelbarriosxcom-dev.github.io/americanrecruiters/diseno/",
+      "status": 200,
+      "title": [
+        "HTML Madre · Ejecutivo editorial | American Recruiters México"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "path": "style.css",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "path": "assets/css/design-system.css",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "path": "assets/js/navigation.js",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "path": "assets/images/american-recruiters-logo.png",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}

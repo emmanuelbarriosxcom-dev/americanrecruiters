@@ -1,0 +1,37 @@
+[
+  {
+    "branch": "main",
+    "sha": "a432c88c19a422cba50d571ce4f367119e0e8465",
+    "ancestor_of_fase10": true
+  },
+  {
+    "branch": "fase6/plantillas-rendimiento-20261017",
+    "sha": "87cfb7ab2b107474c61cd4e88e6c99e2c728aa15",
+    "ancestor_of_fase10": true
+  },
+  {
+    "branch": "fase8/blog-accesibilidad-20261017",
+    "sha": "353ca6b0f9dcab07c20282fd0f29b6f0830c925d",
+    "ancestor_of_fase10": true
+  },
+  {
+    "branch": "fase9/formularios-privacidad-20261017",
+    "sha": "0c9abcf57cab2c4df55830271ee4cbf1513e7726",
+    "ancestor_of_fase10": true
+  },
+  {
+    "branch": "fase9-2/correo-qa-20261017",
+    "sha": "5f924801a6219fd241e3308b6c1e0c9ecff4cbd0",
+    "ancestor_of_fase10": true
+  },
+  {
+    "branch": "fase9-3/seguridad-privacidad-20261017",
+    "sha": "5f75133e9f95412cf2cb723a2fef049286d8c72c",
+    "ancestor_of_fase10": true
+  },
+  {
+    "branch": "fase10/qa-lanzamiento-20261017",
+    "sha": "97584768e2fedae6e265e4e148d49994da6249e0",
+    "ancestor_of_fase10": true
+  }
+]

@@ -12,10 +12,11 @@ function ar_setup() {
 }
 add_action('after_setup_theme','ar_setup');
 function ar_assets() {
+    $version=wp_get_theme()->get('Version');
     wp_enqueue_style('ar-fonts','https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap',[],null);
-    wp_enqueue_style('ar-design',get_theme_file_uri('/assets/css/design-system.css'),['ar-fonts'],'1.0.0');
-    wp_enqueue_style('ar-theme',get_stylesheet_uri(),['ar-design'],'1.0.4');
-    wp_enqueue_script('ar-navigation',get_theme_file_uri('/assets/js/navigation.js'),[], '1.0.0',['strategy'=>'defer','in_footer'=>true]);
+    wp_enqueue_style('ar-design',get_theme_file_uri('/assets/css/design-system.css'),['ar-fonts'],$version);
+    wp_enqueue_style('ar-theme',get_stylesheet_uri(),['ar-design'],$version);
+    wp_enqueue_script('ar-navigation',get_theme_file_uri('/assets/js/navigation.js'),[], $version,['strategy'=>'defer','in_footer'=>true]);
 }
 add_action('wp_enqueue_scripts','ar_assets');
 function ar_url($path='') { return esc_url(home_url('/'.ltrim($path,'/'))); }
@@ -86,6 +87,7 @@ function ar_patterns() {
 add_action('init','ar_patterns');
 /* Bootstrap only for the explicitly authorized staging. Never overwrites existing pages. */
 function ar_staging_bootstrap(){
+    if(!defined('AR_ENABLE_STAGING_BOOTSTRAP') || AR_ENABLE_STAGING_BOOTSTRAP!==true) return;
     if(wp_parse_url(home_url(),PHP_URL_HOST)!=='desarrollo.americanrecruiters.mx' || !current_user_can('manage_options') || get_option('ar_base_installed')) return;
     $pages=[['inicio','Inicio','',0],['servicios','Servicios','',0],['headhunting','Headhunting','page-service.php','servicios'],['reclutamiento-personalizado','Servicio personalizado de reclutamiento y selección','page-service.php','servicios'],['fast-placement','Fast Placement','page-service.php','servicios'],['metodologia','Cómo trabajamos','page-methodology.php',0],['nosotros','Nosotros','page-corporate.php',0],['blog','Blog','',0],['contacto','Contacto','page-contact.php',0],['candidatos','Enviar CV','page-candidates.php',0],['preguntas-frecuentes','Preguntas frecuentes','page-faq.php',0],['privacidad','Privacidad','',0],['sistema-visual','Sistema visual · Base de desarrollo','page-components.php',0]];
     $ids=[];

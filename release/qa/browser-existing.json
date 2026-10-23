@@ -1,0 +1,104 @@
+[
+  {
+    "blogLinks": [],
+    "canonical": [],
+    "draftPlaceholder": true,
+    "forms": [
+      {
+        "action": "https://desarrollo.americanrecruiters.mx/",
+        "enabled": 2
+      }
+    ],
+    "h1": [
+      "Servicios"
+    ],
+    "robots": "noindex, nofollow",
+    "title": "Servicios - American Recruiters México — Desarrollo",
+    "url": "https://desarrollo.americanrecruiters.mx/servicios/"
+  },
+  {
+    "blogLinks": [],
+    "canonical": [],
+    "draftPlaceholder": false,
+    "forms": [
+      {
+        "action": "https://desarrollo.americanrecruiters.mx/",
+        "enabled": 2
+      }
+    ],
+    "h1": [
+      "Blog"
+    ],
+    "robots": "noindex, nofollow",
+    "title": "Blog - American Recruiters México — Desarrollo",
+    "url": "https://desarrollo.americanrecruiters.mx/blog/"
+  },
+  {
+    "blogLinks": [],
+    "canonical": [],
+    "draftPlaceholder": true,
+    "forms": [
+      {
+        "action": "https://desarrollo.americanrecruiters.mx/",
+        "enabled": 2
+      }
+    ],
+    "h1": [
+      "Contacto"
+    ],
+    "robots": "noindex, nofollow",
+    "title": "Contacto - American Recruiters México — Desarrollo",
+    "url": "https://desarrollo.americanrecruiters.mx/contacto/"
+  },
+  {
+    "blogLinks": [],
+    "canonical": [],
+    "draftPlaceholder": true,
+    "forms": [
+      {
+        "action": "https://desarrollo.americanrecruiters.mx/",
+        "enabled": 2
+      }
+    ],
+    "h1": [
+      "Enviar CV"
+    ],
+    "robots": "noindex, nofollow",
+    "title": "Enviar CV - American Recruiters México — Desarrollo",
+    "url": "https://desarrollo.americanrecruiters.mx/candidatos/"
+  },
+  {
+    "blogLinks": [],
+    "canonical": [],
+    "draftPlaceholder": true,
+    "forms": [
+      {
+        "action": "https://desarrollo.americanrecruiters.mx/",
+        "enabled": 2
+      }
+    ],
+    "h1": [
+      "Preguntas frecuentes"
+    ],
+    "robots": "noindex, nofollow",
+    "title": "Preguntas frecuentes - American Recruiters México — Desarrollo",
+    "url": "https://desarrollo.americanrecruiters.mx/preguntas-frecuentes/"
+  },
+  {
+    "blogLinks": [],
+    "canonical": [],
+    "draftPlaceholder": true,
+    "forms": [
+      {
+        "action": "https://desarrollo.americanrecruiters.mx/",
+        "enabled": 2
+      }
+    ],
+    "h1": [
+      "Nosotros"
+    ],
+    "robots": "noindex, nofollow",
+    "title": "Nosotros - American Recruiters México — Desarrollo",
+    "url": "https://desarrollo.americanrecruiters.mx/nosotros/"
+  }
+]
