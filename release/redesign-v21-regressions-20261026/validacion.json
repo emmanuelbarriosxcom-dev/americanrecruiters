@@ -1,0 +1,49 @@
+{
+  "version": "1.1.6-v2.1",
+  "qa_views": 72,
+  "qa_pass": 72,
+  "draft_count": 17,
+  "body_changes": [
+    15,
+    19
+  ],
+  "unexpected_changes": [],
+  "critical_meta_changes": [],
+  "forms": {
+    "business": "disabled",
+    "candidate": "disabled"
+  },
+  "theme_zip_sha256": "e3fc9e5d0c209501ffb8dfd0e5c5b14862f3f3b5099c8bcf7fc4fb2d9027fd87",
+  "performance": {
+    "mobile": {
+      "url": "https://pagespeed.web.dev/analysis/https-desarrollo-americanrecruiters-mx/tkbhq9so3i?form_factor=mobile",
+      "performance": 88,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 69,
+      "fcp": 2.6,
+      "lcp": 2.7,
+      "tbt": 0,
+      "cls": 0.122
+    },
+    "desktop": {
+      "url": "https://pagespeed.web.dev/analysis/https-desarrollo-americanrecruiters-mx/tkbhq9so3i?form_factor=desktop",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 69,
+      "fcp": 0.7,
+      "lcp": 0.7,
+      "tbt": 0,
+      "cls": 0.013
+    },
+    "version": "1.1.6-v2.1",
+    "captured": "2026-10-26 01:40 GMT+3",
+    "kind": "Laboratorio, una ejecución final. Sin CrUX/INP. Variación de CLS móvil vinculada en el informe a acciones del hero y carga de fuente; causalidad del cambio de versión no demostrada."
+  },
+  "evidence_versions": {
+    "matrix_screenshots": "1.1.4-v2.1",
+    "final_dom": "1.1.6-v2.1",
+    "fast_and_menu_screenshots": "1.1.6-v2.1"
+  }
+}

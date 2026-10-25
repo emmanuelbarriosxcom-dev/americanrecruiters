@@ -3,10 +3,17 @@
 if (!defined('ABSPATH')) exit;
 require_once __DIR__.'/icons.php';
 require_once __DIR__.'/home-v21.php';
+require_once __DIR__.'/editorial-review.php';
 
 /** The public editorial loop must not leak private QA posts to signed-in previews. */
 add_action('pre_get_posts',static function($query){
-    if(!is_admin() && $query->is_main_query() && ($query->is_home() || $query->is_archive() || $query->is_search())) $query->set('post_status','publish');
+    if(!is_admin() && $query->is_main_query() && ($query->is_home() || $query->is_archive() || $query->is_search())){
+        $review=ar_v21_editorial_review();
+        $query->set('post_status',$review?'draft':'publish');
+        // Two rows of three cards, as approved, without changing Reading settings.
+        if($query->is_home()||$query->is_category()||$review)$query->set('posts_per_page',6);
+        if($review)$query->set('post__in',ar_v21_editorial_ids());
+    }
 });
 
 function ar_v21_dom($html) {
@@ -35,9 +42,18 @@ function ar_v21_choose_icon($text) {
 function ar_v21_presentation($html) {
     $html=preg_replace('~<style\b[^>]*>.*?</style>~is','',$html);
     $html=preg_replace('~\sstyle="[^"]*"~i','',$html);
+    // The shared V2.1 components own their spacing. Gutenberg's generated flow
+    // class otherwise adds a second, unrelated 24px gap to every saved group.
+    $html=preg_replace_callback('~class="([^"]*)"~',static function($m){
+        $classes=preg_split('/\s+/',trim($m[1]));
+        return 'class="'.esc_attr(implode(' ',array_diff($classes,['is-layout-flow','wp-block-group-is-layout-flow']))).'"';
+    },$html);
     return $html;
 }
 function ar_v21_decorate($html) {
+    $html=preg_replace_callback('~<p\b[^>]*class="[^"]*\bar-text-link\b[^"]*"[^>]*>\s*(<a\b[^>]*>.*?</a>)\s*</p>~s',static function($m){
+        return strpos($m[1],'class="')===false?preg_replace('~<a\b~','<a class="text-link"',$m[1],1):preg_replace('~class="~','class="text-link ',$m[1],1);
+    },$html);
     $html=preg_replace_callback('~<summary([^>]*)>(.*?)</summary>~s',static function($m){
         if(strpos($m[2],'<svg')!==false)return $m[0];
         return '<summary'.$m[1].'>'.$m[2].ar_v21_icon('plus','summary-mark').'</summary>';
@@ -47,8 +63,8 @@ function ar_v21_decorate($html) {
         return $m[1].preg_replace('/\s*[→↗↓]\s*$/u','',$m[2]).ar_v21_icon('arrow-up-right').'</a>';
     },$html);
 }
-function ar_v21_hero($title,$description='',$label='AMERICAN RECRUITERS MÉXICO',$image='',$heading_html='',$image_alt='') {
-    get_template_part('template-parts/hero',null,compact('title','description','label','image','heading_html','image_alt'));
+function ar_v21_hero($title,$description='',$label='AMERICAN RECRUITERS MÉXICO',$image='',$heading_html='',$image_alt='',$symbol='compass') {
+    get_template_part('template-parts/hero',null,compact('title','description','label','image','heading_html','image_alt','symbol'));
 }
 function ar_v21_section($heading,$body,$index,$dark=false,$process=false,$close=false,$id='') {
     get_template_part('template-parts/section',null,compact('heading','body','index','dark','process','close','id'));
@@ -71,11 +87,21 @@ function ar_v21_page() {
     $desc=''; foreach(ar_v21_nodes($intro,'.//p|.//*['.ar_v21_class('wp-block-buttons').']') as $n) $desc.=ar_v21_html($n);
     $slug=get_post_field('post_name',get_the_ID());
     $image=$slug==='headhunting'?'editorial-reunion.webp':(in_array($slug,['reclutamiento-personalizado','nosotros'],true)?'editorial-conversacion.webp':'');
-    $labels=['headhunting'=>'SERVICIOS / BÚSQUEDA EJECUTIVA','reclutamiento-personalizado'=>'SERVICIOS / SELECCIÓN A LA MEDIDA','metodologia'=>'CÓMO TRABAJAMOS','contacto'=>'EMPRESAS','candidatos'=>'ESPACIO PARA CANDIDATOS'];
+    $labels=['headhunting'=>'SERVICIOS / BÚSQUEDA EJECUTIVA','reclutamiento-personalizado'=>'SERVICIOS / SELECCIÓN A LA MEDIDA','fast-placement'=>'SERVICIOS / INFORMACIÓN','metodologia'=>'CÓMO TRABAJAMOS','contacto'=>'EMPRESAS','candidatos'=>'ESPACIO PARA CANDIDATOS'];
     $source_image=ar_v21_first($phase,'img');
-    ar_v21_hero($title,ar_v21_decorate($desc),$labels[$slug]??'AMERICAN RECRUITERS MÉXICO',$image,$heading_html,$source_image?$source_image->getAttribute('alt'):'');
+    ar_v21_hero($title,ar_v21_decorate($desc),$labels[$slug]??'AMERICAN RECRUITERS MÉXICO',$image,$heading_html,$source_image?$source_image->getAttribute('alt'):'',$slug==='fast-placement'?'info':'compass');
     foreach($sections as $i=>$section){
         $h=ar_v21_first($section,'h2');
+        if($slug==='fast-placement' && strpos($section->getAttribute('class'),'ar-fast-alternatives')!==false){
+            $routes=[];
+            foreach(ar_v21_nodes($section,'.//*['.ar_v21_class('ar-card').']') as $j=>$card){
+                $link=ar_v21_first($card,'a');$title=ar_v21_first($card,'h3');$description=ar_v21_first($card,'p');
+                if($link&&$title)$routes[]=['href'=>$link->getAttribute('href'),'title'=>$title->textContent,'description'=>$description?$description->textContent:'','icon'=>['search','users'][$j]??'compass'];
+            }
+            echo '<section class="section-block soft"><div class="wrap">'.ar_v21_html($h);
+            get_template_part('template-parts/service-routes',null,['routes'=>$routes]);
+            echo '</div></section>';continue;
+        }
         if(!$h && ar_v21_first($section,'img'))continue; // already represented by the approved hero image.
         $heading=ar_v21_html($h);$text=$h?$h->textContent:'';
         if($h)$h->parentNode->removeChild($h);
@@ -100,6 +126,12 @@ function ar_v21_article_content($html) {
     foreach(iterator_to_array($xp->query('.//table',$root)) as $i=>$table){
         $wrapper=$doc->createElement('div');$wrapper->setAttribute('class','table-scroll');$wrapper->setAttribute('tabindex','0');$wrapper->setAttribute('role','region');$wrapper->setAttribute('aria-label','Tabla '.($i+1).' — desplazable horizontalmente');$table->parentNode->replaceChild($wrapper,$table);$wrapper->appendChild($table);
     }
+    // Present one existing contextual link as the approved inline CTA, without adding copy.
+    foreach($xp->query('.//p[.//a[contains(@href,"/servicios/")]]',$root) as $paragraph){
+        if($paragraph->parentNode->nodeName!=='div' || strpos($paragraph->parentNode->getAttribute('class'),'inline-cta')!==false)continue;
+        $wrapper=$doc->createElement('aside');$wrapper->setAttribute('class','inline-cta');
+        $paragraph->parentNode->replaceChild($wrapper,$paragraph);$wrapper->appendChild($paragraph);break;
+    }
     return [ar_v21_html($root,true),$toc];
 }
 function ar_v21_context() {
@@ -109,9 +141,11 @@ function ar_v21_context() {
     return ['title'=>'Explora las opciones para tu empresa','text'=>'Revisa los servicios disponibles antes de plantear una necesidad de contratación.','path'=>'servicios/','link'=>'Conocer servicios'];
 }
 function ar_v21_categories() {
-    $terms=get_categories(['hide_empty'=>true]);
+    $term_args=['hide_empty'=>!ar_v21_editorial_review()];
+    if(ar_v21_editorial_review())$term_args['object_ids']=ar_v21_editorial_ids();
+    $terms=get_categories($term_args);
     if(!$terms)return;
     echo '<nav class="category-links" aria-label="Categorías del Blog">';
-    foreach($terms as $term)echo '<a href="'.esc_url(get_category_link($term)).'">'.esc_html($term->name).'</a>';
+    foreach($terms as $term){$url=get_category_link($term);if(ar_v21_editorial_review())$url=ar_v21_review_url($url);echo '<a href="'.esc_url($url).'">'.esc_html($term->name).'</a>';}
     echo '</nav>';
 }

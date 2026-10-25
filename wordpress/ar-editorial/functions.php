@@ -116,7 +116,8 @@ function ar_post_categories($post_id=0) {
     echo '<ul class="ar-post-categories" aria-label="Categorías">';
     foreach($categories as $category) {
         echo '<li>';
-        $url=(int)$category->count>0 ? get_category_link($category->term_id) : '';
+        $url=(int)$category->count>0 || ar_v21_editorial_review() ? get_category_link($category->term_id) : '';
+        if($url&&ar_v21_editorial_review())$url=ar_v21_review_url($url);
         if($url && !is_wp_error($url)) {
             echo '<a class="ar-category" href="'.esc_url($url).'">'.esc_html($category->name).'</a>';
         } else {

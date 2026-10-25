@@ -1,4 +1,4 @@
 <?php if(!defined('ABSPATH'))exit; ?>
 <section class="hero interior"><div class="wrap hero-grid"><div><p class="eyebrow"><?php echo esc_html($args['label']); ?></p><?php echo $args['heading_html'] ?: '<h1>'.esc_html($args['title']).'</h1>'; ?><?php echo $args['description']; ?></div>
 <?php if($args['image']): ?><figure><img class="hero-image" src="<?php echo esc_url(get_theme_file_uri('/assets/images/'.$args['image'])); ?>" width="1200" height="900" loading="eager" decoding="async" alt="<?php echo esc_attr($args['image_alt'] ?: 'Fotografía editorial ilustrativa de profesionales conversando.'); ?>"><figcaption>Imagen ilustrativa · No representa al equipo de American Recruiters.</figcaption></figure>
-<?php else: ?><div class="hero-symbol" aria-hidden="true"><?php echo ar_v21_badge('compass'); ?><i></i><i></i><span>AR / MÉXICO</span></div><?php endif; ?></div></section>
+<?php else: ?><div class="hero-symbol" aria-hidden="true"><?php echo ar_v21_badge($args['symbol']??'compass'); ?><i></i><i></i><span>AR / MÉXICO</span></div><?php endif; ?></div></section>

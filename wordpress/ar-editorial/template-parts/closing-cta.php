@@ -1,0 +1,3 @@
+<?php if(!defined('ABSPATH'))exit;
+$cta=$args ?: ['title'=>'Hablemos de la contratación que necesita tu empresa.','text'=>'Comparte el contexto de tu necesidad para revisar el servicio y el alcance de una propuesta.','link'=>'Solicitar propuesta','path'=>'contacto/']; ?>
+<section class="cta-band"><div class="wrap cta-grid"><div><?php echo ar_v21_badge('chat'); ?><p class="eyebrow">TU SIGUIENTE DECISIÓN</p><h2><?php echo esc_html($cta['title']); ?></h2></div><div><p><?php echo esc_html($cta['text']); ?></p><a class="button" href="<?php echo ar_url($cta['path']); ?>"><?php echo esc_html($cta['link']); ?> <?php echo ar_v21_icon('arrow-up-right'); ?></a></div></div></section>
