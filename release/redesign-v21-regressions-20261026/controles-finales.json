@@ -13,7 +13,16 @@
   "noindex_preservado": true,
   "formularios": {"business": "disabled", "candidate": "disabled", "envios": 0},
   "anonimo_previo": {"home_sin_barra": true, "borradores_no_expuestos": true},
-  "anonimo_final_biblioteca": "PENDIENTE: el Mac bloqueado impidió comprobar el redireccionamiento a login desde Chrome incógnito. La restricción de administrador está aplicada en la plantilla.",
+  "anonimo_final_biblioteca": "PASS: Chrome incógnito redirige /sistema-visual/ a wp-login.php. No se introdujeron credenciales.",
+  "anonimo_final": {
+    "home_sin_barra_administrativa": true,
+    "fast_placement_texto_aprobado": true,
+    "dropdown_desktop_teclado_escape": true,
+    "revision_privada_no_expone_borradores": true,
+    "movil": {"width": 390, "height": 844, "scrollWidth": 390, "adminBar": false, "menu_y_dropdown": true, "tipo": "Emulación DevTools de Chrome incógnito, no dispositivo físico"},
+    "version_observada": "1.1.6-v2.1",
+    "cambios_web_en_esta_comprobacion": 0
+  },
   "rendimiento_movil": "Laboratorio final: Performance 88, LCP 2.7 s, CLS 0.122. El informe asocia el desplazamiento a las acciones del hero y la carga de fuente. Repetir y estabilizar antes del lanzamiento; no hay datos CrUX.",
   "aprobacion_visual_del_propietario": "PENDIENTE",
   "produccion_modificada": false,
