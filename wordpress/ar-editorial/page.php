@@ -1,2 +1,2 @@
-<?php get_header(); while(have_posts()):the_post(); ar_page_hero(); ?><section class="ar-page-content"><div class="container"><div class="ar-reading"><?php the_content(); ?></div><?php if(is_page('servicios') && ar_is_scaffold()): ?><div class="ar-grid-3"><?php foreach(ar_services() as $s): ?><article class="ar-card"><h2><?php echo esc_html($s[0]); ?></h2><p>Contenido comercial pendiente de aprobación.</p><a href="<?php echo ar_url($s[1]); ?>">Ver estructura →</a></article><?php endforeach; ?></div><?php endif; ?></div></section><?php endwhile; get_footer(); ?>
+<?php get_header(); while(have_posts()):the_post(); ar_v21_page(); endwhile; get_footer(); ?>
 

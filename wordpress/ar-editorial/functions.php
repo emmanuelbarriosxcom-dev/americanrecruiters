@@ -1,5 +1,6 @@
 <?php
 if (!defined('ABSPATH')) { exit; }
+require_once __DIR__.'/inc/v21.php';
 function ar_setup() {
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
@@ -14,9 +15,9 @@ add_action('after_setup_theme','ar_setup');
 function ar_assets() {
     $version=wp_get_theme()->get('Version');
     wp_enqueue_style('ar-fonts','https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap',[],null);
-    wp_enqueue_style('ar-design',get_theme_file_uri('/assets/css/design-system.css'),['ar-fonts'],$version);
+    wp_enqueue_style('ar-design',get_theme_file_uri('/assets/css/v21.css'),['ar-fonts'],$version);
     wp_enqueue_style('ar-theme',get_stylesheet_uri(),['ar-design'],$version);
-    wp_enqueue_script('ar-navigation',get_theme_file_uri('/assets/js/navigation.js'),[], $version,['strategy'=>'defer','in_footer'=>true]);
+    wp_enqueue_script('ar-navigation',get_theme_file_uri('/assets/js/v21.js'),[], $version,['strategy'=>'defer','in_footer'=>true]);
 }
 add_action('wp_enqueue_scripts','ar_assets');
 function ar_url($path='') { return esc_url(home_url('/'.ltrim($path,'/'))); }

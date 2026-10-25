@@ -9,7 +9,7 @@ add_action('wp_head', static function () {
 }, 20);
 get_header();
 while (have_posts()) : the_post();
-    the_content();
+    ar_v21_home();
 endwhile;
 get_footer();
 

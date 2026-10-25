@@ -1,2 +1,2 @@
-<?php /* Template Name: Servicio · Ejecutivo Editorial */ get_header(); while(have_posts()):the_post(); ar_page_hero('Plantilla de servicio · Contenido y alcance pendientes de aprobación comercial.'); ?><section class="ar-page-content"><div class="container"><div class="ar-reading"><?php the_content(); ?></div><?php if(ar_is_scaffold()): ?><div class="ar-demo-actions"><a class="btn btn-purple" href="<?php echo ar_url('contacto/'); ?>">Solicitar propuesta →</a><a class="btn btn-ghost" href="<?php echo ar_url('servicios/'); ?>">Todos los servicios</a></div><?php endif; ?></div></section><?php endwhile; get_footer(); ?>
+<?php /* Template Name: Servicio · Ejecutivo Editorial */ include __DIR__.'/page.php'; ?>
 

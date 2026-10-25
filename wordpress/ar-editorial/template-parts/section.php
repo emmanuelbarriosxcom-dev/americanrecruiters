@@ -1,0 +1,3 @@
+<?php if(!defined('ABSPATH'))exit;
+$class='section-block'.($args['dark']?' ink':'').($args['process']?' process':'').($args['close']?' editorial-close':''); ?>
+<section class="<?php echo esc_attr($class); ?>"<?php if($args['id'])echo ' id="'.esc_attr($args['id']).'"'; ?>><div class="wrap section-grid"><div class="section-heading"><?php echo ar_v21_badge(ar_v21_choose_icon($args['heading'])); ?><p class="eyebrow"><?php echo esc_html(str_pad((string)$args['index'],2,'0',STR_PAD_LEFT).' / '.($args['process']?'COLABORACIÓN':'EN CONTEXTO')); ?></p><?php echo $args['heading']; ?></div><div class="section-body reveal"><?php echo $args['body']; ?></div></div></section>

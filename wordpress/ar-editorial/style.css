@@ -1,38 +1,66 @@
 /*
 Theme Name: American Recruiters — Ejecutivo Editorial
-Description: Base de desarrollo Opción 2. Gutenberg y componentes compartidos; sin formularios comerciales.
-Version: 1.0.5-rc.2
+Description: Rediseño V2.1 aprobado. Presentación compartida PHP y Gutenberg.
+Version: 1.1.0-v2.1
 Requires at least: 6.6
 Requires PHP: 8.0
 Text Domain: ar-editorial
 */
-/* Reserve the final two-row CTA layout before the webfont swaps in. */
-@media(max-width:600px){body.style-b .ar-home .hero-actions{flex-direction:column;align-items:flex-start}}
-.ar-card img{display:block;width:100%;height:auto}.ar-article-meta{font-size:13px}.ar-blog-intro{margin-bottom:40px}
-.skip-link{position:absolute;top:-100px;left:16px;z-index:99;background:#fff;color:#25232a;padding:16px}.skip-link:focus{top:16px}.ar-menu,.ar-submenu{list-style:none;margin:0;padding:0}.ar-menu{display:flex;align-items:center;gap:22px}.ar-menu li{position:relative}.ar-menu a,.ar-sub-toggle{display:inline-flex;align-items:center;min-height:44px;font-size:12px;font-weight:750}.ar-sub-toggle{color:inherit;background:transparent;border:0;padding:0 8px;min-width:24px}.ar-submenu{display:none;position:absolute;top:100%;left:0;min-width:270px;background:#36303b;padding:12px;border:1px solid #ffffff31;box-shadow:0 15px 35px #0003}.ar-submenu a{padding:9px 12px;display:block}.ar-submenu a:hover,.ar-submenu a:focus-visible{background:#4d4653;color:#ddf4f3}.ar-submenu[hidden]{display:none!important}.ar-submenu:not([hidden]){display:block}.ar-header-link:hover,.ar-header-link[aria-current=page]{color:#8de8dd}.ar-notice{font-size:12px;line-height:1.7;color:#e6dfe8;padding:15px 0;border-top:1px solid #ffffff24}.ar-base-hero .hero-inner{max-width:1000px}.ar-base-hero h1{max-width:900px}.ar-base-hero{min-height:650px!important}.ar-page-content{background:white;color:#25232a}.ar-page-content:empty{display:none}.ar-page-content>.container{padding-block:70px}.ar-page-content a:not(.btn){text-decoration:underline;text-underline-offset:4px}.ar-page-content h2{font-size:clamp(29px,3vw,42px);letter-spacing:-.04em;line-height:1.2}.ar-page-content h3{font-size:23px;line-height:1.35}.ar-page-content p{line-height:1.85;max-width:760px}.ar-page-content .eyebrow,.ar-section--light .eyebrow,.ar-section--soft .eyebrow{color:#087577}.ar-card{height:100%}.ar-card a{display:inline-flex;min-height:44px;align-items:center;font-weight:700;color:#4d4653;text-decoration:underline;text-underline-offset:4px}.ar-card h2{font-size:24px;letter-spacing:-.03em}.ar-grid-3>*{min-width:0}.ar-demo-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.ar-demo-form{max-width:680px}.ar-demo-form label{display:block;margin:16px 0 6px;font-size:14px;font-weight:700}.ar-demo-form input,.ar-demo-form textarea{display:block;width:100%;padding:14px;border:1px solid #a49aa8;border-radius:8px;background:#f5f4f7;color:#25232a}.ar-demo-form button{margin-top:22px}.ar-demo-form fieldset{border:0;margin:0;padding:0}.ar-demo-form legend{font-size:20px;font-weight:800}.ar-demo-form small{display:block;line-height:1.8;margin-top:18px}.ar-blog-empty{border:1px solid #e4e1e8;padding:32px}.ar-article{max-width:760px;margin-inline:auto}.site-footer .logo{margin-bottom:24px}.site-footer h2{font-size:12px;text-transform:uppercase;letter-spacing:.12em}.site-footer .footer-links{list-style:none;padding:0}.site-footer a{min-height:30px}.site-footer .footer-brand{display:inline-block;opacity:1}.site-footer .footer-brand .logo{margin:0}.ar-reading a{color:#087577;text-decoration:underline}.ar-reading .btn{color:#fff}.ar-demo-form button:disabled{opacity:1;background:#4d4653;color:white;cursor:not-allowed}.ar-staging-chip{display:inline-block;border:1px solid #8de8dd7a;color:#b7f0e9;padding:8px 12px;border-radius:99px;font-size:11px;font-weight:800;letter-spacing:.08em;margin-top:25px}.style-b .btn-primary{background:#ddf4f3;color:#342c38}.ar-section h2{font-size:clamp(32px,4vw,52px);letter-spacing:-.05em;line-height:1.14}.ar-card h2{font-size:24px}.ar-component-heading{margin-top:0}.ar-interior-hero{overflow:hidden}.ar-interior-hero h1{overflow-wrap:break-word}.site-header .nav-content{gap:18px}.site-header .logo{flex-shrink:0}.site-header nav{gap:0}.ar-menu a{white-space:nowrap}.ar-article img{height:auto}.wp-block-image img{height:auto;max-width:100%}
-@media(max-width:1100px){.ar-menu{gap:12px}.site-header .logo{width:205px}.site-header .nav-content{gap:12px}}
-@media(max-width:920px){.site-header .ar-nav{display:none;position:absolute;top:100%;left:0;right:0;background:#36303b;padding:14px 20px 24px;border-bottom:1px solid #ffffff31;box-shadow:0 12px 22px #0003}.site-header .ar-nav.is-open{display:block}.ar-menu{display:block}.ar-menu a{min-height:48px;padding:10px 6px}.ar-menu>li{border-bottom:1px solid #ffffff31}.ar-submenu{position:static;box-shadow:none;border:0;padding:0 0 10px 16px}.ar-sub-toggle{min-height:48px;min-width:44px}.nav-toggle{min-width:44px;min-height:44px}.site-header .ar-nav .ar-mobile-cta{display:block}.ar-base-hero{min-height:580px!important}}
-@media(min-width:921px){.ar-mobile-cta{display:none}.ar-menu>li:hover>.ar-submenu:not([hidden]){display:block}}
-@media(max-width:600px){.site-header .logo{width:190px}.ar-page-content>.container{padding-block:48px}.ar-base-hero .hero-inner h1{font-size:clamp(46px,12vw,68px)}.ar-demo-actions .btn{white-space:normal;text-align:center}.ar-cta-band .btn{white-space:normal;text-align:center}.ar-staging-chip{font-size:10px}.ar-card{padding:24px}.ar-breadcrumb{font-size:11px}.ar-base-hero{min-height:560px!important}}
-
-
-/* Fase 8: same visual layout, logical disclosure order and real taxonomy labels. */
-@media(max-width:920px){
-.site-header .nav-content>.nav-toggle{margin-left:auto}
-.site-header .nav-content>.nav-cta{display:none}
-}
-.ar-post-categories{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:12px 0 20px;padding:0}
+/* WordPress bridge; approved component rules live in assets/css/v21.css. */
+body.ar-v21{margin:0;font-family:Montserrat,Arial,sans-serif}
+body.admin-bar .site-header{top:32px}
+[hidden]{display:none!important}
+.site-header #nav a.button{color:var(--ink)}
+.brand img{height:auto}
+.wp-block-group.is-layout-constrained>:where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:none}
+.ar-v21 .wp-block-buttons>.wp-block-button{margin:0}
+.ar-v21 .wp-block-button__link{border-radius:7px;font:700 12px/1.6 Montserrat,Arial,sans-serif;white-space:normal}
+.hero .wp-block-button__link{background:var(--mint);color:var(--ink)}
+.hero h1 span{color:var(--mint)}
+.overline,.kicker-line{font-size:10px;font-weight:700;letter-spacing:.18em}
+.home-hero .hero-foot{max-width:none}
+.ar-text-link a{display:inline-flex;min-height:44px;align-items:center;font-size:13px;font-weight:600}
+.statement .statement-inner,.statement .ar-reading{max-width:none}
+.service-row h3{overflow-wrap:anywhere}
+.section-body .ar-card>.concept-icon{margin-bottom:18px}
+.section-body .ar-card h3{line-height:1.35}
+.section-body .ar-grid-3>.ar-card{height:auto}
+.section-body .wp-block-columns{flex-wrap:wrap}
+.section-body .wp-block-column{min-width:0}
+.section-body .ar-step-grid .ar-card{position:relative}
+.section-body .ar-step-grid .ar-step-num{font-weight:700;color:var(--purple)}
+.section-body table,.reading table{width:100%;border-collapse:collapse;font-size:14px}
+.section-body td,.section-body th,.reading td,.reading th{padding:14px;border:1px solid var(--border);text-align:left}
+.section-body .wp-block-table{overflow:auto}
+.article-hero .ar-post-categories{display:flex;flex-wrap:wrap;gap:12px;list-style:none;margin:0;padding:0}
+.ar-post-categories a,.ar-post-categories span{font-size:12px}
 .ar-post-categories li{margin:0}
-.ar-post-categories .ar-category{display:inline-flex;align-items:center;min-height:32px;padding:4px 10px;border:1px solid #675c6c;background:#f5f4f7;color:#4d4653;font-size:12px;font-weight:600;line-height:1.5;text-decoration:none;border-radius:4px}
-.ar-post-categories a.ar-category{min-height:44px}
-.ar-post-categories a.ar-category:hover{color:#fff;background:#4d4653}
-
-
+.article-feature{width:100%;height:auto;max-height:620px;object-fit:cover;border-radius:12px}
+.editorial-card h2{font-size:23px;line-height:1.25}
+.editorial-card h2 a{text-decoration:none}
+.editorial-card.legacy-card img{aspect-ratio:1.5;object-fit:cover;border-radius:12px}
+.legacy-card h3{font-size:23px;line-height:1.3;margin-top:20px}
+.legacy-card a{overflow-wrap:anywhere}
+.reading .wp-block-image{margin:24px 0}.reading img{max-width:100%;height:auto}
+.reading .inline-cta h2{font-size:25px}
+.reading-aside,.reading,.section-heading,.hero-grid>div,.hero-grid>figure{min-width:0}
+.category-links{display:flex;gap:16px;flex-wrap:wrap;margin-block:20px}
+.category-links a{min-height:44px;display:inline-flex;align-items:center}
+.nav-links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:55px}
+.nav-links .page-numbers{min-width:48px;min-height:48px;display:grid;place-items:center;padding:8px;border:1px solid var(--border);border-radius:6px;text-decoration:none}
+.nav-links .current{background:var(--purple-dark);color:#fff}
+.screen-reader-text{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.site-footer .brand{margin-bottom:24px}
+.site-footer small{display:block;font-size:11px;line-height:1.7}
+.site-footer a{min-height:32px}
+.section-block>.reading{max-width:800px}
+.section-heading:empty{display:none}
+@media(max-width:1000px){.reading-grid{grid-template-columns:1fr}.reading-aside{position:static}.reading-aside .sidebar-cta{display:none}}
+@media(max-width:782px){body.admin-bar .site-header{top:46px}}
+@media(max-width:600px){body.admin-bar .site-header{top:0}.brand-strip .wrap{flex-wrap:wrap;justify-content:center}.home-hero .hero-actions{flex-direction:column;align-items:flex-start}.article-meta{flex-wrap:wrap}.section-body .wp-block-columns{display:block}.section-body .wp-block-column+.wp-block-column{margin-top:20px}.site-footer .brand{max-width:100%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
 /* Fase 9: disabled review components, no collection of personal data. */
 .ar-f9{max-width:760px;margin:24px auto;padding:clamp(16px,4vw,32px);border:1px solid #d8d1de;border-radius:16px;background:#fff;color:#302936}
 .ar-f9 fieldset{min-width:0;border:0;padding:0;margin:0}.ar-f9 legend{font-weight:700;margin-bottom:16px;font-size:1.15rem}
 .ar-f9 label{display:block;font-weight:600;margin:16px 0 6px}.ar-f9 input,.ar-f9 select,.ar-f9 textarea{box-sizing:border-box;width:100%;max-width:100%;min-height:48px;padding:12px;border:1px solid #93869e;border-radius:8px;font:inherit;background:#f4f2f6;color:#51475b;opacity:1}
 .ar-f9 textarea{min-height:120px;resize:vertical}.ar-f9 small{display:block;line-height:1.6;margin-top:6px}.ar-f9 button{min-height:48px;max-width:100%;white-space:normal;margin-top:20px;opacity:1;cursor:not-allowed}.ar-f9-status{border-left:4px solid #256f68;padding:12px;background:#eef6f4}.ar-f9 a{color:#512776;text-decoration:underline}.ar-f9 a:focus-visible{outline:3px solid #256f68;outline-offset:4px}.ar-f9 .ar-f9-privacy input{width:20px;min-height:20px;height:20px;vertical-align:middle;margin-right:8px}.ar-f9 .ar-f9-privacy{font-weight:400}
-
-/* Keep Home's needs grid within its track when an external image is unavailable. */
-body.style-b .ar-home .moment-layout > * { min-width: 0; }
