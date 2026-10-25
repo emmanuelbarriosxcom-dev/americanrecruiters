@@ -1,0 +1,259 @@
+[
+  {
+    "buttons": [
+      {
+        "gap": "24px",
+        "minHeight": "44px",
+        "text": "Solicitar propuesta ↗"
+      },
+      {
+        "gap": "24px",
+        "minHeight": "52px",
+        "text": "Consultar qué servicio corresponde"
+      },
+      {
+        "gap": "24px",
+        "minHeight": "52px",
+        "text": "Explorar Headhunting"
+      },
+      {
+        "gap": "24px",
+        "minHeight": "52px",
+        "text": "Explorar Servicio personalizado"
+      },
+      {
+        "gap": "24px",
+        "minHeight": "52px",
+        "text": "Consultar mi necesidad"
+      }
+    ],
+    "doc": 1440,
+    "headings": [
+      "Servicios para las necesidades de contratación de tu empresa",
+      "Elige según la necesidad de tu empresa",
+      "Fast Placement: información provisional",
+      "Cómo elegir entre los servicios",
+      "Una propuesta con alcance claro",
+      "¿Necesitas orientación para presentar tu caso?"
+    ],
+    "icons": 0,
+    "url": "http://127.0.0.1:8879/prototype/servicios.html",
+    "w": 1440
+  },
+  {
+    "buttons": [
+      {
+        "gap": "24px",
+        "minHeight": "44px",
+        "text": "Solicitar propuesta ↗"
+      },
+      {
+        "gap": "24px",
+        "minHeight": "52px",
+        "text": "Solicitar propuesta de Headhunting"
+      },
+      {
+        "gap": "24px",
+        "minHeight": "52px",
+        "text": "Conocer cómo trabajamos"
+      },
+      {
+        "gap": "24px",
+        "minHeight": "52px",
+        "text": "Solicitar propuesta de Headhunting"
+      }
+    ],
+    "doc": 1440,
+    "headings": [
+      "Headhunting en México para posiciones de liderazgo",
+      "Una búsqueda que parte del papel del puesto",
+      "Qué es nuestro servicio de Headhunting",
+      "Cuándo considerar una búsqueda ejecutiva",
+      "Criterios que ayudan a orientar la selección",
+      "Una búsqueda de liderazgo empieza por un encargo claro",
+      "Preguntas sobre Headhunting",
+      "Hablemos de la posición que necesitas cubrir"
+    ],
+    "icons": 0,
+    "url": "http://127.0.0.1:8879/prototype/headhunting.html",
+    "w": 1440
+  },
+  {
+    "buttons": [
+      {
+        "gap": "24px",
+        "minHeight": "44px",
+        "text": "Solicitar propuesta ↗"
+      },
+      {
+        "gap": "24px",
+        "minHeight": "52px",
+        "text": "Consultar selección personalizada"
+      },
+      {
+        "gap": "24px",
+        "minHeight": "52px",
+        "text": "Comparar nuestros servicios"
+      },
+      {
+        "gap": "24px",
+        "minHeight": "52px",
+        "text": "Consultar selección personalizada"
+      }
+    ],
+    "doc": 1440,
+    "headings": [
+      "Reclutamiento y selección a la medida de tu empresa",
+      "Tu necesidad define la conversación",
+      "En qué consiste el servicio personalizado",
+      "Situaciones en las que puede ser pertinente",
+      "Define dónde necesita apoyo tu equipo",
+      "Diferencias frente a Headhunting",
+      "Qué debe precisar la propuesta",
+      "Preguntas sobre selección personalizada",
+      "Cuéntanos dónde necesitas apoyo"
+    ],
+    "icons": 0,
+    "url": "http://127.0.0.1:8879/prototype/personalizado.html",
+    "w": 1440
+  },
+  {
+    "buttons": [
+      {
+        "gap": "24px",
+        "minHeight": "44px",
+        "text": "Solicitar propuesta ↗"
+      },
+      {
+        "gap": "24px",
+        "minHeight": "52px",
+        "text": "Consultar información disponible ↗"
+      }
+    ],
+    "doc": 1440,
+    "headings": [
+      "Fast Placement",
+      "Una presentación clara, sin promesas pendientes.",
+      "Conoce las alternativas actuales"
+    ],
+    "icons": 0,
+    "url": "http://127.0.0.1:8879/prototype/fast-placement.html",
+    "w": 1440
+  },
+  {
+    "buttons": [
+      {
+        "gap": "24px",
+        "minHeight": "44px",
+        "text": "Solicitar propuesta ↗"
+      },
+      {
+        "gap": "24px",
+        "minHeight": "52px",
+        "text": "Presentar una necesidad empresarial"
+      }
+    ],
+    "doc": 1440,
+    "headings": [
+      "Una colaboración que empieza por comprender tu necesidad",
+      "Qué conviene aclarar desde el inicio",
+      "Cuatro momentos para ordenar la colaboración",
+      "La propuesta como referencia compartida",
+      "Información útil para comenzar",
+      "Preguntas sobre la colaboración",
+      "Presenta el contexto de tu empresa"
+    ],
+    "icons": 0,
+    "url": "http://127.0.0.1:8879/prototype/metodologia.html",
+    "w": 1440
+  },
+  {
+    "buttons": [
+      {
+        "gap": "24px",
+        "minHeight": "44px",
+        "text": "Solicitar propuesta ↗"
+      },
+      {
+        "gap": "24px",
+        "minHeight": "52px",
+        "text": "Solicitar propuesta\n↗"
+      }
+    ],
+    "doc": 1440,
+    "headings": [
+      "Ideas para decidir mejor sobre talento y contratación.",
+      "Perspectivas para tu empresa",
+      "Hablemos de la contratación que necesita tu empresa."
+    ],
+    "icons": 0,
+    "url": "http://127.0.0.1:8879/prototype/blog.html",
+    "w": 1440
+  },
+  {
+    "buttons": [
+      {
+        "gap": "24px",
+        "minHeight": "44px",
+        "text": "Solicitar propuesta ↗"
+      },
+      {
+        "gap": "24px",
+        "minHeight": "52px",
+        "text": "Solicitar propuesta\n↗"
+      }
+    ],
+    "doc": 1440,
+    "headings": [
+      "¿Cuánto cobra un headhunter? Qué debe revisar una empresa",
+      "De la lectura a tu necesidad.",
+      "Qué factores conviene aclarar para recibir una cotización",
+      "Qué debe explicar la propuesta de honorarios",
+      "Compare el trabajo incluido, además del precio",
+      "Un ejemplo para comparar dos propuestas",
+      "Garantías, reemplazos y exclusividad: nunca por suposición",
+      "Cómo preparar una solicitud útil",
+      "Preguntas frecuentes sobre costos de headhunting",
+      "Hablemos de la contratación que necesita tu empresa.",
+      "Continúa explorando"
+    ],
+    "icons": 0,
+    "url": "http://127.0.0.1:8879/prototype/articulo-808.html",
+    "w": 1440
+  },
+  {
+    "buttons": [
+      {
+        "gap": "24px",
+        "minHeight": "44px",
+        "text": "Solicitar propuesta ↗"
+      },
+      {
+        "gap": "24px",
+        "minHeight": "52px",
+        "text": "Conocer servicios →"
+      },
+      {
+        "gap": "24px",
+        "minHeight": "52px",
+        "text": "Volver al inicio →"
+      },
+      {
+        "gap": "24px",
+        "minHeight": "52px",
+        "text": "Envío no disponible"
+      }
+    ],
+    "doc": 1440,
+    "headings": [
+      "Claridad también cuando no hay resultados.",
+      "Estamos preparando nuevas perspectivas.",
+      "No encontramos esta página.",
+      "Reserva de imagen",
+      "Formulario deshabilitado"
+    ],
+    "icons": 0,
+    "url": "http://127.0.0.1:8879/prototype/estados.html",
+    "w": 1440
+  }
+]

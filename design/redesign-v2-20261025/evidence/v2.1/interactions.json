@@ -1,0 +1,106 @@
+[
+  {
+    "test": "Mobile menu Enter and Escape, observed in browser",
+    "viewport": "390x844",
+    "enterOpensMenu": true,
+    "enterOpensServices": true,
+    "escapeClosesSubmenuThenMenu": true,
+    "focusReturnsToMenuControl": true,
+    "submenuLinkHeightPx": 48
+  },
+  {
+    "focus": "Fast Placement · por definir",
+    "open": true,
+    "outline": "rgb(221, 244, 243) solid 3px",
+    "test": "Desktop dropdown ArrowDown + End"
+  },
+  {
+    "closed": true,
+    "focus": "Mostrar servicios",
+    "test": "Desktop Escape"
+  },
+  {
+    "cards": 6,
+    "current": "2",
+    "test": "Blog page 2",
+    "url": "http://127.0.0.1:8879/prototype/blog-2.html"
+  },
+  {
+    "cards": 5,
+    "current": "3",
+    "test": "Blog page 3",
+    "url": "http://127.0.0.1:8879/prototype/blog-3.html"
+  },
+  {
+    "doc": 390,
+    "hash": "#contenido-2",
+    "heading": "Qué debe explicar la propuesta de honorarios",
+    "table": [
+      {
+        "client": 350,
+        "scroll": 420
+      }
+    ],
+    "test": "Mobile TOC",
+    "width": 390
+  },
+  {
+    "open": [
+      "¿Qué posiciones puedo consultar?"
+    ],
+    "test": "FAQ Enter"
+  },
+  {
+    "computed": [
+      {
+        "animation": "none",
+        "duration": "0s",
+        "selector": "BUTTON"
+      },
+      {
+        "animation": "none",
+        "duration": "0s",
+        "selector": "path"
+      },
+      {
+        "animation": "none",
+        "duration": "0s",
+        "selector": "path"
+      },
+      {
+        "animation": "none",
+        "duration": "0s",
+        "selector": "NAV"
+      },
+      {
+        "animation": "none",
+        "duration": "0s",
+        "selector": "A"
+      },
+      {
+        "animation": "none",
+        "duration": "0s",
+        "selector": "H1"
+      },
+      {
+        "animation": "none",
+        "duration": "0s",
+        "selector": "A"
+      },
+      {
+        "animation": "none",
+        "duration": "0s",
+        "selector": "A"
+      },
+      {
+        "animation": "none",
+        "duration": "0s",
+        "selector": "A"
+      }
+    ],
+    "doc": 390,
+    "override": "reduce",
+    "test": "Manual reduced-motion simulation, not native preference",
+    "width": 390
+  }
+]

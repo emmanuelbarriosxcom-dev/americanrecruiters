@@ -1,0 +1,37 @@
+AMERICAN RECRUITERS MÉXICO — AB.2 / V2.1
+25 octubre 2026
+
+ENTRADA
+refinamiento-v21.html: informe de cambios, checklist y QA de esta ronda.
+prototype/index.html: prototipo navegable refinado.
+informe.html: diagnóstico histórico V2.0; sus capturas y resultados son de esa fase.
+
+ALCANCE
+Sólo prototipo y archivos aislados. Sin cambios en WordPress, RC2, producción,
+hosting, contenido SEO, arquitectura, slugs ni formularios. Sin publicación de
+los 17 artículos. Sin merge a main.
+
+BASE Y RAMA
+V2.0: 41c16322e3aae2f8c5304615e7f9631953fbad44
+Rama de esta ronda: design/redesign-v2.1-20261025
+
+ARCHIVOS
+prototype/assets/refinement-v21.css: capa de precisión, iconos y motion.
+prototype/assets/interactions.js: navegación, TOC y motion progresivo.
+SVG inline: retícula de 24, trazo 1.6, decorativos sin foco.
+refine-v21.py: transformación reproducible desde la base V2.0.
+validate-v21.py: comparación de textos, enlaces, formularios y SVG.
+evidence/v2.1/: capturas reales, matriz de 160 observaciones y resultados.
+
+PRUEBA DE MOVIMIENTO REDUCIDO
+prototype/index.html?motion=reduce activa una simulación explícita del mismo
+estado visual. No emite ni simula la señal nativa del sistema operativo.
+La preferencia nativa se respeta en CSS y JS; su QA en un dispositivo con la
+preferencia activada sigue pendiente para la implementación.
+
+IMPLEMENTACIÓN POSTERIOR
+Mantener PHP + Gutenberg. Consolidar CSS con el tema autorizado antes del
+despliegue; no copiar indefinidamente hojas de overrides. Reutilizar SVG con
+helper/template-part, sin fuentes de iconos o dependencias de animación.
+Repetir QA anónimo, lectores de pantalla, Safari y CWV/CLS en WordPress real.
+La aprobación de V2.1 no habilita formularios ni publica borradores.
