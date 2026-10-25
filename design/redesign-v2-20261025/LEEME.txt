@@ -1,0 +1,59 @@
+AMERICAN RECRUITERS MÉXICO — DIRECCIÓN DE REDISEÑO 2.0
+Agente AB | 25 de octubre de 2026
+
+ENTRADA PRINCIPAL
+informe.html — diagnóstico, inventario, fuentes, sistema de diseño, componentes,
+animación, implementación por fases, riesgos y QA.
+prototype/index.html — propuesta navegable.
+
+ESTADO
+Prototipo aislado. No se ha instalado ni publicado en WordPress.
+No se han cambiado contenidos, estados de publicación, SEO, plugins, tema activo,
+DNS, hosting ni producción. Sin merge a main ni a la release.
+
+32 DOCUMENTOS DE DEMOSTRACIÓN
+Home; ocho interiores completas; Fast Placement provisional; Blog 1/2/3;
+categoría; 17 artículos existentes; catálogo de estados vacío/404/carga/formulario.
+Los artículos son muestras de borradores, no publicaciones nuevas.
+La paginación de este prototipo es navegación entre documentos HTML.
+En WordPress se debe mantener la main query y the_posts_pagination, ya existentes.
+
+VISUALIZAR
+Servir esta carpeta con cualquier servidor estático local y abrir informe.html.
+Ejemplo: python3 -m http.server 8879 --bind 127.0.0.1
+No subirla al WordPress compartido. No hace falta instalar dependencias.
+Montserrat procede de Google Fonts; las imágenes de la propuesta son locales.
+
+IMPLEMENTACIÓN
+Reutilizar PHP + Gutenberg y separar componentes compartidos del contenido.
+El contrato de tokens está en prototype/assets/design.css; refinements.css
+contiene ajustes finales del prototipo; interactions.js implementa mejora progresiva.
+No copiar los archivos .html como rutas finales de WordPress.
+No copiar indiscriminadamente los CTA relacionados a artículos históricos de CV:
+el mapeo definitivo debe respetar la intención y la disponibilidad pública.
+Mantener intactas las salvaguardas de la release RC2. Acordar baseline con Agente Q.
+
+EVIDENCIA
+evidence/review/: capturas del estado actual, con la barra administrativa recortada;
+la sesión sigue siendo autenticada. No declarar dichas capturas anónimas.
+La captura autenticada del Blog, que contiene una entrada privada de QA ajena al
+inventario, permanece sólo local y no se incorpora al repositorio.
+evidence/prototype/: capturas 1440/1024/768/390/360 y QA JSON (160 mediciones).
+No se midieron Core Web Vitals ni se probó reduced-motion de forma nativa.
+El intento de comprobación en Chrome incógnito quedó bloqueado por el bloqueo del Mac.
+
+BASE
+release/ar-ejecutivo-editorial-20261023
+a224cb8f18e5759def579a5a2c9b3bc1c1b5a742
+Rama propia: design/redesign-v2-20261025
+El frontend observado declaró CSS 1.0.5-rc.2. Esto no sustituye la certificación de Q.
+
+IMÁGENES
+Copias de recursos existentes y derivados WebP locales. Los originales de trabajo
+se conservan localmente y en los respaldos previos; no se han editado medios de WP.
+assets-source.json y asset-derivatives.json documentan procedencia y derivados.
+Fotografías ilustrativas: no representan al equipo ni a clientes.
+
+PRÓXIMA DECISIÓN
+Aprobar o ajustar la dirección visual. La implementación en WordPress requiere
+una autorización posterior y coordinación con la release técnica final.

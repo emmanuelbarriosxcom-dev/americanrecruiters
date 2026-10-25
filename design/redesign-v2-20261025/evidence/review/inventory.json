@@ -1,0 +1,1467 @@
+[
+  {
+    "name": "home",
+    "url": "https://desarrollo.americanrecruiters.mx/",
+    "id": "15",
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollWidth": 1440,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "108px",
+    "h1": [
+      "El liderazgo adecuado\ncambia el rumbo."
+    ],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Necesidades distintas.\nSoluciones claras."
+      },
+      {
+        "tag": "H3",
+        "text": "Headhunting"
+      },
+      {
+        "tag": "H3",
+        "text": "Servicio personalizado"
+      },
+      {
+        "tag": "H3",
+        "text": "Fast Placement"
+      },
+      {
+        "tag": "H2",
+        "text": "Antes de buscar un candidato,\nhay que entender la decisión."
+      },
+      {
+        "tag": "H2",
+        "text": "¿Qué situación enfrenta tu empresa?"
+      },
+      {
+        "tag": "H2",
+        "text": "Una posición estratégica requiere una búsqueda con criterio."
+      },
+      {
+        "tag": "H3",
+        "text": "Claridad para una decisión importante."
+      },
+      {
+        "tag": "H2",
+        "text": "Del contexto de negocio a la decisión."
+      },
+      {
+        "tag": "H3",
+        "text": "Entender el reto"
+      },
+      {
+        "tag": "H3",
+        "text": "Alinear el perfil"
+      },
+      {
+        "tag": "H3",
+        "text": "Identificar talento"
+      },
+      {
+        "tag": "H3",
+        "text": "Apoyar la decisión"
+      },
+      {
+        "tag": "H2",
+        "text": "Perspectivas para tomar mejores decisiones."
+      },
+      {
+        "tag": "H3",
+        "text": "¿Cómo contratar talento de alta dirección en México en tiempos de incertidumbre?"
+      },
+      {
+        "tag": "H3",
+        "text": "¿Por qué las mejores ternas de candidatos rechazan su oferta de empleo?"
+      },
+      {
+        "tag": "H3",
+        "text": "Reclutamiento especializado vs. Reclutamiento interno: ¿Cuándo conviene externalizar la búsqueda?"
+      },
+      {
+        "tag": "H2",
+        "text": "Respuestas que ayudan a decidir."
+      },
+      {
+        "tag": "H2",
+        "text": "La siguiente gran decisión puede empezar aquí."
+      }
+    ],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "home",
+    "url": "https://desarrollo.americanrecruiters.mx/",
+    "id": "15",
+    "viewport": [
+      390,
+      900
+    ],
+    "scrollWidth": 390,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "48px",
+    "h1": [
+      "El liderazgo adecuado\ncambia el rumbo."
+    ],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Necesidades distintas.\nSoluciones claras."
+      },
+      {
+        "tag": "H3",
+        "text": "Headhunting"
+      },
+      {
+        "tag": "H3",
+        "text": "Servicio personalizado"
+      },
+      {
+        "tag": "H3",
+        "text": "Fast Placement"
+      },
+      {
+        "tag": "H2",
+        "text": "Antes de buscar un candidato,\nhay que entender la decisión."
+      },
+      {
+        "tag": "H2",
+        "text": "¿Qué situación enfrenta tu empresa?"
+      },
+      {
+        "tag": "H2",
+        "text": "Una posición estratégica requiere una búsqueda con criterio."
+      },
+      {
+        "tag": "H3",
+        "text": "Claridad para una decisión importante."
+      },
+      {
+        "tag": "H2",
+        "text": "Del contexto de negocio a la decisión."
+      },
+      {
+        "tag": "H3",
+        "text": "Entender el reto"
+      },
+      {
+        "tag": "H3",
+        "text": "Alinear el perfil"
+      },
+      {
+        "tag": "H3",
+        "text": "Identificar talento"
+      },
+      {
+        "tag": "H3",
+        "text": "Apoyar la decisión"
+      },
+      {
+        "tag": "H2",
+        "text": "Perspectivas para tomar mejores decisiones."
+      },
+      {
+        "tag": "H3",
+        "text": "¿Cómo contratar talento de alta dirección en México en tiempos de incertidumbre?"
+      },
+      {
+        "tag": "H3",
+        "text": "¿Por qué las mejores ternas de candidatos rechazan su oferta de empleo?"
+      },
+      {
+        "tag": "H3",
+        "text": "Reclutamiento especializado vs. Reclutamiento interno: ¿Cuándo conviene externalizar la búsqueda?"
+      },
+      {
+        "tag": "H2",
+        "text": "Respuestas que ayudan a decidir."
+      },
+      {
+        "tag": "H2",
+        "text": "La siguiente gran decisión puede empezar aquí."
+      }
+    ],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "servicios",
+    "url": "https://desarrollo.americanrecruiters.mx/servicios/",
+    "id": "16",
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollWidth": 1440,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "89.28px",
+    "h1": [
+      "Servicios para las necesidades de contratación de tu empresa"
+    ],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Elige según la necesidad de tu empresa"
+      },
+      {
+        "tag": "H3",
+        "text": "Una posición de liderazgo"
+      },
+      {
+        "tag": "H3",
+        "text": "Apoyo en reclutamiento y selección"
+      },
+      {
+        "tag": "H3",
+        "text": "Aún no sé qué servicio necesito"
+      },
+      {
+        "tag": "H2",
+        "text": "Fast Placement: información provisional"
+      },
+      {
+        "tag": "H2",
+        "text": "Cómo elegir entre los servicios"
+      },
+      {
+        "tag": "H2",
+        "text": "Una propuesta con alcance claro"
+      },
+      {
+        "tag": "H2",
+        "text": "¿Necesitas orientación para presentar tu caso?"
+      }
+    ],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "servicios",
+    "url": "https://desarrollo.americanrecruiters.mx/servicios/",
+    "id": "16",
+    "viewport": [
+      390,
+      900
+    ],
+    "scrollWidth": 390,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "48px",
+    "h1": [
+      "Servicios para las necesidades de contratación de tu empresa"
+    ],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Elige según la necesidad de tu empresa"
+      },
+      {
+        "tag": "H3",
+        "text": "Una posición de liderazgo"
+      },
+      {
+        "tag": "H3",
+        "text": "Apoyo en reclutamiento y selección"
+      },
+      {
+        "tag": "H3",
+        "text": "Aún no sé qué servicio necesito"
+      },
+      {
+        "tag": "H2",
+        "text": "Fast Placement: información provisional"
+      },
+      {
+        "tag": "H2",
+        "text": "Cómo elegir entre los servicios"
+      },
+      {
+        "tag": "H2",
+        "text": "Una propuesta con alcance claro"
+      },
+      {
+        "tag": "H2",
+        "text": "¿Necesitas orientación para presentar tu caso?"
+      }
+    ],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "headhunting",
+    "url": "https://desarrollo.americanrecruiters.mx/servicios/headhunting/",
+    "id": "17",
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollWidth": 1440,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "89.28px",
+    "h1": [
+      "Headhunting en México para posiciones de liderazgo"
+    ],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Una búsqueda que parte del papel del puesto"
+      },
+      {
+        "tag": "H2",
+        "text": "Qué es nuestro servicio de Headhunting"
+      },
+      {
+        "tag": "H2",
+        "text": "Cuándo considerar una búsqueda ejecutiva"
+      },
+      {
+        "tag": "H3",
+        "text": "Responsabilidad gerencial"
+      },
+      {
+        "tag": "H3",
+        "text": "Dirección y decisiones de negocio"
+      },
+      {
+        "tag": "H3",
+        "text": "Necesidades de experiencia específica"
+      },
+      {
+        "tag": "H2",
+        "text": "Criterios que ayudan a orientar la selección"
+      },
+      {
+        "tag": "H2",
+        "text": "Una búsqueda de liderazgo empieza por un encargo claro"
+      },
+      {
+        "tag": "H3",
+        "text": "Responsabilidad del puesto"
+      },
+      {
+        "tag": "H3",
+        "text": "Contexto de la búsqueda"
+      },
+      {
+        "tag": "H3",
+        "text": "Condiciones que ya conoces"
+      },
+      {
+        "tag": "H2",
+        "text": "Preguntas sobre Headhunting"
+      },
+      {
+        "tag": "H2",
+        "text": "Hablemos de la posición que necesitas cubrir"
+      }
+    ],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "headhunting",
+    "url": "https://desarrollo.americanrecruiters.mx/servicios/headhunting/",
+    "id": "17",
+    "viewport": [
+      390,
+      900
+    ],
+    "scrollWidth": 390,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "48px",
+    "h1": [
+      "Headhunting en México para posiciones de liderazgo"
+    ],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Una búsqueda que parte del papel del puesto"
+      },
+      {
+        "tag": "H2",
+        "text": "Qué es nuestro servicio de Headhunting"
+      },
+      {
+        "tag": "H2",
+        "text": "Cuándo considerar una búsqueda ejecutiva"
+      },
+      {
+        "tag": "H3",
+        "text": "Responsabilidad gerencial"
+      },
+      {
+        "tag": "H3",
+        "text": "Dirección y decisiones de negocio"
+      },
+      {
+        "tag": "H3",
+        "text": "Necesidades de experiencia específica"
+      },
+      {
+        "tag": "H2",
+        "text": "Criterios que ayudan a orientar la selección"
+      },
+      {
+        "tag": "H2",
+        "text": "Una búsqueda de liderazgo empieza por un encargo claro"
+      },
+      {
+        "tag": "H3",
+        "text": "Responsabilidad del puesto"
+      },
+      {
+        "tag": "H3",
+        "text": "Contexto de la búsqueda"
+      },
+      {
+        "tag": "H3",
+        "text": "Condiciones que ya conoces"
+      },
+      {
+        "tag": "H2",
+        "text": "Preguntas sobre Headhunting"
+      },
+      {
+        "tag": "H2",
+        "text": "Hablemos de la posición que necesitas cubrir"
+      }
+    ],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "personalizado",
+    "url": "https://desarrollo.americanrecruiters.mx/servicios/reclutamiento-personalizado/",
+    "id": "18",
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollWidth": 1440,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "89.28px",
+    "h1": [
+      "Reclutamiento y selección a la medida de tu empresa"
+    ],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Tu necesidad define la conversación"
+      },
+      {
+        "tag": "H2",
+        "text": "En qué consiste el servicio personalizado"
+      },
+      {
+        "tag": "H2",
+        "text": "Situaciones en las que puede ser pertinente"
+      },
+      {
+        "tag": "H3",
+        "text": "Definir mejor una vacante"
+      },
+      {
+        "tag": "H3",
+        "text": "Complementar el trabajo de Recursos Humanos"
+      },
+      {
+        "tag": "H3",
+        "text": "Revisar una necesidad particular"
+      },
+      {
+        "tag": "H2",
+        "text": "Define dónde necesita apoyo tu equipo"
+      },
+      {
+        "tag": "H3",
+        "text": "Qué necesitas cubrir"
+      },
+      {
+        "tag": "H3",
+        "text": "Dónde necesitas apoyo"
+      },
+      {
+        "tag": "H3",
+        "text": "Cómo participa tu empresa"
+      },
+      {
+        "tag": "H2",
+        "text": "Diferencias frente a Headhunting"
+      },
+      {
+        "tag": "H2",
+        "text": "Qué debe precisar la propuesta"
+      },
+      {
+        "tag": "H2",
+        "text": "Preguntas sobre selección personalizada"
+      },
+      {
+        "tag": "H2",
+        "text": "Cuéntanos dónde necesitas apoyo"
+      }
+    ],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "personalizado",
+    "url": "https://desarrollo.americanrecruiters.mx/servicios/reclutamiento-personalizado/",
+    "id": "18",
+    "viewport": [
+      390,
+      900
+    ],
+    "scrollWidth": 390,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "48px",
+    "h1": [
+      "Reclutamiento y selección a la medida de tu empresa"
+    ],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Tu necesidad define la conversación"
+      },
+      {
+        "tag": "H2",
+        "text": "En qué consiste el servicio personalizado"
+      },
+      {
+        "tag": "H2",
+        "text": "Situaciones en las que puede ser pertinente"
+      },
+      {
+        "tag": "H3",
+        "text": "Definir mejor una vacante"
+      },
+      {
+        "tag": "H3",
+        "text": "Complementar el trabajo de Recursos Humanos"
+      },
+      {
+        "tag": "H3",
+        "text": "Revisar una necesidad particular"
+      },
+      {
+        "tag": "H2",
+        "text": "Define dónde necesita apoyo tu equipo"
+      },
+      {
+        "tag": "H3",
+        "text": "Qué necesitas cubrir"
+      },
+      {
+        "tag": "H3",
+        "text": "Dónde necesitas apoyo"
+      },
+      {
+        "tag": "H3",
+        "text": "Cómo participa tu empresa"
+      },
+      {
+        "tag": "H2",
+        "text": "Diferencias frente a Headhunting"
+      },
+      {
+        "tag": "H2",
+        "text": "Qué debe precisar la propuesta"
+      },
+      {
+        "tag": "H2",
+        "text": "Preguntas sobre selección personalizada"
+      },
+      {
+        "tag": "H2",
+        "text": "Cuéntanos dónde necesitas apoyo"
+      }
+    ],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "fast-placement",
+    "url": "https://desarrollo.americanrecruiters.mx/servicios/fast-placement/",
+    "id": "19",
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollWidth": 1440,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "89.28px",
+    "h1": [
+      "Fast Placement"
+    ],
+    "headings": [],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "fast-placement",
+    "url": "https://desarrollo.americanrecruiters.mx/servicios/fast-placement/",
+    "id": "19",
+    "viewport": [
+      390,
+      900
+    ],
+    "scrollWidth": 390,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "48px",
+    "h1": [
+      "Fast Placement"
+    ],
+    "headings": [],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "metodologia",
+    "url": "https://desarrollo.americanrecruiters.mx/metodologia/",
+    "id": "20",
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollWidth": 1440,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "89.28px",
+    "h1": [
+      "Una colaboración que empieza por comprender tu necesidad"
+    ],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Qué conviene aclarar desde el inicio"
+      },
+      {
+        "tag": "H2",
+        "text": "Cuatro momentos para ordenar la colaboración"
+      },
+      {
+        "tag": "H3",
+        "text": "1. Entender el reto"
+      },
+      {
+        "tag": "H3",
+        "text": "2. Alinear el perfil"
+      },
+      {
+        "tag": "H3",
+        "text": "3. Identificar talento"
+      },
+      {
+        "tag": "H3",
+        "text": "4. Apoyar la decisión"
+      },
+      {
+        "tag": "H2",
+        "text": "La propuesta como referencia compartida"
+      },
+      {
+        "tag": "H2",
+        "text": "Información útil para comenzar"
+      },
+      {
+        "tag": "H2",
+        "text": "Preguntas sobre la colaboración"
+      },
+      {
+        "tag": "H2",
+        "text": "Presenta el contexto de tu empresa"
+      }
+    ],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "metodologia",
+    "url": "https://desarrollo.americanrecruiters.mx/metodologia/",
+    "id": "20",
+    "viewport": [
+      390,
+      900
+    ],
+    "scrollWidth": 390,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "48px",
+    "h1": [
+      "Una colaboración que empieza por comprender tu necesidad"
+    ],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Qué conviene aclarar desde el inicio"
+      },
+      {
+        "tag": "H2",
+        "text": "Cuatro momentos para ordenar la colaboración"
+      },
+      {
+        "tag": "H3",
+        "text": "1. Entender el reto"
+      },
+      {
+        "tag": "H3",
+        "text": "2. Alinear el perfil"
+      },
+      {
+        "tag": "H3",
+        "text": "3. Identificar talento"
+      },
+      {
+        "tag": "H3",
+        "text": "4. Apoyar la decisión"
+      },
+      {
+        "tag": "H2",
+        "text": "La propuesta como referencia compartida"
+      },
+      {
+        "tag": "H2",
+        "text": "Información útil para comenzar"
+      },
+      {
+        "tag": "H2",
+        "text": "Preguntas sobre la colaboración"
+      },
+      {
+        "tag": "H2",
+        "text": "Presenta el contexto de tu empresa"
+      }
+    ],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "nosotros",
+    "url": "https://desarrollo.americanrecruiters.mx/nosotros/",
+    "id": "21",
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollWidth": 1440,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "89.28px",
+    "h1": [
+      "American Recruiters México: talento y necesidades empresariales"
+    ],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Una firma enfocada en la búsqueda y selección"
+      },
+      {
+        "tag": "H2",
+        "text": "El contexto de la empresa importa"
+      },
+      {
+        "tag": "H2",
+        "text": "Principios que orientan nuestra comunicación"
+      },
+      {
+        "tag": "H3",
+        "text": "Escuchar con atención"
+      },
+      {
+        "tag": "H3",
+        "text": "Criterio para entender el puesto"
+      },
+      {
+        "tag": "H3",
+        "text": "Integridad en la relación"
+      },
+      {
+        "tag": "H3",
+        "text": "Claridad sobre el alcance"
+      },
+      {
+        "tag": "H2",
+        "text": "Nuestra oferta"
+      },
+      {
+        "tag": "H2",
+        "text": "Conversemos sobre tu organización"
+      }
+    ],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "nosotros",
+    "url": "https://desarrollo.americanrecruiters.mx/nosotros/",
+    "id": "21",
+    "viewport": [
+      390,
+      900
+    ],
+    "scrollWidth": 390,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "48px",
+    "h1": [
+      "American Recruiters México: talento y necesidades empresariales"
+    ],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Una firma enfocada en la búsqueda y selección"
+      },
+      {
+        "tag": "H2",
+        "text": "El contexto de la empresa importa"
+      },
+      {
+        "tag": "H2",
+        "text": "Principios que orientan nuestra comunicación"
+      },
+      {
+        "tag": "H3",
+        "text": "Escuchar con atención"
+      },
+      {
+        "tag": "H3",
+        "text": "Criterio para entender el puesto"
+      },
+      {
+        "tag": "H3",
+        "text": "Integridad en la relación"
+      },
+      {
+        "tag": "H3",
+        "text": "Claridad sobre el alcance"
+      },
+      {
+        "tag": "H2",
+        "text": "Nuestra oferta"
+      },
+      {
+        "tag": "H2",
+        "text": "Conversemos sobre tu organización"
+      }
+    ],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "faq",
+    "url": "https://desarrollo.americanrecruiters.mx/preguntas-frecuentes/",
+    "id": "25",
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollWidth": 1440,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "89.28px",
+    "h1": [
+      "Preguntas para iniciar una búsqueda de talento con claridad"
+    ],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Elegir el servicio"
+      },
+      {
+        "tag": "H2",
+        "text": "Preparar la consulta"
+      },
+      {
+        "tag": "H2",
+        "text": "Revisar condiciones y alcance"
+      },
+      {
+        "tag": "H2",
+        "text": "Información y confidencialidad"
+      },
+      {
+        "tag": "H2",
+        "text": "Continuar la conversación"
+      }
+    ],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "faq",
+    "url": "https://desarrollo.americanrecruiters.mx/preguntas-frecuentes/",
+    "id": "25",
+    "viewport": [
+      390,
+      900
+    ],
+    "scrollWidth": 390,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "48px",
+    "h1": [
+      "Preguntas para iniciar una búsqueda de talento con claridad"
+    ],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Elegir el servicio"
+      },
+      {
+        "tag": "H2",
+        "text": "Preparar la consulta"
+      },
+      {
+        "tag": "H2",
+        "text": "Revisar condiciones y alcance"
+      },
+      {
+        "tag": "H2",
+        "text": "Información y confidencialidad"
+      },
+      {
+        "tag": "H2",
+        "text": "Continuar la conversación"
+      }
+    ],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "contacto",
+    "url": "https://desarrollo.americanrecruiters.mx/contacto/",
+    "id": "23",
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollWidth": 1440,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "89.28px",
+    "h1": [
+      "Hablemos de la contratación que necesita tu empresa"
+    ],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Cuéntanos qué necesita contratar tu empresa"
+      },
+      {
+        "tag": "H3",
+        "text": "Puesto o necesidad"
+      },
+      {
+        "tag": "H3",
+        "text": "Ubicación y contexto"
+      },
+      {
+        "tag": "H3",
+        "text": "Apoyo que buscas"
+      },
+      {
+        "tag": "H2",
+        "text": "Información para preparar tu mensaje"
+      },
+      {
+        "tag": "H2",
+        "text": "¿Buscas enviar tu currículum?"
+      },
+      {
+        "tag": "H2",
+        "text": "Vista previa del formulario empresarial"
+      }
+    ],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "contacto",
+    "url": "https://desarrollo.americanrecruiters.mx/contacto/",
+    "id": "23",
+    "viewport": [
+      390,
+      900
+    ],
+    "scrollWidth": 390,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "48px",
+    "h1": [
+      "Hablemos de la contratación que necesita tu empresa"
+    ],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Cuéntanos qué necesita contratar tu empresa"
+      },
+      {
+        "tag": "H3",
+        "text": "Puesto o necesidad"
+      },
+      {
+        "tag": "H3",
+        "text": "Ubicación y contexto"
+      },
+      {
+        "tag": "H3",
+        "text": "Apoyo que buscas"
+      },
+      {
+        "tag": "H2",
+        "text": "Información para preparar tu mensaje"
+      },
+      {
+        "tag": "H2",
+        "text": "¿Buscas enviar tu currículum?"
+      },
+      {
+        "tag": "H2",
+        "text": "Vista previa del formulario empresarial"
+      }
+    ],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "candidatos",
+    "url": "https://desarrollo.americanrecruiters.mx/candidatos/",
+    "id": "24",
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollWidth": 1440,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "89.28px",
+    "h1": [
+      "Comparte tu perfil profesional con American Recruiters"
+    ],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Un espacio para tu trayectoria"
+      },
+      {
+        "tag": "H3",
+        "text": "Estado actual de desarrollo"
+      },
+      {
+        "tag": "H2",
+        "text": "Antes de compartir tu CV"
+      },
+      {
+        "tag": "H2",
+        "text": "¿Representas a una empresa?"
+      },
+      {
+        "tag": "H2",
+        "text": "Canal de CV — vista de revisión"
+      }
+    ],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "candidatos",
+    "url": "https://desarrollo.americanrecruiters.mx/candidatos/",
+    "id": "24",
+    "viewport": [
+      390,
+      900
+    ],
+    "scrollWidth": 390,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "48px",
+    "h1": [
+      "Comparte tu perfil profesional con American Recruiters"
+    ],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Un espacio para tu trayectoria"
+      },
+      {
+        "tag": "H3",
+        "text": "Estado actual de desarrollo"
+      },
+      {
+        "tag": "H2",
+        "text": "Antes de compartir tu CV"
+      },
+      {
+        "tag": "H2",
+        "text": "¿Representas a una empresa?"
+      },
+      {
+        "tag": "H2",
+        "text": "Canal de CV — vista de revisión"
+      }
+    ],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "blog",
+    "url": "https://desarrollo.americanrecruiters.mx/blog/",
+    "id": null,
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollWidth": 1440,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "89.28px",
+    "h1": [
+      "Ideas para decidir mejor sobre talento y contratación"
+    ],
+    "headings": [],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "blog",
+    "url": "https://desarrollo.americanrecruiters.mx/blog/",
+    "id": null,
+    "viewport": [
+      390,
+      900
+    ],
+    "scrollWidth": 390,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "48px",
+    "h1": [
+      "Ideas para decidir mejor sobre talento y contratación"
+    ],
+    "headings": [],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "articulo",
+    "url": "https://desarrollo.americanrecruiters.mx/?p=808&preview=true",
+    "id": "808",
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollWidth": 1440,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "89.28px",
+    "h1": [
+      "¿Cuánto cobra un headhunter? Qué debe revisar una empresa"
+    ],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Qué factores conviene aclarar para recibir una cotización"
+      },
+      {
+        "tag": "H2",
+        "text": "Qué debe explicar la propuesta de honorarios"
+      },
+      {
+        "tag": "H2",
+        "text": "Compare el trabajo incluido, además del precio"
+      },
+      {
+        "tag": "H2",
+        "text": "Un ejemplo para comparar dos propuestas"
+      },
+      {
+        "tag": "H2",
+        "text": "Garantías, reemplazos y exclusividad: nunca por suposición"
+      },
+      {
+        "tag": "H2",
+        "text": "Cómo preparar una solicitud útil"
+      },
+      {
+        "tag": "H2",
+        "text": "Preguntas frecuentes sobre costos de headhunting"
+      },
+      {
+        "tag": "H3",
+        "text": "¿El honorario incluye el salario de la persona contratada?"
+      },
+      {
+        "tag": "H3",
+        "text": "¿Una tarifa más alta demuestra una mejor búsqueda?"
+      },
+      {
+        "tag": "H3",
+        "text": "¿Puedo solicitar una propuesta sin tener todos los detalles?"
+      }
+    ],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "articulo",
+    "url": "https://desarrollo.americanrecruiters.mx/?p=808&preview=true",
+    "id": "808",
+    "viewport": [
+      390,
+      900
+    ],
+    "scrollWidth": 390,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "48px",
+    "h1": [
+      "¿Cuánto cobra un headhunter? Qué debe revisar una empresa"
+    ],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Qué factores conviene aclarar para recibir una cotización"
+      },
+      {
+        "tag": "H2",
+        "text": "Qué debe explicar la propuesta de honorarios"
+      },
+      {
+        "tag": "H2",
+        "text": "Compare el trabajo incluido, además del precio"
+      },
+      {
+        "tag": "H2",
+        "text": "Un ejemplo para comparar dos propuestas"
+      },
+      {
+        "tag": "H2",
+        "text": "Garantías, reemplazos y exclusividad: nunca por suposición"
+      },
+      {
+        "tag": "H2",
+        "text": "Cómo preparar una solicitud útil"
+      },
+      {
+        "tag": "H2",
+        "text": "Preguntas frecuentes sobre costos de headhunting"
+      },
+      {
+        "tag": "H3",
+        "text": "¿El honorario incluye el salario de la persona contratada?"
+      },
+      {
+        "tag": "H3",
+        "text": "¿Una tarifa más alta demuestra una mejor búsqueda?"
+      },
+      {
+        "tag": "H3",
+        "text": "¿Puedo solicitar una propuesta sin tener todos los detalles?"
+      }
+    ],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "404",
+    "url": "https://desarrollo.americanrecruiters.mx/ab-revision-ruta-inexistente-20261025/",
+    "id": null,
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollWidth": 1440,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "89.28px",
+    "h1": [
+      "Página no encontrada"
+    ],
+    "headings": [],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "404",
+    "url": "https://desarrollo.americanrecruiters.mx/ab-revision-ruta-inexistente-20261025/",
+    "id": null,
+    "viewport": [
+      390,
+      900
+    ],
+    "scrollWidth": 390,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "48px",
+    "h1": [
+      "Página no encontrada"
+    ],
+    "headings": [],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "privacidad",
+    "url": "https://desarrollo.americanrecruiters.mx/privacidad/",
+    "id": "26",
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollWidth": 1440,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "89.28px",
+    "h1": [
+      "Privacidad"
+    ],
+    "headings": [],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  },
+  {
+    "name": "sistema-visual",
+    "url": "https://desarrollo.americanrecruiters.mx/sistema-visual/",
+    "id": "27",
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollWidth": 1440,
+    "font": "Montserrat, Inter, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+    "h1size": "89.28px",
+    "h1": [
+      "Sistema visual"
+    ],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Componentes compartidos"
+      },
+      {
+        "tag": "H3",
+        "text": "Headhunting"
+      },
+      {
+        "tag": "H3",
+        "text": "Servicio personalizado"
+      },
+      {
+        "tag": "H3",
+        "text": "Fast Placement"
+      },
+      {
+        "tag": "H2",
+        "text": "Lectura editorial y preguntas frecuentes"
+      },
+      {
+        "tag": "H2",
+        "text": "Banda de llamada a la acción"
+      },
+      {
+        "tag": "H2",
+        "text": "Formulario visual"
+      }
+    ],
+    "robots": "noindex, nofollow",
+    "authenticated": true,
+    "css": [
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/assets/css/design-system.css?ver=1.0.5-rc.2",
+      "https://desarrollo.americanrecruiters.mx/wp-content/themes/ar-editorial/style.css?ver=1.0.5-rc.2"
+    ]
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "pages": 32,
+  "brokenLocalLinks": [],
+  "contentPreservation": [
+    {
+      "page": "headhunting",
+      "headings": 14,
+      "missingHeadings": [],
+      "paragraphs": 24,
+      "missingParagraphs": []
+    },
+    {
+      "page": "personalizado",
+      "headings": 15,
+      "missingHeadings": [],
+      "paragraphs": 24,
+      "missingParagraphs": []
+    },
+    {
+      "page": "servicios",
+      "headings": 9,
+      "missingHeadings": [],
+      "paragraphs": 15,
+      "missingParagraphs": []
+    },
+    {
+      "page": "metodologia",
+      "headings": 11,
+      "missingHeadings": [],
+      "paragraphs": 23,
+      "missingParagraphs": []
+    },
+    {
+      "page": "nosotros",
+      "headings": 10,
+      "missingHeadings": [],
+      "paragraphs": 15,
+      "missingParagraphs": []
+    },
+    {
+      "page": "faq",
+      "headings": 6,
+      "missingHeadings": [],
+      "paragraphs": 17,
+      "missingParagraphs": []
+    },
+    {
+      "page": "contacto",
+      "headings": 8,
+      "missingHeadings": [],
+      "paragraphs": 15,
+      "missingParagraphs": []
+    },
+    {
+      "page": "candidatos",
+      "headings": 6,
+      "missingHeadings": [],
+      "paragraphs": 12,
+      "missingParagraphs": []
+    }
+  ],
+  "htmlBytes": 359196,
+  "cssBytes": 20880,
+  "jsBytes": 3211
+}

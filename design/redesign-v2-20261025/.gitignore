@@ -1,0 +1,14 @@
+# Raw authenticated captures and rendered content remain local; no unrelated private QA post is published.
+evidence/current/
+prototype/assets/*.jpg
+prototype/assets/*.jpeg
+prototype/assets/*.png
+!prototype/assets/logo.png
+__pycache__/
+# Local authoring utilities use the private captured baseline. The deliverable is self-contained static HTML/CSS/JS.
+build.py
+report.py
+contact-sheet.cjs
+prepare-evidence.cjs
+optimize-assets.cjs
+validate.py
