@@ -1,0 +1,144 @@
+[
+  {
+    "test": "CTA hover real con puntero, sin activación",
+    "hover": true,
+    "href": "contacto.html",
+    "iconTransform": "matrix(1, 0, 0, 1, 2, -2)",
+    "transform": "matrix(1, 0, 0, 1, 0, -2)"
+  },
+  {
+    "test": "CTA Tab al enlace secundario",
+    "focused": "preguntas frecuentes",
+    "href": "faq.html",
+    "outline": "rgb(221, 244, 243) solid 3px"
+  },
+  {
+    "test": "CTA botón foco de teclado",
+    "focused": "Consultar selección personalizada",
+    "href": "contacto.html",
+    "outline": "rgb(221, 244, 243) solid 3px"
+  },
+  {
+    "test": "CTA Enter abre Contacto",
+    "url": "http://127.0.0.1:8879/prototype/contacto.html",
+    "disabledFields": 6,
+    "enabledFields": 0,
+    "notice": true
+  },
+  {
+    "test": "Proceso hover real con puntero",
+    "background": "rgba(221, 244, 243, 0.043)",
+    "cardHeights": [
+      247,
+      247,
+      247,
+      247
+    ],
+    "hover": true,
+    "iconTransform": "matrix(0.997564, -0.0697565, 0.0697565, 0.997564, 0, -2)"
+  },
+  {
+    "test": "Menú móvil Enter abre menú y submenú",
+    "menu": "true",
+    "sub": "true"
+  },
+  {
+    "test": "Menú móvil Escape por niveles",
+    "focus": "Menú ",
+    "menu": "false",
+    "sub": "false"
+  },
+  {
+    "test": "Guía Contacto ancla local",
+    "hash": "#h-cuentanos-que-necesitas",
+    "heading": "Cuéntanos qué necesita contratar tu empresa"
+  },
+  {
+    "test": "Tarjetas de Servicios: CTA alineados",
+    "cards": [
+      {
+        "buttonY": 373.21875,
+        "height": 300.0703125
+      },
+      {
+        "buttonY": 373.21875,
+        "height": 300.0703125
+      },
+      {
+        "buttonY": 373.21875,
+        "height": 300.0703125
+      }
+    ]
+  },
+  {
+    "test": "Pasos: reveal finito progresivo",
+    "steps": [
+      {
+        "animation": "reveal-refined",
+        "delay": "0ms",
+        "duration": "0.62s",
+        "iterations": "1"
+      },
+      {
+        "animation": "reveal-refined",
+        "delay": "65ms",
+        "duration": "0.62s",
+        "iterations": "1"
+      },
+      {
+        "animation": "reveal-refined",
+        "delay": "130ms",
+        "duration": "0.62s",
+        "iterations": "1"
+      },
+      {
+        "animation": "reveal-refined",
+        "delay": "195ms",
+        "duration": "0.62s",
+        "iterations": "1"
+      }
+    ]
+  },
+  {
+    "test": "Reducción de movimiento simulada, no preferencia nativa",
+    "mode": "reduce",
+    "steps": [
+      {
+        "animation": "none",
+        "transition": "0s"
+      },
+      {
+        "animation": "none",
+        "transition": "0s"
+      },
+      {
+        "animation": "none",
+        "transition": "0s"
+      },
+      {
+        "animation": "none",
+        "transition": "0s"
+      },
+      {
+        "animation": "none",
+        "transition": "0s"
+      },
+      {
+        "animation": "none",
+        "transition": "0s"
+      },
+      {
+        "animation": "none",
+        "transition": "0s"
+      },
+      {
+        "animation": "none",
+        "transition": "0s"
+      }
+    ]
+  },
+  {
+    "test": "Consola del recorrido",
+    "logs": []
+  }
+]

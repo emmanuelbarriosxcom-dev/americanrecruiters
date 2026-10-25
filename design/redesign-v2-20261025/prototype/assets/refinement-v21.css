@@ -43,3 +43,44 @@ summary:after{content:none}summary{padding-right:54px;transition:background var(
 @media(max-width:600px){.nav-row{gap:14px}.brand{width:200px}.menu-toggle{min-width:82px;gap:10px}.service-row{grid-template-columns:34px 1fr 35px;gap:13px}.service-row .concept-icon{width:32px;height:32px;border-radius:10px}.service-row .concept-icon .icon{width:19px;height:19px}.service-row .arrow .icon{width:17px;height:17px}.service-row .index{grid-row:1/3;align-self:start}.service-row .service-number{font-size:8px;padding-left:3px}.steps-line>div{display:block;padding-left:61px;min-height:70px}.steps-line>div>.concept-icon{position:absolute;top:25px;left:0;width:42px;height:42px}.steps-line>div>span:first-child{position:static;margin:0 0 10px;display:block}.steps-line p{grid-column:auto}.section-heading>.concept-icon,.section-intro>.concept-icon{width:42px;height:42px;margin-bottom:19px}.heading-icon{width:26px;height:26px}.button,.wp-block-button__link{gap:12px}.button .icon{width:17px;height:17px}.summary-mark{right:18px}.hero-foot a{gap:9px}.footer-grid a:not(.brand){min-height:40px}.card-copy h3{font-size:24px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.motion-in{opacity:1!important;transform:none!important}}
 html[data-motion=reduce]{scroll-behavior:auto!important}html[data-motion=reduce] *,html[data-motion=reduce] *:before,html[data-motion=reduce] *:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}html[data-motion=reduce] .motion-in{opacity:1!important;transform:none!important}
+
+/* Final V2.1 composition pass: connected steps and compact editorial closing CTA. */
+.steps-line{gap:18px;margin:32px 0;align-items:stretch}
+.steps-line>div{display:grid;grid-template-columns:56px 1fr;grid-template-rows:56px auto 1fr;gap:20px 16px;padding:26px;border:1px solid #ddf4f32b;border-radius:16px;background:#ffffff04;min-width:0;transition:background var(--motion-ui),border-color var(--motion-ui)}
+.steps-line>div>.concept-icon{position:static;display:flex;align-items:center;justify-content:center;grid-column:1;grid-row:1;width:56px;height:56px;margin:0;border-radius:15px;background:#ddf4f310}
+.steps-line>div>.concept-icon .icon{width:30px;height:30px;transition:transform var(--motion-ui) var(--ease-premium)}
+.steps-line>div>span:first-child{position:static;display:block;grid-column:2;grid-row:1;justify-self:end;align-self:center;margin:0;font-size:13px;font-weight:600;letter-spacing:.1em;color:var(--mint)}
+.steps-line>div>h3{grid-column:1/-1;margin:0;font-size:21px;line-height:1.28;text-wrap:initial;letter-spacing:-.035em}
+.steps-line>div>p{grid-column:1/-1;margin:0;font-size:13px;line-height:1.8;color:#e0dbe5}
+.steps-line>div:not(:last-child):after{content:'';position:absolute;top:53px;left:100%;width:19px;height:1px;background:#ddf4f355;pointer-events:none}
+.steps-line>div:hover{background:#ddf4f30b;border-color:#ddf4f360}.steps-line>div:hover>.concept-icon{transform:none;background:#ddf4f31c}.steps-line>div:hover>.concept-icon .icon{transform:translateY(-2px) rotate(-4deg)}
+.ar-step-grid{display:grid;gap:16px;margin-top:28px}
+.section-body .ar-step-grid>.ar-card{display:grid;grid-template-columns:56px minmax(0,1fr);gap:14px 22px;border:1px solid var(--border);border-radius:14px;padding:26px;background:var(--offwhite)}
+.ar-step-grid>.ar-card:before,.ar-step-grid>.ar-card:after{content:none}
+.section-body .ar-step-grid>.ar-card>.concept-icon{display:flex;align-items:center;justify-content:center;grid-column:1;grid-row:1/3;margin:0;width:56px;height:56px;border-radius:15px;position:relative}
+.section-body .ar-step-grid>.ar-card>.concept-icon .icon{width:30px;height:30px;transition:transform var(--motion-ui)}
+.section-body .ar-step-grid>.ar-card h3{grid-column:2;margin:0;font-size:23px!important;line-height:1.3}
+.section-body .ar-step-grid>.ar-card p{grid-column:2;margin:0;font-size:14px;line-height:1.85}
+.section-body .ar-step-grid>.ar-card:hover>.concept-icon{transform:none}.section-body .ar-step-grid>.ar-card:hover>.concept-icon .icon{transform:rotate(-4deg)}
+.ar-step-grid>.ar-card:not(:last-child):after{content:'';position:absolute;left:54px;top:100%;bottom:auto;width:1px;height:17px;background:#1eaba35c;transform:none}
+.editorial-close{padding-block:64px}
+.editorial-close>.section-grid{width:min(1160px,calc(100% - 96px));grid-template-columns:minmax(0,.85fr) minmax(0,1fr);gap:56px;align-items:center;padding:44px 48px;border:1px solid #1eaba32e;border-radius:20px;background:var(--offwhite)}
+.editorial-close.ink>.section-grid{background:#ffffff04;border-color:#ddf4f32b}
+.editorial-close .section-heading{align-self:center}.editorial-close .section-heading>.concept-icon{width:52px;height:52px;margin:0 0 18px}.editorial-close .section-heading>.concept-icon .icon{width:28px;height:28px}
+.editorial-close .section-heading .eyebrow{margin-bottom:12px}.editorial-close h2{font-size:clamp(28px,2.55vw,36px);line-height:1.15;margin:0;max-width:15ch}
+.editorial-close .ar-reading{max-width:49ch}.editorial-close .ar-reading>p{font-size:14px;line-height:1.85;margin:0}
+.editorial-close .wp-block-buttons{margin:24px 0 0;gap:16px}.editorial-close .wp-block-button{max-width:100%}
+.editorial-close .wp-block-buttons+p{margin:24px 0 0;padding-top:20px;border-top:1px solid var(--border);font-size:12px;line-height:1.75}
+.editorial-close.ink .wp-block-buttons+p{border-top-color:#ddf4f32b;color:#d9d2df}
+.editorial-close .wp-block-buttons+p{text-wrap:pretty}
+.editorial-close .wp-block-buttons+p a{display:inline;text-underline-offset:4px;transition:color var(--motion-ui)}
+.editorial-close .wp-block-buttons+p a:hover,.editorial-close .wp-block-buttons+p a:focus-visible{color:var(--icon-ink)}.editorial-close.ink .wp-block-buttons+p a:hover,.editorial-close.ink .wp-block-buttons+p a:focus-visible{color:var(--mint)}
+.editorial-close:has(a:hover) .section-heading>.concept-icon,.editorial-close:has(a:focus-visible) .section-heading>.concept-icon{transform:translateY(-2px)}
+/* Same card alignment issue in the Services selector, without changing card content. */
+.section-body .ar-grid-3>.ar-card:has(.wp-block-buttons){display:flex;flex-direction:column;align-items:flex-start}
+.section-body .ar-grid-3>.ar-card:has(.wp-block-buttons)>.wp-block-buttons{margin-top:auto;padding-top:22px}
+.wp-block-button__link:focus-visible .icon-arrow-up-right{transform:translate(2px,-2px)}
+@media(max-width:1150px){.steps-line{grid-template-columns:repeat(2,minmax(0,1fr))}.steps-line>div:nth-child(2):after{display:none}}
+@media(max-width:1000px){.editorial-close>.section-grid{gap:32px;padding:34px;grid-template-columns:minmax(0,.8fr) minmax(0,1fr)}.editorial-close h2{font-size:30px}.editorial-close .wp-block-button__link{padding-inline:18px}}
+@media(max-width:700px){.editorial-close>.section-grid{grid-template-columns:1fr;gap:26px}.editorial-close h2{max-width:20ch}}
+@media(max-width:600px){.steps-line{grid-template-columns:1fr;gap:18px;margin:28px 0}.steps-line>div{padding:24px;grid-template-columns:56px minmax(0,1fr);gap:16px;min-height:0}.steps-line>div>h3{font-size:23px}.steps-line>div>p{font-size:14px}.steps-line>div:not(:last-child):after,.steps-line>div:nth-child(2):after{display:block;left:52px;top:100%;width:1px;height:19px}.section-body .ar-step-grid>.ar-card{padding:22px;gap:14px 16px;grid-template-columns:48px minmax(0,1fr)}.section-body .ar-step-grid>.ar-card>.concept-icon{width:48px;height:48px;grid-row:1}.section-body .ar-step-grid>.ar-card>.concept-icon .icon{width:28px;height:28px}.section-body .ar-step-grid>.ar-card h3{font-size:21px!important;align-self:center}.section-body .ar-step-grid>.ar-card p{grid-column:1/-1}.ar-step-grid>.ar-card:not(:last-child):after{left:46px}.editorial-close{padding-block:40px}.editorial-close>.section-grid{width:calc(100% - 40px);padding:26px 22px;border-radius:16px}.editorial-close h2{font-size:29px}.editorial-close .section-heading>.concept-icon{width:48px;height:48px}.editorial-close .wp-block-button__link{width:100%;text-align:left;justify-content:space-between;padding:15px 17px}.editorial-close .wp-block-button{width:100%}.editorial-close .wp-block-buttons+p{margin-top:24px;padding-top:18px}}

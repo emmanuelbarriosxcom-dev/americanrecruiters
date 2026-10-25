@@ -2,7 +2,8 @@ AMERICAN RECRUITERS MÉXICO — AB.2 / V2.1
 25 octubre 2026
 
 ENTRADA
-refinamiento-v21.html: informe de cambios, checklist y QA de esta ronda.
+cierre-v21.html: cierre visual final, antes/después y QA actualizado.
+refinamiento-v21.html: informe de la primera ronda V2.1, enlaza al cierre final.
 prototype/index.html: prototipo navegable refinado.
 informe.html: diagnóstico histórico V2.0; sus capturas y resultados son de esa fase.
 
@@ -22,6 +23,11 @@ SVG inline: retícula de 24, trazo 1.6, decorativos sin foco.
 refine-v21.py: transformación reproducible desde la base V2.0.
 validate-v21.py: comparación de textos, enlaces, formularios y SVG.
 evidence/v2.1/: capturas reales, matriz de 160 observaciones y resultados.
+evidence/v2.1-final/: capturas de cierre, nueva matriz e interacciones verificadas.
+final-polish-v21.py: aplicar después de refine-v21.py si se regenera el prototipo.
+Rollback V2.1 anterior: commit remoto 1f76d0029cd6baf3f8ffb59de15bae41546d31be.
+Excepción de enlaces: Ver guía en Contacto ahora usa su ancla local dentro del
+prototipo, no /contacto/ en localhost. No cambia ninguna URL real de WordPress.
 
 PRUEBA DE MOVIMIENTO REDUCIDO
 prototype/index.html?motion=reduce activa una simulación explícita del mismo
