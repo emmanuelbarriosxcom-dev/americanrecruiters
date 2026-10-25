@@ -1,0 +1,176 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Agent Z — Execution guide</title><style>body{font:16px/1.5 system-ui;max-width:1000px;margin:3rem auto;padding:1rem;color:#17364b}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style><h1>Guía de ejecución — Agente Z</h1><pre>AGENTE Z — QA SEO DE MIGRACIÓN | American Recruiters México
+Versión 1.0.0 | 25/10/2026 | Python 3.10+ | Sin dependencias externas
+
+ALCANCE
+Comprobador HTTP de solo lectura. No instala nada en WordPress, no modifica
+servidores/DNS/RC2, no envía formularios y no autoriza una migración.
+Los informes distinguen observación actual, propuesta U y aprobación posterior.
+No prueba Google Search Console ni simula un navegador JavaScript.
+
+CONTENIDO
+seoqa.py: motor y CLI, CSV/JSON/HTML/resumen/comparación.
+import_u.py: importa localmente el paquete U y verifica su manifiesto completo.
+redirect_model.py: simulación pura de las reglas propuestas U, sin solicitudes.
+tests/test_seoqa.py: fixtures HTTP sintéticos y pruebas de contrato.
+README.txt: ejecución, criterios, rollback y comprobaciones manuales.
+examples/: configuración sintética; no contiene información interna.
+
+Los archivos locales private/config contienen 39 filas originales, 17 artículos,
+40 casos de simulación, casos GET reutilizables y aprobaciones pendientes.
+No se suben matrices internas, capturas, informes U ni datos privados a GitHub.
+El importador permite reproducirlos con el paquete autorizado. No crea reglas.
+
+INICIO RÁPIDO
+Desde la raíz del paquete:
+  python3 -m unittest discover -s tools/migration-seo-qa/tests -v
+  python3 tools/migration-seo-qa/import_u.py --source /RUTA/agente-u-20261024 --output private/config
+  python3 tools/migration-seo-qa/redirect_model.py --cases private/config/redirect_cases_u.json --output private/results/redirect-model.json
+
+No confundir los 40 PASS del modelo con la verificación de Apache/LiteSpeed.
+Los casos POST y rutas administrativas se evalúan únicamente como cadenas en
+memoria; jamás se envían. Las retiradas y consolidaciones sin decisión siguen
+pendientes: no se inventa ningún 410 ni redirección a Home.
+
+ESCENARIO 1 — ANTES DE MIGRAR
+Registrar producción actual conservando las variantes exactas de las 39 filas:
+  python3 tools/migration-seo-qa/seoqa.py --target https://www.americanrecruiters.com.mx --urls private/config/matrix39.json --environment production --mode baseline --output private/results/before --budget 100 --interval 2 --links-per-page 2 --images-per-page 2
+
+Para staging:
+  python3 tools/migration-seo-qa/seoqa.py --target https://desarrollo.americanrecruiters.mx --urls private/config/matrix39.json --environment staging --mode baseline --output private/results/staging --budget 100 --interval 2 --links-per-page 2 --images-per-page 2
+
+Noindex es obligatorio en HTML público de staging. Noindex en su sitemap NO es
+un error de producción. La ausencia de canonical en HTML noindex se registra
+como advertencia de política, no se modifica. Si una equivalencia staging no
+está documentada, no se inventa ni se consulta una URL privada. Los borradores
+404 no se tratan automáticamente como páginas perdidas.
+
+ESCENARIO 2 — DESPUÉS DE MIGRAR (SOLO CUANDO EL OPERADOR ESTÉ AUTORIZADO)
+Copiar approvals.pending.json a approvals.approved.json. No rellenar aprobaciones
+por inferencia ni mediante un reemplazo masivo de false por true.
+Para cada URL aprobada guardar la referencia/fecha/decisor en evidence y definir:
+  approved: true
+  evidence: referencia verificable de aprobación
+  expected_http: código de la primera respuesta (ejemplo 200 o 301)
+  final_http: código final para redirecciones (normalmente 200)
+  destination: URL exacta, con query cuando el caso la incluya
+  canonical: canonical final sin parámetros de campaña, cuando proceda
+  indexable: true o false, según decisión individual
+  sitemap: true o false, según política de esa URL
+  published: true solo para artículos cuya publicación se haya confirmado
+El objeto raíz requiere target exacto y evidence del lanzamiento autorizado.
+Ver examples/approvals.example.json. Es un ejemplo ficticio, no una aprobación.
+Para las 11 REVISAR y contact-submition se requiere la decisión específica.
+U28 no exige un 301: host sin / y con / representan el mismo request-target.
+
+  python3 tools/migration-seo-qa/seoqa.py --target https://www.americanrecruiters.com.mx --urls private/config/matrix39.json --approvals private/config/approvals.approved.json --environment production --mode verify --output private/results/after --previous private/results/before/results.json --budget 120 --interval 2
+
+Comparar baseline con verify muestra una advertencia de modos distintos. Para
+una comparación de regresiones homogénea, conservar también el primer verify
+aprobado y usarlo en los siguientes verify. Nunca etiquetar una URL no repetida
+como error resuelto: la comparación indica not_retested.
+
+Probar las combinaciones de esquema, host, barra y query de U por separado,
+para no saturar simultáneamente el hosting del Agente Q:
+  python3 tools/migration-seo-qa/seoqa.py --target https://www.americanrecruiters.com.mx --urls private/config/redirect-live-cases.json --approvals private/config/cases.approved.json --environment production --mode verify --output private/results/redirects --budget 130 --interval 3 --links-per-page 0 --images-per-page 0
+
+El archivo contiene solo GET públicos elegibles del modelo, más controles 404
+R25/R27/R50. Los 40 casos completos se conservan en redirect_cases_u.json.
+La normalización de una ruta inexistente puede terminar en un 404 legítimo;
+no se exige un destino 200 para ese control. La ruta /blog/page/999/ debe dar404;
+/blog/page/2/ requiere conocer posts_per_page y publicaciones reales antes de
+establecer su respuesta. No se inventa un listado ni se publica ningún borrador.
+
+ESCENARIO 3 — TRAS PUBLICAR LOS 17 ARTÍCULOS
+Reconciliar con el corte final del Agente T: IDs, URLs, estado editorial y fecha.
+Usar IDs ARTICLE-783, ARTICLE-156, etc. en un archivo de aprobaciones distinto.
+Solo published=true + approved=true + evidence permite consultar el artículo
+en este modo. Sin ello se informa PENDING y no se presupone exposición pública.
+
+  python3 tools/migration-seo-qa/seoqa.py --target https://www.americanrecruiters.com.mx --urls private/config/articles17.json --approvals private/config/articles.approved.json --environment production --mode articles --output private/results/articles --budget 100 --interval 2
+
+CONFIGURACIÓN Y SEGURIDAD
+--target: origen autorizado sin ruta; debe existir en allowed_targets.
+--urls: JSON. CSV preservado como entrega legible; el ejecutor consume JSON.
+--environment: staging o production. --mode: baseline, verify o articles.
+--output: carpeta nueva por ejecución. --previous: results.json previo.
+--approvals: registro explícito de aprobación por ID; separado de la matriz U.
+--budget: 1..500 peticiones incluyendo redirecciones y recursos; valor80.
+--interval: mínimo1,5s, valor2s. Una sola petición simultánea. Sin reintentos.
+--links-per-page / --images-per-page: 0..20, valor2; muestra limitada, no crawleo
+exhaustivo. Ajustar al presupuesto y revisar cobertura real en cada informe.
+
+Parada global de la ejecución al recibir403/429/503: no evadir WAF ni aumentar
+velocidad. Las URLs restantes quedan PENDING, no PASS. Conserva resultados y
+coordina otra ventana de ejecución; no se modifica seguridad ni hosting.
+Máximo5 redirecciones, HTML/XML2MB y muestra de imagen2KiB. No descarga imágenes
+completas ni documentos/CV. TLS siempre validado. No cookies ni autenticación.
+Solo hosts permitidos; redirecciones externas o administrativas se bloquean.
+No se descargan adjuntos, PDFs, ZIP, CV, rutas privadas ni páginas de edición.
+
+En este entorno de ejecución la resolución DNS de hosts públicos puede usar
+240.0.0.0/4 como enrutamiento sintético. SOLO si el entorno lo confirma, añadir
+--synthetic-dns-routing. No habilita localhost/RFC1918, no amplía hosts y no
+omite TLS. En un equipo normal no se necesita. Queda registrado en el JSON.
+
+SALIDAS Y SEVERIDAD
+results.csv: fila por URL/check, esperado, observado, estado, gravedad y detalle.
+results.json: cadenas, metadatos, hashes HTML, solicitudes y cobertura, sin HTML
+completo ni cookies. report.html: informe legible, autocontenido y sin scripts.
+summary.json: resultado general, conteos, fecha UTC y solicitudes.
+comparison: altas/cambios/not_retested y nuevos FAIL; no demuestra crecimiento.
+critical_errors, warnings, affected_urls: listas separadas en results.json.
+
+PASS = contrato concreto cumplido. WARN = anomalía/propuesta no aprobada o
+muestreo parcial. PENDING = falta aprobación, respuesta o cobertura necesaria.
+FAIL = contrato aprobado incumplido o fallo técnico inequívoco (bucle/5xx,
+XML inválido, staging indexable). Noindex prod es FAIL solo para URL aprobada
+indexable. La indexación real/Google-selected canonical siempre es manual GSC.
+
+Exit0: PASS o PASS_WITH_WARNINGS; revisar WARN antes de aceptar un lanzamiento.
+Exit1: FAIL. Exit2: INCOMPLETE/PENDING o error de uso. No automatizar despliegues
+basándose solamente en exit0. Los gates U de negocio, privacidad, RC2, respaldo
+y dominio siguen siendo independientes del resultado de estas pruebas.
+
+CRITERIOS DE ROLLBACK SEO — INSTRUCCIONES, NO EJECUCIÓN
+1. Detener aceptación/cutover si aparecen bucles, 5xx, pérdida de rutas aprobadas,
+   canonical a otro entorno, noindex/bloqueo robots inesperado en producción o
+   tracking/formularios que no superan su QA autorizado por sus responsables.
+2. Conservar hora UTC, results.json/csv, reglas efectivas y evidencia del error.
+3. Antes del despliegue el operador debe tener copia íntegra y hash de la capa
+   de redirecciones, snapshot de archivos/BD, acceso externo a WordPress y una
+   reversión ensayada. Este paquete no crea ni certifica esos respaldos.
+4. Revertir la capa mínima causante a su configuración verificada. No cambiar
+   DNS por un error301 ni restaurar una BD antigua para corregir una redirección.
+   No perder envíos/altas posteriores al corte y no activar noindex global.
+5. Repetir los controles afectados y los contratos39. Validar origen/navegador
+   limpio porque los301 pueden permanecer cacheados. Registrar quién autorizó
+   y ejecutó el rollback. No tocar RC2 ni capas del Agente Q desde este paquete.
+
+MANUAL / NO AUTOMATIZADO
+- GSC: propiedad correcta, estado real de indexación, canonical seleccionado,
+  último rastreo, cobertura/exclusiones y envío/lectura del sitemap definitivo.
+- Renderizado JavaScript, móvil/escritorio, accesibilidad, menús, CTAs y contenido
+  visual; este lector HTTP no representa el DOM renderizado por Google.
+- Equivalencia editorial de cada301, backlinks y criterios comerciales de las
+  11REVISAR; no deducir canibalización o retirada por un código HTTP.
+- Inventario de capas reales Apache/LiteSpeed/CDN/MU y prueba nativa; el modelo
+  Python no prueba que .htaccess sea compatible ni que las reglas se instalaron.
+- robots.txt avanzado: grupos/Allow/Disallow/*/$ comprobados; normalización de
+  octetos/Unicode y comportamientos específicos de otros crawlers requieren
+  revisión si aparecen. Sitemap fuera del host, gzip o mayor2MB: pendiente.
+- Enlaces externos, imágenes protegidas, CSS-background y carga posterior JS:
+  no probados por este muestreo; no declarar cobertura integral.
+- Formularios, GA4, consentimiento, privacidad/CV y transacciones: responsables
+  autorizados; ninguna prueba de envío en esta tarea.
+- Publicación final de los17, paginación con contenido distinto y exclusión de
+  borradores/QA del sitemap. No confundir publicaciónWP con indexaciónGoogle.
+
+FUENTES TÉCNICAS (consultadas 25/10/2026)
+https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag
+https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec
+https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls
+https://www.sitemaps.org/protocol.html
+Fuente de decisiones: URLs_39.csv, Rutas_y_pruebas.csv, Publicación.csv,
+REGLAS_PROPUESTAS.txt, SIMULACION_REGLAS.csv y RUNBOOK_LANZAMIENTO_AR_U.html;
+corte24/10/2026, hashes verificados. No se reemplaza ni reabre la auditoría U.
+</pre></html>

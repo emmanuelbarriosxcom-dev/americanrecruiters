@@ -1,0 +1,16 @@
+{
+  "target": "https://www.example.com",
+  "evidence": "",
+  "urls": {
+    "EXAMPLE-ONLY": {
+      "approved": false,
+      "evidence": "",
+      "expected_http": 200,
+      "destination": "https://www.example.com/service/",
+      "canonical": "https://www.example.com/service/",
+      "indexable": true,
+      "sitemap": true,
+      "published": false
+    }
+  }
+}

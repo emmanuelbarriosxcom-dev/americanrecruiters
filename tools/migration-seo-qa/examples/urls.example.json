@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "allowed_targets": ["https://www.example.com", "https://staging.example.com"],
+  "production_alias_hosts": ["www.example.com", "example.com"],
+  "sitemap_candidates": ["https://www.example.com/sitemap.xml"],
+  "urls": [{
+    "id": "EXAMPLE-ONLY",
+    "source_url": "https://www.example.com/service/",
+    "staging_url": "https://staging.example.com/service/",
+    "destination": "https://www.example.com/service/",
+    "action": "CONSERVAR",
+    "proposed_http": 200,
+    "canonical_proposed": "https://www.example.com/service/",
+    "approval": "PENDING",
+    "draft": false
+  }]
+}

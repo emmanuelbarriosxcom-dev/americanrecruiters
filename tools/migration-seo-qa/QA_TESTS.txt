@@ -1,0 +1,42 @@
+Executed 2026-10-25. Synthetic local HTTP. The CLI INCOMPLETE line is intentional: missing approvals must never pass.
+test_admin_not_fetched (test_seoqa.QA) ... ok
+test_articles_not_requested_without_publication (test_seoqa.QA) ... ok
+test_broken_internal_link (test_seoqa.QA) ... ok
+test_budget (test_seoqa.QA) ... ok
+test_cache (test_seoqa.QA) ... ok
+test_chain (test_seoqa.QA) ... ok
+test_circuit_breaker (test_seoqa.QA) ... ok
+test_cli_integration (test_seoqa.QA) ... ok
+test_complete_approved_contract (test_seoqa.QA) ... ok
+test_draft404_not_error (test_seoqa.QA) ... ok
+test_duplicate_canonical_header (test_seoqa.QA) ... ok
+test_external_redirect_not_fetched (test_seoqa.QA) ... ok
+test_failed_check_not_retested (test_seoqa.QA) ... ok
+test_legitimate_gone (test_seoqa.QA) ... ok
+test_loop (test_seoqa.QA) ... ok
+test_missing_location (test_seoqa.QA) ... ok
+test_model_rules (test_seoqa.QA) ... ok
+test_no_post_sent (test_seoqa.QA) ... ok
+test_page_extraction (test_seoqa.QA) ... ok
+test_prod_approved_noindex_fail (test_seoqa.QA) ... ok
+test_prod_requires_approval (test_seoqa.QA) ... ok
+test_production_sitemap_exclusion (test_seoqa.QA) ... ok
+test_redirect_onehop_query (test_seoqa.QA) ... ok
+test_rep_longest (test_seoqa.QA) ... ok
+test_rep_specific (test_seoqa.QA) ... ok
+test_report_escape_and_comparison (test_seoqa.QA) ... ok
+test_robots_directives (test_seoqa.QA) ... ok
+test_safe_policy (test_seoqa.QA) ... ok
+test_staging_indexable_fail (test_seoqa.QA) ... ok
+test_staging_noindex_pass (test_seoqa.QA) ... ok
+test_svg_title_is_not_seo_title (test_seoqa.QA) ... ok
+test_xml_entity_rejected (test_seoqa.QA) ... ok
+test_xml_image_not_page (test_seoqa.QA) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 0.555s
+
+OK
+{"overall": "INCOMPLETE", "counts": {"PASS": 13, "PENDING": 1}, "urls_observed": 1, "network_requests": 5}
+
+Agent U model: 40/40 cases PASS (no HTTP; original matrix retained locally).
