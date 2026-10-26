@@ -1,0 +1,2555 @@
+[
+  {
+    "id": 783,
+    "graph": [
+      {
+        "@type": "Article",
+        "@id": "https://desarrollo.americanrecruiters.mx/hola-mundo/#article",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/hola-mundo/"
+        },
+        "author": {
+          "@id": "https://desarrollo.americanrecruiters.mx/blog/#equipo-editorial"
+        },
+        "headline": "¿Qué hacer y qué no hacer en una entrevista de trabajo?",
+        "datePublished": "2021-09-21T15:20:19+00:00",
+        "dateModified": "2026-10-26T16:30:53+00:00",
+        "mainEntityOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/hola-mundo/"
+        },
+        "wordCount": 568,
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/hola-mundo/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2021/09/1-m3Pd9aedSlmfSzTsVhidJA.jpeg",
+        "articleSection": [
+          "Reclutamiento y selección"
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://desarrollo.americanrecruiters.mx/hola-mundo/",
+        "url": "https://desarrollo.americanrecruiters.mx/hola-mundo/",
+        "name": "Qué hacer en una entrevista de trabajo | American Recruiters",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/hola-mundo/#primaryimage"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/hola-mundo/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2021/09/1-m3Pd9aedSlmfSzTsVhidJA.jpeg",
+        "datePublished": "2021-09-21T15:20:19+00:00",
+        "dateModified": "2026-10-26T16:30:53+00:00",
+        "description": "Consulta recomendaciones de preparación, comunicación y seguimiento para una entrevista de trabajo, junto con conductas que conviene evitar.",
+        "breadcrumb": {
+          "@id": "https://desarrollo.americanrecruiters.mx/hola-mundo/#breadcrumb"
+        },
+        "inLanguage": "es",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://desarrollo.americanrecruiters.mx/hola-mundo/"
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "inLanguage": "es",
+        "@id": "https://desarrollo.americanrecruiters.mx/hola-mundo/#primaryimage",
+        "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2021/09/1-m3Pd9aedSlmfSzTsVhidJA.jpeg",
+        "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2021/09/1-m3Pd9aedSlmfSzTsVhidJA.jpeg",
+        "width": 1280,
+        "height": 854,
+        "caption": "Fotografía ilustrativa de una mujer con las manos frente a la boca."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://desarrollo.americanrecruiters.mx/hola-mundo/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://desarrollo.americanrecruiters.mx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ideas para decidir mejor sobre talento y contratación",
+            "item": "https://desarrollo.americanrecruiters.mx/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "¿Qué hacer y qué no hacer en una entrevista de trabajo?"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://desarrollo.americanrecruiters.mx/#website",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "name": "American Recruiters México — Desarrollo",
+        "description": "Entorno privado de desarrollo web.",
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://desarrollo.americanrecruiters.mx/?s={search_term_string}"
+            },
+            "query-input": {
+              "@type": "PropertyValueSpecification",
+              "valueRequired": true,
+              "valueName": "search_term_string"
+            }
+          }
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/#organization",
+        "name": "American Recruiters México",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "logo": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/",
+          "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "width": 1472,
+          "height": 200,
+          "caption": "American Recruiters México"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/blog/#equipo-editorial",
+        "name": "Equipo editorial de American Recruiters",
+        "url": "https://desarrollo.americanrecruiters.mx/blog/"
+      }
+    ]
+  },
+  {
+    "id": 156,
+    "graph": [
+      {
+        "@type": "Article",
+        "@id": "https://desarrollo.americanrecruiters.mx/pasos-para-crear-un-cv-mas-efectivo/#article",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/pasos-para-crear-un-cv-mas-efectivo/"
+        },
+        "author": {
+          "@id": "https://desarrollo.americanrecruiters.mx/blog/#equipo-editorial"
+        },
+        "headline": "Puntos esenciales de un cv efectivo",
+        "datePublished": "2021-09-21T18:21:50+00:00",
+        "dateModified": "2026-10-26T16:28:44+00:00",
+        "mainEntityOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/pasos-para-crear-un-cv-mas-efectivo/"
+        },
+        "wordCount": 67,
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/pasos-para-crear-un-cv-mas-efectivo/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2021/09/application-2076445_1280.png",
+        "articleSection": [
+          "Reclutamiento y selección"
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://desarrollo.americanrecruiters.mx/pasos-para-crear-un-cv-mas-efectivo/",
+        "url": "https://desarrollo.americanrecruiters.mx/pasos-para-crear-un-cv-mas-efectivo/",
+        "name": "Puntos esenciales de un CV efectivo | American Recruiters",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/pasos-para-crear-un-cv-mas-efectivo/#primaryimage"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/pasos-para-crear-un-cv-mas-efectivo/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2021/09/application-2076445_1280.png",
+        "datePublished": "2021-09-21T18:21:50+00:00",
+        "dateModified": "2026-10-26T16:28:44+00:00",
+        "description": "Revisa los apartados de un CV: capacidades, habilidades, experiencia profesional, logros, cursos y publicaciones. Una lista breve para organizar tu información.",
+        "breadcrumb": {
+          "@id": "https://desarrollo.americanrecruiters.mx/pasos-para-crear-un-cv-mas-efectivo/#breadcrumb"
+        },
+        "inLanguage": "es",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://desarrollo.americanrecruiters.mx/pasos-para-crear-un-cv-mas-efectivo/"
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "inLanguage": "es",
+        "@id": "https://desarrollo.americanrecruiters.mx/pasos-para-crear-un-cv-mas-efectivo/#primaryimage",
+        "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2021/09/application-2076445_1280.png",
+        "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2021/09/application-2076445_1280.png",
+        "width": 1280,
+        "height": 753,
+        "caption": "Ilustración de documentos y un lápiz sobre fondo azul."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://desarrollo.americanrecruiters.mx/pasos-para-crear-un-cv-mas-efectivo/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://desarrollo.americanrecruiters.mx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ideas para decidir mejor sobre talento y contratación",
+            "item": "https://desarrollo.americanrecruiters.mx/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Puntos esenciales de un cv efectivo"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://desarrollo.americanrecruiters.mx/#website",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "name": "American Recruiters México — Desarrollo",
+        "description": "Entorno privado de desarrollo web.",
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://desarrollo.americanrecruiters.mx/?s={search_term_string}"
+            },
+            "query-input": {
+              "@type": "PropertyValueSpecification",
+              "valueRequired": true,
+              "valueName": "search_term_string"
+            }
+          }
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/#organization",
+        "name": "American Recruiters México",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "logo": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/",
+          "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "width": 1472,
+          "height": 200,
+          "caption": "American Recruiters México"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/blog/#equipo-editorial",
+        "name": "Equipo editorial de American Recruiters",
+        "url": "https://desarrollo.americanrecruiters.mx/blog/"
+      }
+    ]
+  },
+  {
+    "id": 159,
+    "graph": [
+      {
+        "@type": "Article",
+        "@id": "https://desarrollo.americanrecruiters.mx/como-tener-una-excelente-entrevista/#article",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/como-tener-una-excelente-entrevista/"
+        },
+        "author": {
+          "@id": "https://desarrollo.americanrecruiters.mx/blog/#equipo-editorial"
+        },
+        "headline": "¿Cuándo contratar un head hunter?",
+        "datePublished": "2021-09-21T18:32:23+00:00",
+        "dateModified": "2026-10-26T16:26:31+00:00",
+        "mainEntityOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/como-tener-una-excelente-entrevista/"
+        },
+        "wordCount": 533,
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/como-tener-una-excelente-entrevista/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2021/09/most-common-interview-questions.jpg",
+        "articleSection": [
+          "Headhunting y liderazgo"
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://desarrollo.americanrecruiters.mx/como-tener-una-excelente-entrevista/",
+        "url": "https://desarrollo.americanrecruiters.mx/como-tener-una-excelente-entrevista/",
+        "name": "Cuándo contratar un headhunter | American Recruiters",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/como-tener-una-excelente-entrevista/#primaryimage"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/como-tener-una-excelente-entrevista/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2021/09/most-common-interview-questions.jpg",
+        "datePublished": "2021-09-21T18:32:23+00:00",
+        "dateModified": "2026-10-26T16:26:31+00:00",
+        "description": "Conoce cuándo considerar un headhunter para puestos gerenciales, directivos o especializados y qué papel corresponde a la empresa en la selección.",
+        "breadcrumb": {
+          "@id": "https://desarrollo.americanrecruiters.mx/como-tener-una-excelente-entrevista/#breadcrumb"
+        },
+        "inLanguage": "es",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://desarrollo.americanrecruiters.mx/como-tener-una-excelente-entrevista/"
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "inLanguage": "es",
+        "@id": "https://desarrollo.americanrecruiters.mx/como-tener-una-excelente-entrevista/#primaryimage",
+        "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2021/09/most-common-interview-questions.jpg",
+        "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2021/09/most-common-interview-questions.jpg",
+        "width": 1200,
+        "height": 675,
+        "caption": "Ilustración de una entrevista de trabajo entre dos personas."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://desarrollo.americanrecruiters.mx/como-tener-una-excelente-entrevista/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://desarrollo.americanrecruiters.mx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ideas para decidir mejor sobre talento y contratación",
+            "item": "https://desarrollo.americanrecruiters.mx/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "¿Cuándo contratar un head hunter?"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://desarrollo.americanrecruiters.mx/#website",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "name": "American Recruiters México — Desarrollo",
+        "description": "Entorno privado de desarrollo web.",
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://desarrollo.americanrecruiters.mx/?s={search_term_string}"
+            },
+            "query-input": {
+              "@type": "PropertyValueSpecification",
+              "valueRequired": true,
+              "valueName": "search_term_string"
+            }
+          }
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/#organization",
+        "name": "American Recruiters México",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "logo": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/",
+          "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "width": 1472,
+          "height": 200,
+          "caption": "American Recruiters México"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/blog/#equipo-editorial",
+        "name": "Equipo editorial de American Recruiters",
+        "url": "https://desarrollo.americanrecruiters.mx/blog/"
+      }
+    ]
+  },
+  {
+    "id": 718,
+    "graph": [
+      {
+        "@type": "Article",
+        "@id": "https://desarrollo.americanrecruiters.mx/los-5-errores-mas-comunes-en-el-proceso-de-reclutamiento-y-como-evitarlos/#article",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/los-5-errores-mas-comunes-en-el-proceso-de-reclutamiento-y-como-evitarlos/"
+        },
+        "author": {
+          "@id": "https://desarrollo.americanrecruiters.mx/blog/#equipo-editorial"
+        },
+        "headline": "Los 5 errores más comunes en el proceso de reclutamiento y cómo evitarlos",
+        "datePublished": "2024-07-08T22:14:36+00:00",
+        "dateModified": "2026-10-26T16:29:07+00:00",
+        "mainEntityOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/los-5-errores-mas-comunes-en-el-proceso-de-reclutamiento-y-como-evitarlos/"
+        },
+        "wordCount": 682,
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/los-5-errores-mas-comunes-en-el-proceso-de-reclutamiento-y-como-evitarlos/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2021/09/Webp.net-resizeimage-1.jpg",
+        "articleSection": [
+          "Reclutamiento y selección"
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://desarrollo.americanrecruiters.mx/los-5-errores-mas-comunes-en-el-proceso-de-reclutamiento-y-como-evitarlos/",
+        "url": "https://desarrollo.americanrecruiters.mx/los-5-errores-mas-comunes-en-el-proceso-de-reclutamiento-y-como-evitarlos/",
+        "name": "5 errores de reclutamiento y cómo evitarlos",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/los-5-errores-mas-comunes-en-el-proceso-de-reclutamiento-y-como-evitarlos/#primaryimage"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/los-5-errores-mas-comunes-en-el-proceso-de-reclutamiento-y-como-evitarlos/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2021/09/Webp.net-resizeimage-1.jpg",
+        "datePublished": "2024-07-08T22:14:36+00:00",
+        "dateModified": "2026-10-26T16:29:07+00:00",
+        "description": "Revisa cinco errores del reclutamiento: perfil poco claro, canales inadecuados, revisión de CV, entrevistas y demora en presentar una oferta.",
+        "breadcrumb": {
+          "@id": "https://desarrollo.americanrecruiters.mx/los-5-errores-mas-comunes-en-el-proceso-de-reclutamiento-y-como-evitarlos/#breadcrumb"
+        },
+        "inLanguage": "es",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://desarrollo.americanrecruiters.mx/los-5-errores-mas-comunes-en-el-proceso-de-reclutamiento-y-como-evitarlos/"
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "inLanguage": "es",
+        "@id": "https://desarrollo.americanrecruiters.mx/los-5-errores-mas-comunes-en-el-proceso-de-reclutamiento-y-como-evitarlos/#primaryimage",
+        "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2021/09/Webp.net-resizeimage-1.jpg",
+        "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2021/09/Webp.net-resizeimage-1.jpg",
+        "width": 1200,
+        "height": 800,
+        "caption": "Fotografía ilustrativa de dos personas conversando en una entrevista de trabajo."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://desarrollo.americanrecruiters.mx/los-5-errores-mas-comunes-en-el-proceso-de-reclutamiento-y-como-evitarlos/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://desarrollo.americanrecruiters.mx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ideas para decidir mejor sobre talento y contratación",
+            "item": "https://desarrollo.americanrecruiters.mx/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Los 5 errores más comunes en el proceso de reclutamiento y cómo evitarlos"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://desarrollo.americanrecruiters.mx/#website",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "name": "American Recruiters México — Desarrollo",
+        "description": "Entorno privado de desarrollo web.",
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://desarrollo.americanrecruiters.mx/?s={search_term_string}"
+            },
+            "query-input": {
+              "@type": "PropertyValueSpecification",
+              "valueRequired": true,
+              "valueName": "search_term_string"
+            }
+          }
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/#organization",
+        "name": "American Recruiters México",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "logo": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/",
+          "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "width": 1472,
+          "height": 200,
+          "caption": "American Recruiters México"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/blog/#equipo-editorial",
+        "name": "Equipo editorial de American Recruiters",
+        "url": "https://desarrollo.americanrecruiters.mx/blog/"
+      }
+    ]
+  },
+  {
+    "id": 762,
+    "graph": [
+      {
+        "@type": "Article",
+        "@id": "https://desarrollo.americanrecruiters.mx/como-contratar-talento-de-alta-direccion-en-mexico-en-tiempos-de-incertidumbre/#article",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/como-contratar-talento-de-alta-direccion-en-mexico-en-tiempos-de-incertidumbre/"
+        },
+        "author": {
+          "@id": "https://desarrollo.americanrecruiters.mx/blog/#equipo-editorial"
+        },
+        "headline": "¿Cómo contratar talento de alta dirección en México en tiempos de incertidumbre?",
+        "datePublished": "2026-08-28T18:29:13+00:00",
+        "dateModified": "2026-10-26T16:29:46+00:00",
+        "mainEntityOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/como-contratar-talento-de-alta-direccion-en-mexico-en-tiempos-de-incertidumbre/"
+        },
+        "wordCount": 656,
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/como-contratar-talento-de-alta-direccion-en-mexico-en-tiempos-de-incertidumbre/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/financial-investment-volatility-uncertainty-or-change-in-business-and-stock-market-concept-businessman-investor-fall-on-uncertainty-volatile-up-and-down-arrow-profit-graph-vector.jpg",
+        "articleSection": [
+          "Headhunting y liderazgo"
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://desarrollo.americanrecruiters.mx/como-contratar-talento-de-alta-direccion-en-mexico-en-tiempos-de-incertidumbre/",
+        "url": "https://desarrollo.americanrecruiters.mx/como-contratar-talento-de-alta-direccion-en-mexico-en-tiempos-de-incertidumbre/",
+        "name": "Contratar alta dirección en México: criterios de búsqueda",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/como-contratar-talento-de-alta-direccion-en-mexico-en-tiempos-de-incertidumbre/#primaryimage"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/como-contratar-talento-de-alta-direccion-en-mexico-en-tiempos-de-incertidumbre/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/financial-investment-volatility-uncertainty-or-change-in-business-and-stock-market-concept-businessman-investor-fall-on-uncertainty-volatile-up-and-down-arrow-profit-graph-vector.jpg",
+        "datePublished": "2026-08-28T18:29:13+00:00",
+        "dateModified": "2026-10-26T16:29:46+00:00",
+        "description": "Revisa el perfil de liderazgo, la compatibilidad con el contexto de la empresa y la organización de una búsqueda de alta dirección en México.",
+        "breadcrumb": {
+          "@id": "https://desarrollo.americanrecruiters.mx/como-contratar-talento-de-alta-direccion-en-mexico-en-tiempos-de-incertidumbre/#breadcrumb"
+        },
+        "inLanguage": "es",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://desarrollo.americanrecruiters.mx/como-contratar-talento-de-alta-direccion-en-mexico-en-tiempos-de-incertidumbre/"
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "inLanguage": "es",
+        "@id": "https://desarrollo.americanrecruiters.mx/como-contratar-talento-de-alta-direccion-en-mexico-en-tiempos-de-incertidumbre/#primaryimage",
+        "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/financial-investment-volatility-uncertainty-or-change-in-business-and-stock-market-concept-businessman-investor-fall-on-uncertainty-volatile-up-and-down-arrow-profit-graph-vector.jpg",
+        "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/financial-investment-volatility-uncertainty-or-change-in-business-and-stock-market-concept-businessman-investor-fall-on-uncertainty-volatile-up-and-down-arrow-profit-graph-vector.jpg",
+        "width": 1537,
+        "height": 980,
+        "caption": "Ilustración de una persona ante líneas de un gráfico financiero."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://desarrollo.americanrecruiters.mx/como-contratar-talento-de-alta-direccion-en-mexico-en-tiempos-de-incertidumbre/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://desarrollo.americanrecruiters.mx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ideas para decidir mejor sobre talento y contratación",
+            "item": "https://desarrollo.americanrecruiters.mx/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "¿Cómo contratar talento de alta dirección en México en tiempos de incertidumbre?"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://desarrollo.americanrecruiters.mx/#website",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "name": "American Recruiters México — Desarrollo",
+        "description": "Entorno privado de desarrollo web.",
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://desarrollo.americanrecruiters.mx/?s={search_term_string}"
+            },
+            "query-input": {
+              "@type": "PropertyValueSpecification",
+              "valueRequired": true,
+              "valueName": "search_term_string"
+            }
+          }
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/#organization",
+        "name": "American Recruiters México",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "logo": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/",
+          "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "width": 1472,
+          "height": 200,
+          "caption": "American Recruiters México"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/blog/#equipo-editorial",
+        "name": "Equipo editorial de American Recruiters",
+        "url": "https://desarrollo.americanrecruiters.mx/blog/"
+      }
+    ]
+  },
+  {
+    "id": 766,
+    "graph": [
+      {
+        "@type": "Article",
+        "@id": "https://desarrollo.americanrecruiters.mx/escasez-de-perfiles-it-y-tech-en-mexico-el-reto-de-los-sueldos-en-dolares-y-la-fuga-de-talento/#article",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/escasez-de-perfiles-it-y-tech-en-mexico-el-reto-de-los-sueldos-en-dolares-y-la-fuga-de-talento/"
+        },
+        "author": {
+          "@id": "https://desarrollo.americanrecruiters.mx/blog/#equipo-editorial"
+        },
+        "headline": "Escasez de perfiles IT y Tech en México: El reto de los sueldos en dólares y la fuga de talento",
+        "datePublished": "2026-08-28T18:41:21+00:00",
+        "dateModified": "2026-10-26T16:29:52+00:00",
+        "mainEntityOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/escasez-de-perfiles-it-y-tech-en-mexico-el-reto-de-los-sueldos-en-dolares-y-la-fuga-de-talento/"
+        },
+        "wordCount": 532,
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/escasez-de-perfiles-it-y-tech-en-mexico-el-reto-de-los-sueldos-en-dolares-y-la-fuga-de-talento/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/reclutamiento-perfiles-it-tech-mexico-e1787942551284.png",
+        "articleSection": [
+          "Gestión del talento"
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://desarrollo.americanrecruiters.mx/escasez-de-perfiles-it-y-tech-en-mexico-el-reto-de-los-sueldos-en-dolares-y-la-fuga-de-talento/",
+        "url": "https://desarrollo.americanrecruiters.mx/escasez-de-perfiles-it-y-tech-en-mexico-el-reto-de-los-sueldos-en-dolares-y-la-fuga-de-talento/",
+        "name": "Reclutamiento IT en México: retos de la oferta laboral",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/escasez-de-perfiles-it-y-tech-en-mexico-el-reto-de-los-sueldos-en-dolares-y-la-fuga-de-talento/#primaryimage"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/escasez-de-perfiles-it-y-tech-en-mexico-el-reto-de-los-sueldos-en-dolares-y-la-fuga-de-talento/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/reclutamiento-perfiles-it-tech-mexico-e1787942551284.png",
+        "datePublished": "2026-08-28T18:41:21+00:00",
+        "dateModified": "2026-10-26T16:29:52+00:00",
+        "description": "Revisa cómo el perfil, las pruebas técnicas, el stack y las condiciones de trabajo pueden influir en una búsqueda de talento IT en México.",
+        "breadcrumb": {
+          "@id": "https://desarrollo.americanrecruiters.mx/escasez-de-perfiles-it-y-tech-en-mexico-el-reto-de-los-sueldos-en-dolares-y-la-fuga-de-talento/#breadcrumb"
+        },
+        "inLanguage": "es",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://desarrollo.americanrecruiters.mx/escasez-de-perfiles-it-y-tech-en-mexico-el-reto-de-los-sueldos-en-dolares-y-la-fuga-de-talento/"
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "inLanguage": "es",
+        "@id": "https://desarrollo.americanrecruiters.mx/escasez-de-perfiles-it-y-tech-en-mexico-el-reto-de-los-sueldos-en-dolares-y-la-fuga-de-talento/#primaryimage",
+        "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/reclutamiento-perfiles-it-tech-mexico-e1787942551284.png",
+        "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/reclutamiento-perfiles-it-tech-mexico-e1787942551284.png",
+        "width": 1536,
+        "height": 942,
+        "caption": "Imagen ilustrativa de una persona caminando por un pasillo de oficinas."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://desarrollo.americanrecruiters.mx/escasez-de-perfiles-it-y-tech-en-mexico-el-reto-de-los-sueldos-en-dolares-y-la-fuga-de-talento/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://desarrollo.americanrecruiters.mx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ideas para decidir mejor sobre talento y contratación",
+            "item": "https://desarrollo.americanrecruiters.mx/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Escasez de perfiles IT y Tech en México: El reto de los sueldos en dólares y la fuga de talento"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://desarrollo.americanrecruiters.mx/#website",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "name": "American Recruiters México — Desarrollo",
+        "description": "Entorno privado de desarrollo web.",
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://desarrollo.americanrecruiters.mx/?s={search_term_string}"
+            },
+            "query-input": {
+              "@type": "PropertyValueSpecification",
+              "valueRequired": true,
+              "valueName": "search_term_string"
+            }
+          }
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/#organization",
+        "name": "American Recruiters México",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "logo": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/",
+          "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "width": 1472,
+          "height": 200,
+          "caption": "American Recruiters México"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/blog/#equipo-editorial",
+        "name": "Equipo editorial de American Recruiters",
+        "url": "https://desarrollo.americanrecruiters.mx/blog/"
+      }
+    ]
+  },
+  {
+    "id": 769,
+    "graph": [
+      {
+        "@type": "Article",
+        "@id": "https://desarrollo.americanrecruiters.mx/el-verdadero-costo-de-una-mala-contratacion-calculo-de-perdidas-operativas-para-pymes-y-corporativos/#article",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/el-verdadero-costo-de-una-mala-contratacion-calculo-de-perdidas-operativas-para-pymes-y-corporativos/"
+        },
+        "author": {
+          "@id": "https://desarrollo.americanrecruiters.mx/blog/#equipo-editorial"
+        },
+        "headline": "El verdadero costo de una mala contratación: Cálculo de pérdidas operativas para PyMEs y Corporativos",
+        "datePublished": "2026-08-28T18:47:14+00:00",
+        "dateModified": "2026-10-26T16:30:16+00:00",
+        "mainEntityOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/el-verdadero-costo-de-una-mala-contratacion-calculo-de-perdidas-operativas-para-pymes-y-corporativos/"
+        },
+        "wordCount": 557,
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/el-verdadero-costo-de-una-mala-contratacion-calculo-de-perdidas-operativas-para-pymes-y-corporativos/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/costo-mala-contratacion-rotacion-personal-mexico-e1787942817484.png",
+        "articleSection": [
+          "Estrategia de contratación"
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://desarrollo.americanrecruiters.mx/el-verdadero-costo-de-una-mala-contratacion-calculo-de-perdidas-operativas-para-pymes-y-corporativos/",
+        "url": "https://desarrollo.americanrecruiters.mx/el-verdadero-costo-de-una-mala-contratacion-calculo-de-perdidas-operativas-para-pymes-y-corporativos/",
+        "name": "Costo de una mala contratación: qué revisar en la empresa",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/el-verdadero-costo-de-una-mala-contratacion-calculo-de-perdidas-operativas-para-pymes-y-corporativos/#primaryimage"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/el-verdadero-costo-de-una-mala-contratacion-calculo-de-perdidas-operativas-para-pymes-y-corporativos/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/costo-mala-contratacion-rotacion-personal-mexico-e1787942817484.png",
+        "datePublished": "2026-08-28T18:47:14+00:00",
+        "dateModified": "2026-10-26T16:30:16+00:00",
+        "description": "Identifica costos de reclutamiento, salida, capacitación y productividad que conviene revisar al evaluar el impacto de una contratación fallida.",
+        "breadcrumb": {
+          "@id": "https://desarrollo.americanrecruiters.mx/el-verdadero-costo-de-una-mala-contratacion-calculo-de-perdidas-operativas-para-pymes-y-corporativos/#breadcrumb"
+        },
+        "inLanguage": "es",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://desarrollo.americanrecruiters.mx/el-verdadero-costo-de-una-mala-contratacion-calculo-de-perdidas-operativas-para-pymes-y-corporativos/"
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "inLanguage": "es",
+        "@id": "https://desarrollo.americanrecruiters.mx/el-verdadero-costo-de-una-mala-contratacion-calculo-de-perdidas-operativas-para-pymes-y-corporativos/#primaryimage",
+        "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/costo-mala-contratacion-rotacion-personal-mexico-e1787942817484.png",
+        "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/costo-mala-contratacion-rotacion-personal-mexico-e1787942817484.png",
+        "width": 1536,
+        "height": 940,
+        "caption": "Imagen ilustrativa de una silla de oficina vacía junto a documentos."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://desarrollo.americanrecruiters.mx/el-verdadero-costo-de-una-mala-contratacion-calculo-de-perdidas-operativas-para-pymes-y-corporativos/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://desarrollo.americanrecruiters.mx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ideas para decidir mejor sobre talento y contratación",
+            "item": "https://desarrollo.americanrecruiters.mx/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "El verdadero costo de una mala contratación: Cálculo de pérdidas operativas para PyMEs y Corporativos"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://desarrollo.americanrecruiters.mx/#website",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "name": "American Recruiters México — Desarrollo",
+        "description": "Entorno privado de desarrollo web.",
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://desarrollo.americanrecruiters.mx/?s={search_term_string}"
+            },
+            "query-input": {
+              "@type": "PropertyValueSpecification",
+              "valueRequired": true,
+              "valueName": "search_term_string"
+            }
+          }
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/#organization",
+        "name": "American Recruiters México",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "logo": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/",
+          "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "width": 1472,
+          "height": 200,
+          "caption": "American Recruiters México"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/blog/#equipo-editorial",
+        "name": "Equipo editorial de American Recruiters",
+        "url": "https://desarrollo.americanrecruiters.mx/blog/"
+      }
+    ]
+  },
+  {
+    "id": 772,
+    "graph": [
+      {
+        "@type": "Article",
+        "@id": "https://desarrollo.americanrecruiters.mx/reclutamiento-masivo-sin-perder-calidad-claves-para-la-industria-manufacturera-y-logistica/#article",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/reclutamiento-masivo-sin-perder-calidad-claves-para-la-industria-manufacturera-y-logistica/"
+        },
+        "author": {
+          "@id": "https://desarrollo.americanrecruiters.mx/blog/#equipo-editorial"
+        },
+        "headline": "Reclutamiento Masivo sin Perder Calidad: Claves para la Industria Manufacturera y Logística",
+        "datePublished": "2026-08-28T18:50:02+00:00",
+        "dateModified": "2026-10-26T16:30:22+00:00",
+        "mainEntityOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/reclutamiento-masivo-sin-perder-calidad-claves-para-la-industria-manufacturera-y-logistica/"
+        },
+        "wordCount": 505,
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/reclutamiento-masivo-sin-perder-calidad-claves-para-la-industria-manufacturera-y-logistica/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/reclutamiento-masivo-personal-operativo-mexico.png",
+        "articleSection": [
+          "Reclutamiento y selección"
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://desarrollo.americanrecruiters.mx/reclutamiento-masivo-sin-perder-calidad-claves-para-la-industria-manufacturera-y-logistica/",
+        "url": "https://desarrollo.americanrecruiters.mx/reclutamiento-masivo-sin-perder-calidad-claves-para-la-industria-manufacturera-y-logistica/",
+        "name": "Reclutamiento masivo: criterios para cuidar la selección",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/reclutamiento-masivo-sin-perder-calidad-claves-para-la-industria-manufacturera-y-logistica/#primaryimage"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/reclutamiento-masivo-sin-perder-calidad-claves-para-la-industria-manufacturera-y-logistica/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/reclutamiento-masivo-personal-operativo-mexico.png",
+        "datePublished": "2026-08-28T18:50:02+00:00",
+        "dateModified": "2026-10-26T16:30:22+00:00",
+        "description": "Revisa movilidad, condiciones de trabajo y filtros de selección al planear contrataciones operativas para manufactura y logística.",
+        "breadcrumb": {
+          "@id": "https://desarrollo.americanrecruiters.mx/reclutamiento-masivo-sin-perder-calidad-claves-para-la-industria-manufacturera-y-logistica/#breadcrumb"
+        },
+        "inLanguage": "es",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://desarrollo.americanrecruiters.mx/reclutamiento-masivo-sin-perder-calidad-claves-para-la-industria-manufacturera-y-logistica/"
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "inLanguage": "es",
+        "@id": "https://desarrollo.americanrecruiters.mx/reclutamiento-masivo-sin-perder-calidad-claves-para-la-industria-manufacturera-y-logistica/#primaryimage",
+        "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/reclutamiento-masivo-personal-operativo-mexico.png",
+        "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/reclutamiento-masivo-personal-operativo-mexico.png",
+        "width": 1536,
+        "height": 1024,
+        "caption": "Imagen ilustrativa de personal trabajando en un almacén."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://desarrollo.americanrecruiters.mx/reclutamiento-masivo-sin-perder-calidad-claves-para-la-industria-manufacturera-y-logistica/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://desarrollo.americanrecruiters.mx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ideas para decidir mejor sobre talento y contratación",
+            "item": "https://desarrollo.americanrecruiters.mx/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Reclutamiento Masivo sin Perder Calidad: Claves para la Industria Manufacturera y Logística"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://desarrollo.americanrecruiters.mx/#website",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "name": "American Recruiters México — Desarrollo",
+        "description": "Entorno privado de desarrollo web.",
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://desarrollo.americanrecruiters.mx/?s={search_term_string}"
+            },
+            "query-input": {
+              "@type": "PropertyValueSpecification",
+              "valueRequired": true,
+              "valueName": "search_term_string"
+            }
+          }
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/#organization",
+        "name": "American Recruiters México",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "logo": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/",
+          "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "width": 1472,
+          "height": 200,
+          "caption": "American Recruiters México"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/blog/#equipo-editorial",
+        "name": "Equipo editorial de American Recruiters",
+        "url": "https://desarrollo.americanrecruiters.mx/blog/"
+      }
+    ]
+  },
+  {
+    "id": 775,
+    "graph": [
+      {
+        "@type": "Article",
+        "@id": "https://desarrollo.americanrecruiters.mx/por-que-las-mejores-ternas-de-candidatos-rechazan-su-oferta-de-empleo/#article",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/por-que-las-mejores-ternas-de-candidatos-rechazan-su-oferta-de-empleo/"
+        },
+        "author": {
+          "@id": "https://desarrollo.americanrecruiters.mx/blog/#equipo-editorial"
+        },
+        "headline": "¿Por qué los candidatos rechazan su oferta de empleo?",
+        "datePublished": "2026-08-28T18:57:21+00:00",
+        "dateModified": "2026-10-26T16:30:27+00:00",
+        "mainEntityOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/por-que-las-mejores-ternas-de-candidatos-rechazan-su-oferta-de-empleo/"
+        },
+        "wordCount": 479,
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/por-que-las-mejores-ternas-de-candidatos-rechazan-su-oferta-de-empleo/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/propuesta-oferta-laboral-candidatos-ejecutivos-e1787943340313.png",
+        "articleSection": [
+          "Gestión del talento"
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://desarrollo.americanrecruiters.mx/por-que-las-mejores-ternas-de-candidatos-rechazan-su-oferta-de-empleo/",
+        "url": "https://desarrollo.americanrecruiters.mx/por-que-las-mejores-ternas-de-candidatos-rechazan-su-oferta-de-empleo/",
+        "name": "Por qué los candidatos rechazan una oferta de empleo",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/por-que-las-mejores-ternas-de-candidatos-rechazan-su-oferta-de-empleo/#primaryimage"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/por-que-las-mejores-ternas-de-candidatos-rechazan-su-oferta-de-empleo/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/propuesta-oferta-laboral-candidatos-ejecutivos-e1787943340313.png",
+        "datePublished": "2026-08-28T18:57:21+00:00",
+        "dateModified": "2026-10-26T16:30:27+00:00",
+        "description": "Revisa la claridad del puesto, la comunicación entre etapas y las condiciones de la oferta cuando los candidatos deciden no continuar.",
+        "breadcrumb": {
+          "@id": "https://desarrollo.americanrecruiters.mx/por-que-las-mejores-ternas-de-candidatos-rechazan-su-oferta-de-empleo/#breadcrumb"
+        },
+        "inLanguage": "es",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://desarrollo.americanrecruiters.mx/por-que-las-mejores-ternas-de-candidatos-rechazan-su-oferta-de-empleo/"
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "inLanguage": "es",
+        "@id": "https://desarrollo.americanrecruiters.mx/por-que-las-mejores-ternas-de-candidatos-rechazan-su-oferta-de-empleo/#primaryimage",
+        "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/propuesta-oferta-laboral-candidatos-ejecutivos-e1787943340313.png",
+        "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/propuesta-oferta-laboral-candidatos-ejecutivos-e1787943340313.png",
+        "width": 1536,
+        "height": 947,
+        "caption": "Imagen ilustrativa de personas revisando documentos en una reunión."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://desarrollo.americanrecruiters.mx/por-que-las-mejores-ternas-de-candidatos-rechazan-su-oferta-de-empleo/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://desarrollo.americanrecruiters.mx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ideas para decidir mejor sobre talento y contratación",
+            "item": "https://desarrollo.americanrecruiters.mx/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "¿Por qué los candidatos rechazan su oferta de empleo?"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://desarrollo.americanrecruiters.mx/#website",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "name": "American Recruiters México — Desarrollo",
+        "description": "Entorno privado de desarrollo web.",
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://desarrollo.americanrecruiters.mx/?s={search_term_string}"
+            },
+            "query-input": {
+              "@type": "PropertyValueSpecification",
+              "valueRequired": true,
+              "valueName": "search_term_string"
+            }
+          }
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/#organization",
+        "name": "American Recruiters México",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "logo": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/",
+          "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "width": 1472,
+          "height": 200,
+          "caption": "American Recruiters México"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/blog/#equipo-editorial",
+        "name": "Equipo editorial de American Recruiters",
+        "url": "https://desarrollo.americanrecruiters.mx/blog/"
+      }
+    ]
+  },
+  {
+    "id": 778,
+    "graph": [
+      {
+        "@type": "Article",
+        "@id": "https://desarrollo.americanrecruiters.mx/nearshoring-en-mexico-esta-su-empresa-lista-para-competir-por-el-talento-internacional/#article",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/nearshoring-en-mexico-esta-su-empresa-lista-para-competir-por-el-talento-internacional/"
+        },
+        "author": {
+          "@id": "https://desarrollo.americanrecruiters.mx/blog/#equipo-editorial"
+        },
+        "headline": "Nearshoring en México: ¿Está su empresa lista para competir por el talento internacional?",
+        "datePublished": "2026-08-28T19:00:43+00:00",
+        "dateModified": "2026-10-26T16:30:42+00:00",
+        "mainEntityOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/nearshoring-en-mexico-esta-su-empresa-lista-para-competir-por-el-talento-internacional/"
+        },
+        "wordCount": 454,
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/nearshoring-en-mexico-esta-su-empresa-lista-para-competir-por-el-talento-internacional/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/nearshoring-mexico-reclutamiento-ejecutivo-e1787943604406.png",
+        "articleSection": [
+          "Estrategia de contratación"
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://desarrollo.americanrecruiters.mx/nearshoring-en-mexico-esta-su-empresa-lista-para-competir-por-el-talento-internacional/",
+        "url": "https://desarrollo.americanrecruiters.mx/nearshoring-en-mexico-esta-su-empresa-lista-para-competir-por-el-talento-internacional/",
+        "name": "Nearshoring en México y búsqueda de talento",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/nearshoring-en-mexico-esta-su-empresa-lista-para-competir-por-el-talento-internacional/#primaryimage"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/nearshoring-en-mexico-esta-su-empresa-lista-para-competir-por-el-talento-internacional/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/nearshoring-mexico-reclutamiento-ejecutivo-e1787943604406.png",
+        "datePublished": "2026-08-28T19:00:43+00:00",
+        "dateModified": "2026-10-26T16:30:42+00:00",
+        "description": "Revisa las necesidades de perfiles técnicos y ejecutivos, comunicación y coordinación que conviene considerar en proyectos relacionados con nearshoring.",
+        "breadcrumb": {
+          "@id": "https://desarrollo.americanrecruiters.mx/nearshoring-en-mexico-esta-su-empresa-lista-para-competir-por-el-talento-internacional/#breadcrumb"
+        },
+        "inLanguage": "es",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://desarrollo.americanrecruiters.mx/nearshoring-en-mexico-esta-su-empresa-lista-para-competir-por-el-talento-internacional/"
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "inLanguage": "es",
+        "@id": "https://desarrollo.americanrecruiters.mx/nearshoring-en-mexico-esta-su-empresa-lista-para-competir-por-el-talento-internacional/#primaryimage",
+        "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/nearshoring-mexico-reclutamiento-ejecutivo-e1787943604406.png",
+        "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/nearshoring-mexico-reclutamiento-ejecutivo-e1787943604406.png",
+        "width": 1536,
+        "height": 947,
+        "caption": "Imagen ilustrativa de edificios y naves industriales vistos desde arriba."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://desarrollo.americanrecruiters.mx/nearshoring-en-mexico-esta-su-empresa-lista-para-competir-por-el-talento-internacional/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://desarrollo.americanrecruiters.mx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ideas para decidir mejor sobre talento y contratación",
+            "item": "https://desarrollo.americanrecruiters.mx/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Nearshoring en México: ¿Está su empresa lista para competir por el talento internacional?"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://desarrollo.americanrecruiters.mx/#website",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "name": "American Recruiters México — Desarrollo",
+        "description": "Entorno privado de desarrollo web.",
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://desarrollo.americanrecruiters.mx/?s={search_term_string}"
+            },
+            "query-input": {
+              "@type": "PropertyValueSpecification",
+              "valueRequired": true,
+              "valueName": "search_term_string"
+            }
+          }
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/#organization",
+        "name": "American Recruiters México",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "logo": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/",
+          "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "width": 1472,
+          "height": 200,
+          "caption": "American Recruiters México"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/blog/#equipo-editorial",
+        "name": "Equipo editorial de American Recruiters",
+        "url": "https://desarrollo.americanrecruiters.mx/blog/"
+      }
+    ]
+  },
+  {
+    "id": 781,
+    "graph": [
+      {
+        "@type": "Article",
+        "@id": "https://desarrollo.americanrecruiters.mx/reclutamiento-especializado-vs-reclutamiento-interno-cuando-conviene-externalizar-la-busqueda/#article",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/reclutamiento-especializado-vs-reclutamiento-interno-cuando-conviene-externalizar-la-busqueda/"
+        },
+        "author": {
+          "@id": "https://desarrollo.americanrecruiters.mx/blog/#equipo-editorial"
+        },
+        "headline": "Reclutamiento especializado vs. Reclutamiento interno: ¿Cuándo conviene externalizar la búsqueda?",
+        "datePublished": "2026-08-28T19:06:19+00:00",
+        "dateModified": "2026-10-26T16:30:47+00:00",
+        "mainEntityOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/reclutamiento-especializado-vs-reclutamiento-interno-cuando-conviene-externalizar-la-busqueda/"
+        },
+        "wordCount": 522,
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/reclutamiento-especializado-vs-reclutamiento-interno-cuando-conviene-externalizar-la-busqueda/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/agencia-reclutamiento-especializado-vs-rh-interno-e1787943914730.png",
+        "articleSection": [
+          "Estrategia de contratación"
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://desarrollo.americanrecruiters.mx/reclutamiento-especializado-vs-reclutamiento-interno-cuando-conviene-externalizar-la-busqueda/",
+        "url": "https://desarrollo.americanrecruiters.mx/reclutamiento-especializado-vs-reclutamiento-interno-cuando-conviene-externalizar-la-busqueda/",
+        "name": "Reclutamiento especializado o interno: cuándo apoyarse",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/reclutamiento-especializado-vs-reclutamiento-interno-cuando-conviene-externalizar-la-busqueda/#primaryimage"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/reclutamiento-especializado-vs-reclutamiento-interno-cuando-conviene-externalizar-la-busqueda/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/agencia-reclutamiento-especializado-vs-rh-interno-e1787943914730.png",
+        "datePublished": "2026-08-28T19:06:19+00:00",
+        "dateModified": "2026-10-26T16:30:47+00:00",
+        "description": "Compara responsabilidades y capacidad interna al decidir si una búsqueda de personal requiere apoyo de una firma especializada.",
+        "breadcrumb": {
+          "@id": "https://desarrollo.americanrecruiters.mx/reclutamiento-especializado-vs-reclutamiento-interno-cuando-conviene-externalizar-la-busqueda/#breadcrumb"
+        },
+        "inLanguage": "es",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://desarrollo.americanrecruiters.mx/reclutamiento-especializado-vs-reclutamiento-interno-cuando-conviene-externalizar-la-busqueda/"
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "inLanguage": "es",
+        "@id": "https://desarrollo.americanrecruiters.mx/reclutamiento-especializado-vs-reclutamiento-interno-cuando-conviene-externalizar-la-busqueda/#primaryimage",
+        "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/agencia-reclutamiento-especializado-vs-rh-interno-e1787943914730.png",
+        "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/08/agencia-reclutamiento-especializado-vs-rh-interno-e1787943914730.png",
+        "width": 1285,
+        "height": 814,
+        "caption": "Imagen ilustrativa de tres personas conversando en una oficina."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://desarrollo.americanrecruiters.mx/reclutamiento-especializado-vs-reclutamiento-interno-cuando-conviene-externalizar-la-busqueda/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://desarrollo.americanrecruiters.mx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ideas para decidir mejor sobre talento y contratación",
+            "item": "https://desarrollo.americanrecruiters.mx/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Reclutamiento especializado vs. Reclutamiento interno: ¿Cuándo conviene externalizar la búsqueda?"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://desarrollo.americanrecruiters.mx/#website",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "name": "American Recruiters México — Desarrollo",
+        "description": "Entorno privado de desarrollo web.",
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://desarrollo.americanrecruiters.mx/?s={search_term_string}"
+            },
+            "query-input": {
+              "@type": "PropertyValueSpecification",
+              "valueRequired": true,
+              "valueName": "search_term_string"
+            }
+          }
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/#organization",
+        "name": "American Recruiters México",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "logo": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/",
+          "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "width": 1472,
+          "height": 200,
+          "caption": "American Recruiters México"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/blog/#equipo-editorial",
+        "name": "Equipo editorial de American Recruiters",
+        "url": "https://desarrollo.americanrecruiters.mx/blog/"
+      }
+    ]
+  },
+  {
+    "id": 808,
+    "graph": [
+      {
+        "@type": "Article",
+        "@id": "https://desarrollo.americanrecruiters.mx/cuanto-cobra-un-headhunter/#article",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/cuanto-cobra-un-headhunter/"
+        },
+        "author": {
+          "name": "Equipo editorial de American Recruiters",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/person/3105214942b4dc4e69e0ad88345e8f66"
+        },
+        "headline": "¿Cuánto cobra un headhunter? Qué debe revisar una empresa",
+        "datePublished": "2026-10-26T00:45:24+00:00",
+        "dateModified": "2026-10-26T13:24:19+00:00",
+        "mainEntityOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/cuanto-cobra-un-headhunter/"
+        },
+        "wordCount": 1128,
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/cuanto-cobra-un-headhunter/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/cuanto-cobra-un-headhunter.webp",
+        "articleSection": [
+          "Headhunting y liderazgo"
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://desarrollo.americanrecruiters.mx/cuanto-cobra-un-headhunter/",
+        "url": "https://desarrollo.americanrecruiters.mx/cuanto-cobra-un-headhunter/",
+        "name": "¿Cuánto cobra un headhunter? Cómo evaluar sus honorarios",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/cuanto-cobra-un-headhunter/#primaryimage"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/cuanto-cobra-un-headhunter/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/cuanto-cobra-un-headhunter.webp",
+        "datePublished": "2026-10-26T00:45:24+00:00",
+        "dateModified": "2026-10-26T13:24:19+00:00",
+        "description": "Conoce qué influye en los honorarios de un headhunter y qué revisar en una propuesta: alcance, forma de cobro, entregables y condiciones.",
+        "breadcrumb": {
+          "@id": "https://desarrollo.americanrecruiters.mx/cuanto-cobra-un-headhunter/#breadcrumb"
+        },
+        "inLanguage": "es",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://desarrollo.americanrecruiters.mx/cuanto-cobra-un-headhunter/"
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "inLanguage": "es",
+        "@id": "https://desarrollo.americanrecruiters.mx/cuanto-cobra-un-headhunter/#primaryimage",
+        "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/cuanto-cobra-un-headhunter.webp",
+        "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/cuanto-cobra-un-headhunter.webp",
+        "width": 1600,
+        "height": 900,
+        "caption": "Dos profesionales revisando una propuesta de búsqueda ejecutiva en una mesa de trabajo."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://desarrollo.americanrecruiters.mx/cuanto-cobra-un-headhunter/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://desarrollo.americanrecruiters.mx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ideas para decidir mejor sobre talento y contratación",
+            "item": "https://desarrollo.americanrecruiters.mx/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "¿Cuánto cobra un headhunter? Qué debe revisar una empresa"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://desarrollo.americanrecruiters.mx/#website",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "name": "American Recruiters México — Desarrollo",
+        "description": "Entorno privado de desarrollo web.",
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://desarrollo.americanrecruiters.mx/?s={search_term_string}"
+            },
+            "query-input": {
+              "@type": "PropertyValueSpecification",
+              "valueRequired": true,
+              "valueName": "search_term_string"
+            }
+          }
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/#organization",
+        "name": "American Recruiters México",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "logo": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/",
+          "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "width": 1472,
+          "height": 200,
+          "caption": "American Recruiters México"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://desarrollo.americanrecruiters.mx/#/schema/person/3105214942b4dc4e69e0ad88345e8f66",
+        "name": "Equipo editorial de American Recruiters",
+        "image": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/person/image/",
+          "url": "https://secure.gravatar.com/avatar/a20f8f1bf9c9a4d483a5f554f969913c0c320d18d9d7727587f3d8ca1df8b7dc?s=96&d=mm&r=g",
+          "contentUrl": "https://secure.gravatar.com/avatar/a20f8f1bf9c9a4d483a5f554f969913c0c320d18d9d7727587f3d8ca1df8b7dc?s=96&d=mm&r=g",
+          "caption": "Equipo editorial de American Recruiters"
+        },
+        "url": "https://desarrollo.americanrecruiters.mx/author/ar_editorial/"
+      }
+    ]
+  },
+  {
+    "id": 816,
+    "graph": [
+      {
+        "@type": "Article",
+        "@id": "https://desarrollo.americanrecruiters.mx/como-definir-una-vacante/#article",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/como-definir-una-vacante/"
+        },
+        "author": {
+          "name": "Equipo editorial de American Recruiters",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/person/3105214942b4dc4e69e0ad88345e8f66"
+        },
+        "headline": "Cómo definir una vacante: del puesto solicitado a un brief de contratación",
+        "datePublished": "2026-10-26T00:45:26+00:00",
+        "dateModified": "2026-10-26T13:24:24+00:00",
+        "mainEntityOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/como-definir-una-vacante/"
+        },
+        "wordCount": 1098,
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/como-definir-una-vacante/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/como-definir-una-vacante.webp",
+        "articleSection": [
+          "Reclutamiento y selección"
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://desarrollo.americanrecruiters.mx/como-definir-una-vacante/",
+        "url": "https://desarrollo.americanrecruiters.mx/como-definir-una-vacante/",
+        "name": "Cómo definir una vacante antes de iniciar el reclutamiento",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/como-definir-una-vacante/#primaryimage"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/como-definir-una-vacante/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/como-definir-una-vacante.webp",
+        "datePublished": "2026-10-26T00:45:26+00:00",
+        "dateModified": "2026-10-26T13:24:24+00:00",
+        "description": "Prepara una vacante con objetivos, responsabilidades, requisitos y condiciones claras. Incluye un ejemplo de brief para alinear a RH y al área contratante.",
+        "breadcrumb": {
+          "@id": "https://desarrollo.americanrecruiters.mx/como-definir-una-vacante/#breadcrumb"
+        },
+        "inLanguage": "es",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://desarrollo.americanrecruiters.mx/como-definir-una-vacante/"
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "inLanguage": "es",
+        "@id": "https://desarrollo.americanrecruiters.mx/como-definir-una-vacante/#primaryimage",
+        "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/como-definir-una-vacante.webp",
+        "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/como-definir-una-vacante.webp",
+        "width": 1600,
+        "height": 900,
+        "caption": "Reunión de trabajo para definir las responsabilidades de una vacante."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://desarrollo.americanrecruiters.mx/como-definir-una-vacante/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://desarrollo.americanrecruiters.mx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ideas para decidir mejor sobre talento y contratación",
+            "item": "https://desarrollo.americanrecruiters.mx/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Cómo definir una vacante: del puesto solicitado a un brief de contratación"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://desarrollo.americanrecruiters.mx/#website",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "name": "American Recruiters México — Desarrollo",
+        "description": "Entorno privado de desarrollo web.",
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://desarrollo.americanrecruiters.mx/?s={search_term_string}"
+            },
+            "query-input": {
+              "@type": "PropertyValueSpecification",
+              "valueRequired": true,
+              "valueName": "search_term_string"
+            }
+          }
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/#organization",
+        "name": "American Recruiters México",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "logo": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/",
+          "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "width": 1472,
+          "height": 200,
+          "caption": "American Recruiters México"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://desarrollo.americanrecruiters.mx/#/schema/person/3105214942b4dc4e69e0ad88345e8f66",
+        "name": "Equipo editorial de American Recruiters",
+        "image": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/person/image/",
+          "url": "https://secure.gravatar.com/avatar/a20f8f1bf9c9a4d483a5f554f969913c0c320d18d9d7727587f3d8ca1df8b7dc?s=96&d=mm&r=g",
+          "contentUrl": "https://secure.gravatar.com/avatar/a20f8f1bf9c9a4d483a5f554f969913c0c320d18d9d7727587f3d8ca1df8b7dc?s=96&d=mm&r=g",
+          "caption": "Equipo editorial de American Recruiters"
+        },
+        "url": "https://desarrollo.americanrecruiters.mx/author/ar_editorial/"
+      }
+    ]
+  },
+  {
+    "id": 818,
+    "graph": [
+      {
+        "@type": "Article",
+        "@id": "https://desarrollo.americanrecruiters.mx/evaluacion-de-candidatos-matriz/#article",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/evaluacion-de-candidatos-matriz/"
+        },
+        "author": {
+          "name": "Equipo editorial de American Recruiters",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/person/3105214942b4dc4e69e0ad88345e8f66"
+        },
+        "headline": "Evaluación de candidatos: una matriz para decidir con evidencia",
+        "datePublished": "2026-10-26T00:45:28+00:00",
+        "dateModified": "2026-10-26T13:24:24+00:00",
+        "mainEntityOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/evaluacion-de-candidatos-matriz/"
+        },
+        "wordCount": 1103,
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/evaluacion-de-candidatos-matriz/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/evaluacion-de-candidatos-matriz.webp",
+        "articleSection": [
+          "Reclutamiento y selección"
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://desarrollo.americanrecruiters.mx/evaluacion-de-candidatos-matriz/",
+        "url": "https://desarrollo.americanrecruiters.mx/evaluacion-de-candidatos-matriz/",
+        "name": "Evaluación de candidatos: cómo comparar evidencia útil",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/evaluacion-de-candidatos-matriz/#primaryimage"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/evaluacion-de-candidatos-matriz/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/evaluacion-de-candidatos-matriz.webp",
+        "datePublished": "2026-10-26T00:45:28+00:00",
+        "dateModified": "2026-10-26T13:24:24+00:00",
+        "description": "Organiza la evaluación de candidatos con criterios del puesto, evidencias y una matriz de comparación. Distingue información faltante de falta de capacidad.",
+        "breadcrumb": {
+          "@id": "https://desarrollo.americanrecruiters.mx/evaluacion-de-candidatos-matriz/#breadcrumb"
+        },
+        "inLanguage": "es",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://desarrollo.americanrecruiters.mx/evaluacion-de-candidatos-matriz/"
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "inLanguage": "es",
+        "@id": "https://desarrollo.americanrecruiters.mx/evaluacion-de-candidatos-matriz/#primaryimage",
+        "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/evaluacion-de-candidatos-matriz.webp",
+        "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/evaluacion-de-candidatos-matriz.webp",
+        "width": 1600,
+        "height": 900,
+        "caption": "Equipo de selección comparando información de candidatos."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://desarrollo.americanrecruiters.mx/evaluacion-de-candidatos-matriz/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://desarrollo.americanrecruiters.mx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ideas para decidir mejor sobre talento y contratación",
+            "item": "https://desarrollo.americanrecruiters.mx/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Evaluación de candidatos: una matriz para decidir con evidencia"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://desarrollo.americanrecruiters.mx/#website",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "name": "American Recruiters México — Desarrollo",
+        "description": "Entorno privado de desarrollo web.",
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://desarrollo.americanrecruiters.mx/?s={search_term_string}"
+            },
+            "query-input": {
+              "@type": "PropertyValueSpecification",
+              "valueRequired": true,
+              "valueName": "search_term_string"
+            }
+          }
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/#organization",
+        "name": "American Recruiters México",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "logo": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/",
+          "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "width": 1472,
+          "height": 200,
+          "caption": "American Recruiters México"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://desarrollo.americanrecruiters.mx/#/schema/person/3105214942b4dc4e69e0ad88345e8f66",
+        "name": "Equipo editorial de American Recruiters",
+        "image": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/person/image/",
+          "url": "https://secure.gravatar.com/avatar/a20f8f1bf9c9a4d483a5f554f969913c0c320d18d9d7727587f3d8ca1df8b7dc?s=96&d=mm&r=g",
+          "contentUrl": "https://secure.gravatar.com/avatar/a20f8f1bf9c9a4d483a5f554f969913c0c320d18d9d7727587f3d8ca1df8b7dc?s=96&d=mm&r=g",
+          "caption": "Equipo editorial de American Recruiters"
+        },
+        "url": "https://desarrollo.americanrecruiters.mx/author/ar_editorial/"
+      }
+    ]
+  },
+  {
+    "id": 820,
+    "graph": [
+      {
+        "@type": "Article",
+        "@id": "https://desarrollo.americanrecruiters.mx/entrevista-seleccion-estructurada/#article",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/entrevista-seleccion-estructurada/"
+        },
+        "author": {
+          "name": "Equipo editorial de American Recruiters",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/person/3105214942b4dc4e69e0ad88345e8f66"
+        },
+        "headline": "Cómo preparar una entrevista de selección estructurada",
+        "datePublished": "2026-10-26T00:45:29+00:00",
+        "dateModified": "2026-10-26T13:24:25+00:00",
+        "mainEntityOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/entrevista-seleccion-estructurada/"
+        },
+        "wordCount": 1081,
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/entrevista-seleccion-estructurada/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/entrevista-seleccion-estructurada.webp",
+        "articleSection": [
+          "Reclutamiento y selección"
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://desarrollo.americanrecruiters.mx/entrevista-seleccion-estructurada/",
+        "url": "https://desarrollo.americanrecruiters.mx/entrevista-seleccion-estructurada/",
+        "name": "Entrevista de selección: guía estructurada para empresas",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/entrevista-seleccion-estructurada/#primaryimage"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/entrevista-seleccion-estructurada/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/entrevista-seleccion-estructurada.webp",
+        "datePublished": "2026-10-26T00:45:29+00:00",
+        "dateModified": "2026-10-26T13:24:25+00:00",
+        "description": "Prepara una entrevista de selección con preguntas sobre el puesto, repreguntas útiles y criterios comunes. Incluye ejemplos para entrevistar sin improvisar.",
+        "breadcrumb": {
+          "@id": "https://desarrollo.americanrecruiters.mx/entrevista-seleccion-estructurada/#breadcrumb"
+        },
+        "inLanguage": "es",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://desarrollo.americanrecruiters.mx/entrevista-seleccion-estructurada/"
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "inLanguage": "es",
+        "@id": "https://desarrollo.americanrecruiters.mx/entrevista-seleccion-estructurada/#primaryimage",
+        "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/entrevista-seleccion-estructurada.webp",
+        "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/entrevista-seleccion-estructurada.webp",
+        "width": 1600,
+        "height": 900,
+        "caption": "Entrevista de selección con una guía de preguntas sobre el puesto."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://desarrollo.americanrecruiters.mx/entrevista-seleccion-estructurada/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://desarrollo.americanrecruiters.mx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ideas para decidir mejor sobre talento y contratación",
+            "item": "https://desarrollo.americanrecruiters.mx/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Cómo preparar una entrevista de selección estructurada"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://desarrollo.americanrecruiters.mx/#website",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "name": "American Recruiters México — Desarrollo",
+        "description": "Entorno privado de desarrollo web.",
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://desarrollo.americanrecruiters.mx/?s={search_term_string}"
+            },
+            "query-input": {
+              "@type": "PropertyValueSpecification",
+              "valueRequired": true,
+              "valueName": "search_term_string"
+            }
+          }
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/#organization",
+        "name": "American Recruiters México",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "logo": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/",
+          "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "width": 1472,
+          "height": 200,
+          "caption": "American Recruiters México"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://desarrollo.americanrecruiters.mx/#/schema/person/3105214942b4dc4e69e0ad88345e8f66",
+        "name": "Equipo editorial de American Recruiters",
+        "image": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/person/image/",
+          "url": "https://secure.gravatar.com/avatar/a20f8f1bf9c9a4d483a5f554f969913c0c320d18d9d7727587f3d8ca1df8b7dc?s=96&d=mm&r=g",
+          "contentUrl": "https://secure.gravatar.com/avatar/a20f8f1bf9c9a4d483a5f554f969913c0c320d18d9d7727587f3d8ca1df8b7dc?s=96&d=mm&r=g",
+          "caption": "Equipo editorial de American Recruiters"
+        },
+        "url": "https://desarrollo.americanrecruiters.mx/author/ar_editorial/"
+      }
+    ]
+  },
+  {
+    "id": 822,
+    "graph": [
+      {
+        "@type": "Article",
+        "@id": "https://desarrollo.americanrecruiters.mx/busqueda-candidatos-pasivos/#article",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/busqueda-candidatos-pasivos/"
+        },
+        "author": {
+          "name": "Equipo editorial de American Recruiters",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/person/3105214942b4dc4e69e0ad88345e8f66"
+        },
+        "headline": "Búsqueda de candidatos pasivos: qué debe acordar la empresa",
+        "datePublished": "2026-10-26T00:45:30+00:00",
+        "dateModified": "2026-10-26T13:24:21+00:00",
+        "mainEntityOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/busqueda-candidatos-pasivos/"
+        },
+        "wordCount": 1069,
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/busqueda-candidatos-pasivos/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/busqueda-candidatos-pasivos.webp",
+        "articleSection": [
+          "Headhunting y liderazgo"
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://desarrollo.americanrecruiters.mx/busqueda-candidatos-pasivos/",
+        "url": "https://desarrollo.americanrecruiters.mx/busqueda-candidatos-pasivos/",
+        "name": "Candidatos pasivos: cómo delimitar una búsqueda directa",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/busqueda-candidatos-pasivos/#primaryimage"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/busqueda-candidatos-pasivos/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/busqueda-candidatos-pasivos.webp",
+        "datePublished": "2026-10-26T00:45:30+00:00",
+        "dateModified": "2026-10-26T13:24:21+00:00",
+        "description": "Revisa qué acordar antes de buscar candidatos pasivos: mercado, requisitos, confidencialidad, mensajes y seguimiento de respuestas, sin promesas de contratación.",
+        "breadcrumb": {
+          "@id": "https://desarrollo.americanrecruiters.mx/busqueda-candidatos-pasivos/#breadcrumb"
+        },
+        "inLanguage": "es",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://desarrollo.americanrecruiters.mx/busqueda-candidatos-pasivos/"
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "inLanguage": "es",
+        "@id": "https://desarrollo.americanrecruiters.mx/busqueda-candidatos-pasivos/#primaryimage",
+        "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/busqueda-candidatos-pasivos.webp",
+        "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/busqueda-candidatos-pasivos.webp",
+        "width": 1600,
+        "height": 900,
+        "caption": "Revisión del perfil y del alcance de una búsqueda de talento."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://desarrollo.americanrecruiters.mx/busqueda-candidatos-pasivos/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://desarrollo.americanrecruiters.mx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ideas para decidir mejor sobre talento y contratación",
+            "item": "https://desarrollo.americanrecruiters.mx/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Búsqueda de candidatos pasivos: qué debe acordar la empresa"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://desarrollo.americanrecruiters.mx/#website",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "name": "American Recruiters México — Desarrollo",
+        "description": "Entorno privado de desarrollo web.",
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://desarrollo.americanrecruiters.mx/?s={search_term_string}"
+            },
+            "query-input": {
+              "@type": "PropertyValueSpecification",
+              "valueRequired": true,
+              "valueName": "search_term_string"
+            }
+          }
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/#organization",
+        "name": "American Recruiters México",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "logo": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/",
+          "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "width": 1472,
+          "height": 200,
+          "caption": "American Recruiters México"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://desarrollo.americanrecruiters.mx/#/schema/person/3105214942b4dc4e69e0ad88345e8f66",
+        "name": "Equipo editorial de American Recruiters",
+        "image": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/person/image/",
+          "url": "https://secure.gravatar.com/avatar/a20f8f1bf9c9a4d483a5f554f969913c0c320d18d9d7727587f3d8ca1df8b7dc?s=96&d=mm&r=g",
+          "contentUrl": "https://secure.gravatar.com/avatar/a20f8f1bf9c9a4d483a5f554f969913c0c320d18d9d7727587f3d8ca1df8b7dc?s=96&d=mm&r=g",
+          "caption": "Equipo editorial de American Recruiters"
+        },
+        "url": "https://desarrollo.americanrecruiters.mx/author/ar_editorial/"
+      }
+    ]
+  },
+  {
+    "id": 824,
+    "graph": [
+      {
+        "@type": "Article",
+        "@id": "https://desarrollo.americanrecruiters.mx/retencion-talento-incorporacion/#article",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/retencion-talento-incorporacion/"
+        },
+        "author": {
+          "name": "Equipo editorial de American Recruiters",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/person/3105214942b4dc4e69e0ad88345e8f66"
+        },
+        "headline": "Retención de talento desde la incorporación: qué organizar en los primeros meses",
+        "datePublished": "2026-10-26T00:45:32+00:00",
+        "dateModified": "2026-10-26T13:24:14+00:00",
+        "mainEntityOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/retencion-talento-incorporacion/"
+        },
+        "wordCount": 1161,
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/retencion-talento-incorporacion/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/retencion-talento-incorporacion.webp",
+        "articleSection": [
+          "Gestión del talento"
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://desarrollo.americanrecruiters.mx/retencion-talento-incorporacion/",
+        "url": "https://desarrollo.americanrecruiters.mx/retencion-talento-incorporacion/",
+        "name": "Retención de talento: cómo organizar la incorporación",
+        "isPartOf": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://desarrollo.americanrecruiters.mx/retencion-talento-incorporacion/#primaryimage"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/retencion-talento-incorporacion/#primaryimage"
+        },
+        "thumbnailUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/retencion-talento-incorporacion.webp",
+        "datePublished": "2026-10-26T00:45:32+00:00",
+        "dateModified": "2026-10-26T13:24:14+00:00",
+        "description": "Organiza la incorporación para cuidar la retención de talento: expectativas, responsables, recursos y seguimiento durante los primeros meses, sin promesas irreales.",
+        "breadcrumb": {
+          "@id": "https://desarrollo.americanrecruiters.mx/retencion-talento-incorporacion/#breadcrumb"
+        },
+        "inLanguage": "es",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://desarrollo.americanrecruiters.mx/retencion-talento-incorporacion/"
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "inLanguage": "es",
+        "@id": "https://desarrollo.americanrecruiters.mx/retencion-talento-incorporacion/#primaryimage",
+        "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/retencion-talento-incorporacion.webp",
+        "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/retencion-talento-incorporacion.webp",
+        "width": 1600,
+        "height": 900,
+        "caption": "Conversación de incorporación para revisar prioridades y recursos del puesto."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://desarrollo.americanrecruiters.mx/retencion-talento-incorporacion/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://desarrollo.americanrecruiters.mx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ideas para decidir mejor sobre talento y contratación",
+            "item": "https://desarrollo.americanrecruiters.mx/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Retención de talento desde la incorporación: qué organizar en los primeros meses"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://desarrollo.americanrecruiters.mx/#website",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "name": "American Recruiters México — Desarrollo",
+        "description": "Entorno privado de desarrollo web.",
+        "publisher": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#organization"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://desarrollo.americanrecruiters.mx/?s={search_term_string}"
+            },
+            "query-input": {
+              "@type": "PropertyValueSpecification",
+              "valueRequired": true,
+              "valueName": "search_term_string"
+            }
+          }
+        ],
+        "inLanguage": "es"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://desarrollo.americanrecruiters.mx/#organization",
+        "name": "American Recruiters México",
+        "url": "https://desarrollo.americanrecruiters.mx/",
+        "logo": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/",
+          "url": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "contentUrl": "https://desarrollo.americanrecruiters.mx/wp-content/uploads/2026/10/american-recruiters-logo-existente.png",
+          "width": 1472,
+          "height": 200,
+          "caption": "American Recruiters México"
+        },
+        "image": {
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/logo/image/"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://desarrollo.americanrecruiters.mx/#/schema/person/3105214942b4dc4e69e0ad88345e8f66",
+        "name": "Equipo editorial de American Recruiters",
+        "image": {
+          "@type": "ImageObject",
+          "inLanguage": "es",
+          "@id": "https://desarrollo.americanrecruiters.mx/#/schema/person/image/",
+          "url": "https://secure.gravatar.com/avatar/a20f8f1bf9c9a4d483a5f554f969913c0c320d18d9d7727587f3d8ca1df8b7dc?s=96&d=mm&r=g",
+          "contentUrl": "https://secure.gravatar.com/avatar/a20f8f1bf9c9a4d483a5f554f969913c0c320d18d9d7727587f3d8ca1df8b7dc?s=96&d=mm&r=g",
+          "caption": "Equipo editorial de American Recruiters"
+        },
+        "url": "https://desarrollo.americanrecruiters.mx/author/ar_editorial/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "php": "8.0",
+    "lint": "PASS",
+    "exitCode": 0,
+    "stderr": "",
+    "suite": "PHP fixture graphs, not live WordPress integration",
+    "total": 363,
+    "failed": 0
+  },
+  {
+    "php": "8.3",
+    "lint": "PASS",
+    "exitCode": 0,
+    "stderr": "",
+    "suite": "PHP fixture graphs, not live WordPress integration",
+    "total": 363,
+    "failed": 0
+  }
+]

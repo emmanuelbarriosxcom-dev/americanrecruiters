@@ -1,0 +1,36 @@
+--- a/wordpress/ar-editorial/functions.php
++++ b/wordpress/ar-editorial/functions.php
+@@ -260,31 +260,5 @@
+ }
+ add_action('admin_menu',function(){if(ar_f9_staging())add_management_page('Fase 9 — QA','Formularios — QA','manage_options','ar-f9-qa','ar_f9_qa_page');});
+ 
+-/* AJ: approved corporate signature for migrated history only; provenance stays private. */
+-function ar_aj_historical_article($id) {
+-    return wp_parse_url(home_url('/'),PHP_URL_HOST)==='desarrollo.americanrecruiters.mx'
+-        && in_array((int)$id,[156,159,718,762,766,769,772,775,778,781,783],true);
+-}
+-add_filter('the_author',function($name){
+-    return is_singular('post') && ar_aj_historical_article(get_the_ID())
+-        ? 'Equipo editorial de American Recruiters' : $name;
+-});
+-add_filter('wpseo_schema_graph',function($graph){
+-    if(!is_singular('post') || !ar_aj_historical_article(get_queried_object_id()))return $graph;
+-    $editorial_id=home_url('/blog/#equipo-editorial');$previous=[];$changed=false;
+-    foreach($graph as &$node){
+-        $types=(array)($node['@type']??[]);
+-        if(!array_intersect($types,['Article','BlogPosting','NewsArticle'])
+-            && !(in_array('WebPage',$types,true)&&isset($node['author'])))continue;
+-        if(isset($node['author']['@id']))$previous[]=$node['author']['@id'];
+-        $node['author']=['@id'=>$editorial_id];$changed=true;
+-    }
+-    unset($node);
+-    if(!$changed)return $graph;
+-    $graph=array_values(array_filter($graph,function($node)use($previous){
+-        return !(in_array('Person',(array)($node['@type']??[]),true)
+-            && in_array($node['@id']??'', $previous,true));
+-    }));
+-    $graph[]=['@type'=>'Organization','@id'=>$editorial_id,'name'=>'Equipo editorial de American Recruiters','url'=>home_url('/blog/')];
+-    return $graph;
+-});
++/* AR: unified editorial graph; integrate after AQ review. */
++require_once __DIR__.'/inc/editorial-author.php';
