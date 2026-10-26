@@ -14,12 +14,27 @@ function ar_setup() {
 add_action('after_setup_theme','ar_setup');
 function ar_assets() {
     $version=wp_get_theme()->get('Version');
-    wp_enqueue_style('ar-fonts','https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap',[],null);
+    // AQ: keep the existing font definitions, remove their blocking CSS round trip.
+    $font_file=get_theme_file_path('/assets/css/fonts.css');
+    $font_css=is_readable($font_file) ? file_get_contents($font_file) : false;
+    if($font_css!==false && $font_css!=='') {
+        $font_css=str_replace('../fonts/',esc_url_raw(get_theme_file_uri('/assets/fonts/')),$font_css);
+        wp_register_style('ar-fonts',false,[],$version);
+        wp_enqueue_style('ar-fonts');
+        wp_add_inline_style('ar-fonts',$font_css);
+    } else {
+        wp_enqueue_style('ar-fonts',get_theme_file_uri('/assets/css/fonts.css'),[],$version);
+    }
     wp_enqueue_style('ar-design',get_theme_file_uri('/assets/css/v21.css'),['ar-fonts'],$version);
     wp_enqueue_style('ar-theme',get_stylesheet_uri(),['ar-design'],$version);
     wp_enqueue_script('ar-navigation',get_theme_file_uri('/assets/js/v21.js'),[], $version,['strategy'=>'defer','in_footer'=>true]);
 }
 add_action('wp_enqueue_scripts','ar_assets');
+/* Discover the unchanged Latin font before styles: avoid a late fallback swap. */
+function ar_preload_primary_font() {
+    echo '<link rel="preload" href="'.esc_url(get_theme_file_uri('/assets/fonts/montserrat-latin-v31.woff2')).'" as="font" type="font/woff2" crossorigin>';
+}
+add_action('wp_head','ar_preload_primary_font',1);
 function ar_url($path='') { return esc_url(home_url('/'.ltrim($path,'/'))); }
 function ar_logo() { return esc_url(get_theme_file_uri('/assets/images/american-recruiters-logo.png')); }
 function ar_services() { return [
@@ -48,7 +63,6 @@ function ar_page_hero($description='Base estructural en desarrollo. Contenido pe
 }
 function ar_font_hints($urls,$relation) {
     if($relation==='preconnect') {
-        $urls[]='https://fonts.googleapis.com';
         $urls[]=['href'=>'https://fonts.gstatic.com','crossorigin'=>'anonymous'];
     }
     return $urls;
@@ -255,3 +269,6 @@ function ar_f9_qa_page() {
     echo '</tbody></table><p>Canales bloqueados. No existe ruta de éxito, correo ni almacenamiento.</p></div>';
 }
 add_action('admin_menu',function(){if(ar_f9_staging())add_management_page('Fase 9 — QA','Formularios — QA','manage_options','ar-f9-qa','ar_f9_qa_page');});
+
+/* AR: unified editorial author graph, reviewed and integrated by AQ. */
+require_once __DIR__.'/inc/editorial-author.php';

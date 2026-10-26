@@ -126,15 +126,28 @@ function ar_v21_article_content($html) {
     foreach(iterator_to_array($xp->query('.//table',$root)) as $i=>$table){
         $wrapper=$doc->createElement('div');$wrapper->setAttribute('class','table-scroll');$wrapper->setAttribute('tabindex','0');$wrapper->setAttribute('role','region');$wrapper->setAttribute('aria-label','Tabla '.($i+1).' — desplazable horizontalmente');$table->parentNode->replaceChild($wrapper,$table);$wrapper->appendChild($table);
     }
-    // Present one existing contextual link as the approved inline CTA, without adding copy.
-    foreach($xp->query('.//p[.//a[contains(@href,"/servicios/")]]',$root) as $paragraph){
-        if($paragraph->parentNode->nodeName!=='div' || strpos($paragraph->parentNode->getAttribute('class'),'inline-cta')!==false)continue;
-        $wrapper=$doc->createElement('aside');$wrapper->setAttribute('class','inline-cta');
-        $paragraph->parentNode->replaceChild($wrapper,$paragraph);$wrapper->appendChild($paragraph);break;
-    }
+    // Editorial paragraphs and links stay in their original form; the single
+    // automatic contextual CTA is rendered by single.php after the article.
     return [ar_v21_html($root,true),$toc];
 }
+/** Reviewed article audiences. Unknown IDs fail safely to informational navigation.
+ * Extend the map (or its filter) only after checking the article's actual intent.
+ * IDs 156/783 are for candidates; 820 is a business interview guide.
+ */
+function ar_v21_article_audience($post_id=0) {
+    $audiences=[156=>'candidate',783=>'candidate'];
+    foreach([159,718,762,766,769,772,775,778,781,808,816,818,820,822,824] as $id)$audiences[$id]='business';
+    $audiences=apply_filters('ar_v21_article_audiences',$audiences);
+    $audience=$audiences[(int)($post_id ?: get_the_ID())]??'informational';
+    return in_array($audience,['business','candidate'],true)?$audience:'informational';
+}
 function ar_v21_context() {
+    $audience=ar_v21_article_audience();
+    if($audience==='candidate') {
+        if((int)get_the_ID()===156)return ['title'=>'Más información para tu búsqueda de empleo','text'=>'Consulta recomendaciones para preparar una entrevista y presentar tu experiencia con claridad.','path'=>'hola-mundo/','link'=>'Preparar una entrevista de trabajo'];
+        return ['title'=>'Organiza la información de tu trayectoria','text'=>'Consulta qué información puede ayudarte a preparar tu currículum y explicar tu experiencia.','path'=>'pasos-para-crear-un-cv-mas-efectivo/','link'=>'Revisar la guía para preparar tu CV'];
+    }
+    if($audience!=='business')return ['title'=>'Continúa explorando el Blog','text'=>'Consulta más perspectivas sobre contratación y desarrollo profesional.','path'=>'blog/','link'=>'Explorar el Blog'];
     $text=remove_accents(mb_strtolower(get_the_title()));
     if(preg_match('/headhunt|honorario|directiv|gerencial|pasiv/',$text))return ['title'=>'Una búsqueda alineada con tu organización','text'=>'Revisa el servicio de búsqueda ejecutiva y presenta el contexto del puesto que necesitas cubrir.','path'=>'servicios/headhunting/','link'=>'Explorar Headhunting'];
     if(preg_match('/vacante|evaluacion|entrevista|retencion|seleccion|incorporacion/',$text))return ['title'=>'Del criterio de selección a tu necesidad','text'=>'Conoce la opción de reclutamiento y selección según las necesidades de tu empresa.','path'=>'servicios/reclutamiento-personalizado/','link'=>'Consultar selección personalizada'];

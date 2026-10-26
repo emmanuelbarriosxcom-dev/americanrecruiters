@@ -1,4 +1,4 @@
-<?php if(!defined('ABSPATH'))exit; $context=ar_v21_context(); ?>
+<?php if(!defined('ABSPATH'))exit; ?>
 <aside class="reading-aside">
 <?php if($args['toc']): ?><details class="toc" open><summary><?php echo ar_v21_icon('list','toc-icon'); ?>En este artículo<?php echo ar_v21_icon('plus','summary-mark'); ?></summary><nav aria-label="Tabla de contenidos"><?php foreach($args['toc'] as $item): ?><a<?php if($item['level']==='h3')echo ' class="sub"'; ?> href="#<?php echo esc_attr($item['id']); ?>"><?php echo esc_html($item['text']); ?></a><?php endforeach; ?></nav></details><?php endif; ?>
-<div class="sidebar-cta"><?php echo ar_v21_badge('compass'); ?><p class="eyebrow">PARA TU EMPRESA</p><h2><?php echo esc_html($context['title']); ?></h2><p><?php echo esc_html($context['text']); ?></p><a href="<?php echo ar_url($context['path']); ?>"><?php echo esc_html($context['link']); ?> <?php echo ar_v21_icon('arrow-right'); ?></a><a href="<?php echo ar_url('contacto/'); ?>">Consultar el canal empresarial <?php echo ar_v21_icon('arrow-up-right'); ?></a><?php ar_v21_categories(); ?></div></aside>
+</aside>

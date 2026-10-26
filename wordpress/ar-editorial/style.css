@@ -1,12 +1,28 @@
 /*
 Theme Name: American Recruiters — Ejecutivo Editorial
 Description: Rediseño V2.1 aprobado. Presentación compartida PHP y Gutenberg.
-Version: 1.1.6-v2.1
+Version: 1.1.7-v2.1-aq4
 Requires at least: 6.6
 Requires PHP: 8.0
 Text Domain: ar-editorial
 */
 /* WordPress bridge; approved component rules live in assets/css/v21.css. */
+/* AL: scoped editorial end components; no global layout overrides. */
+.article-end .article-author{display:grid;grid-template-columns:200px minmax(0,1fr);align-items:start;gap:22px;padding:28px;background:var(--offwhite);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:28px}
+.article-end .article-author-avatar{display:block;width:200px;max-width:100%;margin-top:4px;line-height:0}
+.article-end .article-author-avatar img{display:block;width:100%;height:auto;aspect-ratio:1472/200;object-fit:contain}
+.article-end .article-author-label{font-size:10px;font-weight:700;line-height:1.6;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+.article-end .article-author h2{font-size:clamp(19px,2vw,23px);line-height:1.35;letter-spacing:-.025em;margin:0 0 10px;text-wrap:initial}
+.article-end .article-author p:last-child{max-width:740px;font-size:14px;line-height:1.8;color:var(--muted);margin:0}
+.article-end .share{align-items:center;justify-content:space-between;gap:16px 24px;padding:22px 0;margin-bottom:20px}
+.article-end .share-label{font-size:11px;font-weight:700;line-height:1.6;letter-spacing:.1em;text-transform:uppercase}
+.article-end .share-options{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.article-end .share-options a{display:inline-flex;justify-content:center;align-items:center;gap:9px;min-height:44px;padding:10px 15px;border:1px solid var(--border);border-radius:7px;color:var(--ink);background:#fff;text-decoration:none;font-size:12px;font-weight:600;line-height:1.6}
+.article-end .share-options svg{display:block;flex-shrink:0;width:18px;height:18px}
+.article-end .share-options a:hover{background:var(--mint);border-color:#087577}
+.article-end .share-options a:focus-visible{outline:3px solid #087577;outline-offset:3px}
+.article-end .share-options .screen-reader-text{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:600px){.article-end .article-author{grid-template-columns:minmax(0,1fr);gap:18px;padding:22px 18px}.article-end .article-author-avatar{width:200px;margin-top:0}.article-end .article-author h2{font-size:19px}.article-end .article-author p:last-child{font-size:13px}.article-end .share{flex-direction:column;align-items:flex-start;gap:14px}.article-end .share-options{width:100%;gap:8px}.article-end .share-options a{padding:10px 12px;font-size:11px;gap:7px}}
 body.ar-v21{margin:0;font-family:Montserrat,Arial,sans-serif}
 body.admin-bar .site-header{top:32px}
 [hidden]{display:none!important}
@@ -62,3 +78,9 @@ body.admin-bar .site-header{top:32px}
 .ar-f9 fieldset{min-width:0;border:0;padding:0;margin:0}.ar-f9 legend{font-weight:700;margin-bottom:16px;font-size:1.15rem}
 .ar-f9 label{display:block;font-weight:600;margin:16px 0 6px}.ar-f9 input,.ar-f9 select,.ar-f9 textarea{box-sizing:border-box;width:100%;max-width:100%;min-height:48px;padding:12px;border:1px solid #93869e;border-radius:8px;font:inherit;background:#f4f2f6;color:#51475b;opacity:1}
 .ar-f9 textarea{min-height:120px;resize:vertical}.ar-f9 small{display:block;line-height:1.6;margin-top:6px}.ar-f9 button{min-height:48px;max-width:100%;white-space:normal;margin-top:20px;opacity:1;cursor:not-allowed}.ar-f9-status{border-left:4px solid #256f68;padding:12px;background:#eef6f4}.ar-f9 a{color:#512776;text-decoration:underline}.ar-f9 a:focus-visible{outline:3px solid #256f68;outline-offset:4px}.ar-f9 .ar-f9-privacy input{width:20px;min-height:20px;height:20px;vertical-align:middle;margin-right:8px}.ar-f9 .ar-f9-privacy{font-weight:400}
+
+/* AQ: preserve final V2.1 typography, stabilize only hero fallback geometry. */
+.home-hero h1,.home-hero-content>p:not(.eyebrow),.hero.interior h1{font-family:Montserrat,"AR Montserrat Fallback",Arial,sans-serif}
+
+/* AQ2: match the fallback for the two Headhunting hero paragraphs as well. */
+body.page-id-17 .hero-grid>div>p{font-family:Montserrat,"AR Montserrat Fallback",Arial,sans-serif}
